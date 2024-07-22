@@ -310,6 +310,7 @@
   transition: all 0.3s ease;
   width: auto;
   position: relative;
+  max-width: 400px;
 }
 .main__swiper .swiper-slide .item {
   width: 400px;
@@ -332,13 +333,13 @@
 }
 .main__swiper .swiper-slide .item .item__wrap .group {
   display: inline-block;
-  height: 24px;
-  line-height: 24px;
   background-color: #D3E1FB;
   margin-bottom: 32px;
+  font-size: 15px;
+  padding: 6px 8px;
 }
 .main__swiper .swiper-slide .item .item__wrap .btn__group {
-  position: relative;
+  display: flex;
   margin-bottom: 32px;
 }
 .main__swiper .swiper-slide .item .item__wrap .btn__group button {
@@ -347,19 +348,32 @@
   line-height: 48px;
   font-size: 17px;
   border-radius: 30px;
+  border: 0;
+}
+.main__swiper .swiper-slide .item .item__wrap .btn__group .asset {
+  position: relative;
+  left: 20px;
+  z-index: 4;
+  background-color: #003675;
+  color: #fff;
 }
 .main__swiper .swiper-slide .item .item__wrap .btn__group .income {
-  position: absolute;
+  position: relative;
+  right: 20px;
+  background-color: #fff;
+  color: #1d1d1d;
   top: 0;
-  z-index: -1;
-  right: 16px;
+  z-index: 3;
+}
+.main__swiper .swiper-slide .item .item__wrap .btn__group .income .text {
+  padding-left: 12px;
 }
 .main__swiper .swiper-slide .item .item__wrap .circle__graph {
   margin: 0px auto;
   width: 210px;
   height: 210px;
   border-radius: 50%;
-  background: conic-gradient(#4caf50 0% 70%, #f44336 70% 100%);
+  background: conic-gradient(#003675 0% 70%, #fff 70% 100%);
   position: relative;
 }
 .main__swiper .swiper-slide .item .item__wrap .circle__graph::before {
@@ -378,6 +392,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main__swiper .swiper-slide .item .item__wrap .circle__graph .text .detail {
+  font-size: 24px;
+  font-weight: 700;
 }
 .main__swiper .swiper-slide .item .item__wrap .total {
   display: flex;
@@ -399,15 +418,50 @@
   font-size: 13px;
   color: #767676;
 }
+.main__swiper .swiper-slide .item .item__wrap .total .bg {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 .main__swiper .swiper-slide-active .item {
   background-color: #246BEB;
   color: #fff;
   margin-top: 0;
 }
+.main__swiper .swiper-slide-active .item .group {
+  color: #246BEB;
+}
+.main__swiper .swiper-slide-active .item .graph .circle__graph::before {
+  background-color: #246BEB;
+}
+.main__swiper .swiper-slide-active .item .item__wrap .total {
+  background-color: #fff;
+  box-sizing: content-box;
+  width: calc(100% + 64px); /* 부모의 padding 값을 고려하여 너비를 설정 */
+  margin-left: -32px; /* 패딩 값을 무시하고 좌측으로 이동 */
+  margin-right: -32px; /* 패딩 값을 무시하고 우측으로 이동 */
+  padding-bottom: 16px;
+  padding-top: 8px;
+}
+.main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap p:nth-child(1) {
+  color: #003675;
+  margin-bottom: 16px;
+}
+.main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap p:nth-child(2) {
+  color: #1d1d1d;
+}
 
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item {
   margin-top: 50px;
+}
+.main__swiper .swiper-slide:not(.swiper-slide-active) .item .btn__group .asset {
+  background-color: #444444;
+}
+.main__swiper .swiper-slide:not(.swiper-slide-active) .item .btn__group .income {
+  border: 1px solid #444444;
 }
 
 .cs__center {
@@ -470,6 +524,10 @@
 }
 .cs__center .content .qa a:not(:last-child) {
   border-bottom: 1px solid #fff;
+}
+
+#skip-nav {
+  display: none;
 }
 
 body {

@@ -3,6 +3,10 @@
 @import "swiper.scss";
 @import "cs_footer.scss";
 
+#skip-nav {
+    display: none;
+}
+
 body {
     color: #1d1d1d;
     font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

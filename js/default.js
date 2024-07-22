@@ -14,7 +14,7 @@ var swiper = new Swiper(".bannerSwiper", {
   });
 
   var swiper = new Swiper(".mainSwiper", {
-    slidesPerView : 'auto',
+    slidesPerView : 3,
 
     navigation: {
       nextEl: ".swiper-button-next",

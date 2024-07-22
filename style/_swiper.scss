@@ -42,9 +42,9 @@
             }
             
         
-      }
+    }
 
-      .swiper-button-prev , .swiper-button-next {
+    .swiper-button-prev , .swiper-button-next {
         width: 64px;
         height: 64px;
         color: #1d1d1d;
@@ -52,7 +52,7 @@
         border-radius: 50%;
         border: 1px solid  #E4E4E4;   
         transform: translateY(-25%);     
-      }
+    }
 }
 
 
@@ -116,6 +116,7 @@
         transition: all 0.3s ease;
         width: auto;
         position: relative;
+        max-width: 400px;
 
 
         .item {
@@ -139,15 +140,15 @@
 
                 .group {
                     display: inline-block;
-                    height: 24px;
-                    line-height: 24px;
                     background-color: #D3E1FB;
                     margin-bottom: 32px ;
+                    font-size: 15px;
+                    padding: 6px 8px;
                 }
 
 
                 .btn__group {
-                    position: relative;
+                    display: flex;
                     margin-bottom: 32px;
 
                     button {
@@ -156,13 +157,29 @@
                         line-height: 48px;
                         font-size: 17px;
                         border-radius: 30px;
+                        border: 0;
+                    }
+
+                    .asset {
+                        position: relative;
+                        left: 20px;
+                        z-index: 4;
+                        background-color: #003675;
+                        color: #fff;
+
                     }
 
                     .income {
-                        position: absolute;
+                        position: relative;
+                        right: 20px;
+                        background-color: #fff;
+                        color: #1d1d1d;
                         top: 0;
-                        z-index: -1;
-                        right: 16px;
+                        z-index: 3;
+
+                        .text {
+                            padding-left: 12px;
+                        }
                     }
                 }
 
@@ -172,8 +189,8 @@
                     height: 210px;
                     border-radius: 50%;
                     background: conic-gradient(
-                      #4caf50 0% 70%, /* 첫 번째 색상 */
-                      #f44336 70% 100% /* 두 번째 색상 */
+                      #003675 0% 70%, /* 첫 번째 색상 */
+                      #fff 70% 100% /* 두 번째 색상 */
                     );
                     position: relative;
 
@@ -194,12 +211,19 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        text-align: center;
+
+                        .detail {
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
                     }
 
                 }
 
 
                 .total {
+                    
                     display: flex;
                     justify-content: space-between;
                     margin-top: 40px;
@@ -222,6 +246,14 @@
                             color: #767676;
                         }
                     }
+
+                    .bg {
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -232,10 +264,52 @@
     background-color: #246BEB;
     color: #fff;
     margin-top: 0;
+
+    .group {
+        color: #246BEB;
+    }
+
+    .graph .circle__graph {
+
+        &::before {
+            background-color: #246BEB;
+        } 
+    }
+
+    .item__wrap .total {
+        background-color: #fff;
+        box-sizing: content-box;
+        width: calc(100% + 64px); /* 부모의 padding 값을 고려하여 너비를 설정 */
+        margin-left: -32px; /* 패딩 값을 무시하고 좌측으로 이동 */
+        margin-right: -32px; /* 패딩 값을 무시하고 우측으로 이동 */
+        padding-bottom: 16px;
+        padding-top: 8px;
+
+        .total__wrap p:nth-child(1) {
+            color: #003675;
+            margin-bottom: 16px;
+        }
+
+        .total__wrap p:nth-child(2){
+            color: #1d1d1d;
+        }
+    }
+
+ 
 }
 
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item {
     margin-top: 50px;
+
+    .btn__group {
+        .asset {
+            background-color: #444444;
+        }
+
+        .income {
+            border: 1px solid #444444;
+        }
+    }
 }
 
 
