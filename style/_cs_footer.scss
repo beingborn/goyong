@@ -10,6 +10,17 @@
 
         .more {
             color: #fff;
+            font-size: 19px;
+            padding-right: 4px;
+            display: inline-flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                width: 24px;
+                height: 24px;
+                background: url(/img/more__arrow__right.png) no-repeat center;
+            }
         }
 
 
@@ -40,6 +51,30 @@
 
         .qa {
           
+
+            .content__qa {
+                margin-top: 40px;
+
+                a{
+                    display: block;
+                    padding: 33px 0 33px 24px;
+                    color: #fff;
+
+                    .text {
+                        span {
+                            margin-right: 32px;
+                        }
+
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            a:not(:last-child){
+                border-bottom: 1px solid #fff;
+            }
+
         }
 
         
