@@ -1,0 +1,140 @@
+.top__banner {
+    height: 32px;
+    background-color: #EDF1F5;
+
+
+    .banner__wrap {
+        // display: flex;
+        // align-items: center;
+        flex-wrap: nowrap;
+        line-height: 32px;
+
+        .korea {
+            margin-right: 8px;
+            display: inline-block;
+            width: 28px;
+            height: 20px;
+            background: url(/img/태극기_medium.png) no-repeat center;
+            position: relative;
+            top: 4px;
+        }
+    }
+}
+
+.banner__text {display: inline-block;}
+
+.banner__text a {
+    color: #003675;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-right: 4px;
+      display: inline-flex;
+    align-items: center;
+
+    &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: url(/img/icon__arrow__down.svg) no-repeat center;
+    }
+}
+
+.header__top {
+    display: flex;
+    height: 40px;
+    justify-content: end;
+    align-items: center;
+
+    a:not(:last-child){
+        border-right: 2px solid #D8D8D8;
+    }
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 12px;
+        padding-right: 12px;
+
+        &::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url(/img/icon__arrow__down.svg) no-repeat center;
+        }
+    }
+}
+
+
+// 하단 헤더 영역
+
+.header__btm {
+    position: relative;
+    margin-bottom: 16px;
+
+    .right__icon__set {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 4px;
+
+        a {
+
+            img {
+                margin-right: 8px;
+            }
+
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px 12px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .talk__count {
+            display: inline-block;
+            width: 26px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background-color: #246BEB;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 15px;
+            font-size: 400;
+            margin-left: 8px;
+        }
+
+    }
+}
+
+.base__gnb {
+    height: 64px;
+
+    a{
+        line-height: 64px;
+        margin-right: 16px;
+        font-weight: bold;
+        font-size: 19px;
+        color: #555555;
+        display: inline-flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url(/img/icon__arrow__20.png) no-repeat center;
+            margin-left: 8px;
+        }
+    }
+}
+
+.border {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border: 1px solid #D8D8D8;
+}
