@@ -1,6 +1,36 @@
+/* 노트북 & 태블릿 가로 사이즈 */
+
+@media all and (min-width:1024px) and (max-width:1440px) { 
+    //스타일 입력
+
+    .wrap .inner {width: 1024px;}
+
+
+    .wrap {
+
+        .cs__center .content .item {
+            width: 480px;
+        }
+
+        .swiper__container {
+            width: 100%;
+        }
+
+        .count__group .count {width: calc(25% - 16px);}
+    }
+  } 
+
+
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
 @media all and (min-width:480px) and (max-width:767px) {
     //스타일 입력
+
+    .wrap {
+        .inner {width: 100%; padding: 0 16px;}
+
+    }
+
+
   } 
   
   /* 모바일 세로 (해상도 ~ 479px) 까지 */ 

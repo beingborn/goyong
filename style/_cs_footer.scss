@@ -58,6 +58,8 @@
             width: 610px;
         }
 
+        .visitor__graph img {width: 100%;}
+
         .qa {
           
 
@@ -157,7 +159,7 @@ footer {
 .footer__info p {
     font-size: 17px;
 
-    &:nth-child(1) { margin-bottom: 24px; }
+    &:nth-child(1) { margin-bottom: 24px; line-height: 150%;}
     &:nth-child(2) { margin-bottom: 20px;}
 }
 

@@ -14,6 +14,11 @@ var swiper = new Swiper(".bannerSwiper", {
 
     breakpoints: {
       1024: {
+        slidesPerView : 3,
+        spaceBetween: 24,
+      },
+
+      1440: {
         slidesPerView : 'auto',
         spaceBetween: 32,
       }
@@ -41,7 +46,13 @@ var swiper = new Swiper(".bannerSwiper", {
     },
 
     breakpoints: {
-      1024: {
+
+     1024: {
+      slidesPerView : 2,
+      centeredSlides: false, 
+     }, 
+
+      1440: {
         slidesPerView : 3,
         centeredSlides: false, 
       }

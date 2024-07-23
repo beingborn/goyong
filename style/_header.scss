@@ -92,6 +92,11 @@
             padding: 10px 12px;
             display: inline-flex;
             align-items: center;
+
+
+            span {
+                white-space: nowrap;
+            }
         }
 
         .talk__count {

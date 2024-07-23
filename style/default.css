@@ -81,6 +81,9 @@
 .header__btm .right__icon__set a img {
   margin-right: 8px;
 }
+.header__btm .right__icon__set a span {
+  white-space: nowrap;
+}
 .header__btm .right__icon__set .talk__count {
   display: inline-block;
   width: 26px;
@@ -630,6 +633,9 @@
 .cs__center .content .item {
   width: 610px;
 }
+.cs__center .content .visitor__graph img {
+  width: 100%;
+}
 .cs__center .content .qa .content__qa {
   margin-top: 40px;
 }
@@ -706,6 +712,7 @@ footer .footer__top .btn__flex .top__btn .last__btn {
 }
 .footer__info p:nth-child(1) {
   margin-bottom: 24px;
+  line-height: 150%;
 }
 .footer__info p:nth-child(2) {
   margin-bottom: 20px;
@@ -775,7 +782,28 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   color: #555555;
 }
 
+/* 노트북 & 태블릿 가로 사이즈 */
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .wrap .inner {
+    width: 1024px;
+  }
+  .wrap .cs__center .content .item {
+    width: 480px;
+  }
+  .wrap .swiper__container {
+    width: 100%;
+  }
+  .wrap .count__group .count {
+    width: calc(25% - 16px);
+  }
+}
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .wrap .inner {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
 @media all and (max-width: 479px) {
   .wrap .inner {
@@ -1000,4 +1028,30 @@ body {
 
 .mobile__logo {
   display: none;
+}
+
+a:focus {
+  outline: 2px dashed #0cc;
+}
+
+.skip__nav {
+  position: relative;
+  z-index: 300;
+}
+
+.skip__nav a {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.skip__nav a:focus {
+  top: 0;
+  z-index: 100;
 }/*# sourceMappingURL=default.css.map */

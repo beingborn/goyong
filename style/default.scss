@@ -42,3 +42,29 @@ body {
 .mobile__logo {
     display: none;
 }
+
+// 웹 접근성 skip navigation
+
+a:focus {
+    outline: 2px dashed #0cc;
+}
+
+.skip__nav {
+	position: relative;
+	z-index: 300;
+}
+.skip__nav a {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	padding: 7px 0;
+	font-size: 16px;
+	color: #fff;
+}
+.skip__nav a:focus {
+	top: 0;
+	z-index: 100;
+}
