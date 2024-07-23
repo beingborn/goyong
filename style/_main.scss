@@ -67,6 +67,16 @@
     }
 }
 
+.manual {
+    position: relative;
+
+   .tip {
+    position: absolute;
+    top: -60px;
+   }
+}
+
+
 
 .count__group {
     position: relative;

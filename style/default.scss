@@ -3,6 +3,16 @@
 @import "swiper.scss";
 @import "cs_footer.scss";
 
+
+* {
+    box-sizing: border-box;
+}
+
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
 #skip-nav {
     display: none;
 }
@@ -18,3 +28,12 @@ body {
     margin: 0px auto;
 }
 
+.btn--active {
+    background-color: #003675;
+    color: #fff;
+}
+
+.btn--disabled {
+    background-color: #fff;
+    color: #1d1d1d;
+}
