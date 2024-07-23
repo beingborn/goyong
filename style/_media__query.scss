@@ -1,0 +1,110 @@
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+    //스타일 입력
+  } 
+  
+  /* 모바일 세로 (해상도 ~ 479px) 까지 */ 
+  @media all and (max-width:479px){
+    // 헤더
+
+    .wrap {
+        .inner {width: 100%; padding: 0 16px;}
+        .header__top {display: none;}
+        .top__banner {height: auto;}
+        .banner__wrap {display: flex;}
+        .header__btm .right__icon__set .talk {display: none;}
+    
+        .logo {display: none;}
+        .mobile__logo {display: block;}
+        .header__btm {margin: 8px 0;}
+        .base__gnb {display: none;}
+    
+        .header__btm .right__icon__set a {flex-direction: column; font-size: 13px; } 
+        .header__btm .right__icon__set a span {padding-top: 8px;}
+        .header__btm .right__icon__set a img {margin: 0;}
+        
+        .top__visual .main__hero {height: auto;}
+        .top__visual .main__hero .main__text {
+            position: static;
+            padding-top: 63px;
+            text-align: center;
+        }
+
+        .top__visual .main__hero .main__text .main__bold {font-size: 32px; padding-bottom: 32px;}
+        .top__visual .main__hero .quick__menu {position: static; padding-top: 100px; padding-bottom: 40px; justify-content: center;} 
+        .top__visual .main__hero .quick__menu .quick__wrap {width: 100px; height: 100px; margin: 0;}
+        .top__visual .main__hero .quick__menu .quick__wrap:nth-child(2) {margin: 0 24px;}
+        .top__visual .main__hero .quick__menu .quick__wrap span {padding-top: 8px; font-size: 13px;}
+
+
+        // 탑 비주얼 하얀색 
+        .count__group {position: static; padding: 40px 0;}
+        .count__group .count:nth-child(1), .count__group .count:nth-child(2) {
+            margin-bottom: 16px;
+        }
+
+        .count__group .inner {flex-wrap: wrap;}
+        .count__group .count {width: calc(50% - 8px);}
+        .count__group .count .subc {font-size: 32px;}
+
+
+        // 메인 스와이퍼
+        .main__swiper .bg {left: 40px; bottom: -20px;}
+        .main__swiper .section__top {flex-direction: column;}
+        .main__swiper .swiper-slide {margin-right: 16px; max-width: 100%;}
+        .main__swiper .swiper-slide:not(.swiper-slide-active) .item {margin-top: 0;}
+        .main__swiper .section__title {font-size: 32px;}
+        .main__swiper .form__select {width: calc(100% - 32px); margin-top: 24px;}
+
+
+        // 고객센터 영역
+        .cs__center {height: auto;}
+        .cs__center .content {flex-direction: column; padding-top: 288px;}
+        .cs__center .content .item {width: 100%;}
+        .cs__center .bg {height: 100%;}
+        .cs__center .content__title {font-size: 25px;}
+        .cs__center .content .qa .content__qa a {padding-right: 24px;}
+
+        .visitor__graph {padding: 40px 0 80px 0;}
+        .visitor__graph .graph__img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    // 스와이퍼 영역
+        .swiper__container {
+            width: 80%;
+            padding: 0;
+
+          
+        }
+
+        .banner__btn {
+            position: static;
+            transform: none;
+        }
+
+
+    // 푸터 영역 
+    footer .footer__top .btn__flex {width: 100vw; margin-left: calc(-50vw + 50%);}
+    footer .footer__top {height: auto;}
+    footer .footer__top .btn__flex .top__btn:nth-child(1) {border-top: 1px solid #D8D8D8;}
+    footer .footer__top .btn__flex .top__btn {width: 100%; border-bottom: 1px solid #D8D8D8;}
+    footer .footer__top .btn__flex {flex-direction: column;} 
+    footer .footer__bottom .footer__flex {flex-direction: column;}
+
+    .footer__global .g__flex {flex-direction: column;}
+    .footer__global .global__link {margin-top: 16px;}
+    .footer__global .global__link a {display: block; width: 100%; margin-bottom: 16px;}
+    .footer__bottom .footer__logo {display: none;}
+    .footer__bottom .mobile__logo {padding-top: 40px;}
+    .sns__info {padding-top: 32px;}
+    .sns__info .icon__wrap {padding: 32px 0;}
+    }
+  }
+/** 태블릿 가로 , 태블릿 세로 해상도 768~1023*/
+
+@media all and (min-width:768px) and (max-width: 1023px){}

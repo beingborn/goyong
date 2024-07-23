@@ -2,8 +2,7 @@
 
 
 var swiper = new Swiper(".bannerSwiper", {
-    slidesPerView : 'auto',
-    spaceBetween: 32,
+    slidesPerView : 1,
     loop: true,
     loopAdditionalSlides : 1,
   
@@ -12,6 +11,14 @@ var swiper = new Swiper(".bannerSwiper", {
       nextEl: ".banner__btn .swiper-button-next",
       prevEl: ".banner__btn swiper-button-prev",
     },
+
+    breakpoints: {
+      1024: {
+        slidesPerView : 'auto',
+        spaceBetween: 32,
+      }
+    }
+
   });
 
   var swiper = new Swiper(".mainSwiper", {
@@ -19,7 +26,9 @@ var swiper = new Swiper(".bannerSwiper", {
       delay: 3000,
     },
 
-    slidesPerView : 3,
+    slidesPerView : 1,
+    slidesBetWeen : 16,
+    centeredSlides: true,
 
     pagination: {
       el: '.swiper-pagination',
@@ -31,11 +40,12 @@ var swiper = new Swiper(".bannerSwiper", {
       prevEl: ".swiper-button-prev",
     },
 
-    on: {
-    activeIndexChange : function() {
-        
-    },
-    },
+    breakpoints: {
+      1024: {
+        slidesPerView : 3,
+        centeredSlides: false, 
+      }
+    }
   });
 
   /** 

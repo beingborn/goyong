@@ -100,6 +100,7 @@
     }
 
     .form__select {
+        width: 150px;
         border: 0;
         border-bottom: 1px solid #dbdbdb;
         height: 56px;
@@ -111,6 +112,8 @@
         appearance:none; /* 화살표 없애기 */
         padding-right: 20px;
         background: url(/img/icon__arrow__20.png) no-repeat right;
+
+   
     }
 
  
@@ -159,7 +162,6 @@
 
         position: relative;
         bottom: -42px;
-        border: 1px dashed green;
         box-sizing: border-box;
 
         .swiper__pause {

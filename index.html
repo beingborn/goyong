@@ -23,7 +23,7 @@
         <a href="#container">본문 바로가기</a>
     </div>
 
-    <div id="wrap">
+    <div class="wrap" id="wrap">
         <!-- 상단 띠 영역 -->
         <div class="top__banner">
             <div class="inner">
@@ -44,21 +44,24 @@
                 <h1 class="logo">
                     <img src="/img/slogan_H48.png" alt="메인 홈페이지로고">
                 </h1>
+                <div class="mobile__logo">
+                    <img src="/img/mobile__logo.png" alt="모바일 버전 로고">
+                </div>
                 <div class="right__icon__set">
                     <a href="#">
                     <img src="/img/icon20.png" alt="검색 아이콘">
-                        통합검색
+                        <span>통합검색</span>
                     </a>
                     <a href="#">
                         <img src="/img/icon20-1.png" alt="검색 아이콘">
-                        로그인
+                        <span>로그인</span>
                     </a>
                     <a href="#">
                         <img src="/img/icon20-2.png" alt="검색 아이콘">
-                        회원가입
+                        <span>회원가입</span>
                     </a>
-                    <a href="#">
-                        알림톡
+                    <a href="#" class="talk">
+                        <span>알림톡</span>
                         <span class="talk__count">5</span>
                     </a>
                 </div>
@@ -187,7 +190,11 @@
                 <div class="section__top">
                     <h2 class="section__title"><span class="strong">노동조합</span> 회계공시</h2>
                     <select class="form__select">
-                        <option value="2024">2024년</option>
+                        <option value="2024">
+                            <div class="form__desc">
+                                <span>2024년</span>
+                            </div>
+                        </option>
                         <option value="2023">2023년</option>
                         <option value="2022">2022년</option>
                         <option value="2021">2011년</option>
@@ -493,6 +500,9 @@
                         <div class="footer__logo">
                             <img src="/img/slogan_H48.png" alt="푸터 로고">
                         </div>
+                        <div class="mobile__logo">
+                            <img src="/img/mobile__logo.png" alt="모바일 버전 로고">
+                        </div>
                         <div class="footer__flex">
                             <div class="footer__info">
                                 <p class="location">30117 세종특별자치시 한누리대로 422 정부세종청사 11동 고용노동부(044-202-7828)</p>
@@ -516,7 +526,7 @@
                             </div>
                         </div>
                         <div class="footer__global">
-                            <div class="inner">
+                            <div class="g__flex">
                                 <div class="global__link">
                                     <a href="#">이용안내</a>
                                     <a href="#" class="strong">개인정보처리방침</a>
