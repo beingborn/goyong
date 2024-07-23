@@ -1,3 +1,21 @@
+/* 태블릿 큰 사이즈 */
+
+
+@media all and (min-width: 768px) and ( max-width: 1023px)  {
+
+
+ .wrap .inner {width: 100%; padding: 0 16px;}
+
+ .top__visual .main__hero .main__text {position: static; padding-top: 63px; text-align: center;} 
+
+ .count__group .count {width: calc(25% - 16px); height: auto; padding: 20px 0;}
+ .count__group .count .subc {font-size: 32px;}
+
+ .top__visual .main__hero {height: auto;}
+ .top__visual .main__hero .quick__menu {position: static; justify-content: center; padding-top: 100px; padding-bottom: 40px;}
+ .count__group {position: static; padding: 40px 0;}
+}
+
 /* 노트북 & 태블릿 가로 사이즈 */
 
 @media all and (min-width:1024px) and (max-width:1440px) { 
@@ -27,6 +45,7 @@
 
     .wrap {
         .inner {width: 100%; padding: 0 16px;}
+
 
     }
 
