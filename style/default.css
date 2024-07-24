@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 1.5px solid #ededed;
+  transition: all 0.5s;
+}
+
+.header__fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: translateY(0);
+}
+
 .top__banner {
   height: 32px;
   background-color: #EDF1F5;
