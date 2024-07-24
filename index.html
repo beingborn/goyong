@@ -56,7 +56,14 @@
                         <img src="/img/icon20-1.png" alt="검색 아이콘">
                         <span>로그인</span>
                     </a>
-                    <a href="#">
+
+                    <!-- 전체메뉴 -->
+                    <a href="#" class="hamburger">
+                        <img src="/img/hamburger__icon.png" alt="전체 메뉴 아이콘">
+                        <span>전체메뉴</span>
+                    </a>
+
+                    <a href="#" class="sign__up">
                         <img src="/img/icon20-2.png" alt="검색 아이콘">
                         <span>회원가입</span>
                     </a>
@@ -137,51 +144,63 @@
                 <div class="content">
                     <div class="swiper__container swiper bannerSwiper">
                         <div class="swiper-wrapper">
+                         <!-- slide 1 -->
                           <div class="swiper-slide">
-                                <img src="/img/worker.jpg" alt="근로자이용센터 바로가기">
-                                <p class="item__desc">근로자 
-                                    <br>
-                                     이음센터 바로가기
-                                </p>  
+                                <div class="banner__box worker">
+                                    <div class="banner__text">
+                                        <p>근로자</p>
+                                        <p>이음센터 바로가기</p>
+                                    </div>
+                                    <img src="/img/worker__transparent.png" alt="근로자 이음센터 캐릭터 이미지">
+                                </div>
                           </div>
+                         <!-- slide 2 -->
                           <div class="swiper-slide">
-                            <img src="/img/work__condition.jpg" alt="근로자이용센터 바로가기">
-                            <p class="item__desc">근로조건 자율개선 <br>(수탁기관) 
-                            </p>
+                            <div class="banner__box work__condition">
+                                <div class="banner__text">
+                                    <p>근로조건 자율개선</p>
+                                    <p>(수탁기관)</p>
+                                </div>
+                                <img src="/img/work__condition_transparent.png" alt="근로자 이음센터 캐릭터 이미지">
+                            </div>
                           </div>
+                         <!-- slide 3 -->
                           <div class="swiper-slide">
-                            <img src="/img/work__portal.jpg" alt="근로자이용센터 바로가기">
-                            <p class="item__desc">고용노동부
-                                <br>
-                                노동포털 바로가기
-                            </p>
+                            <div class="banner__box work__portal">
+                                <div class="banner__text">
+                                    <p>고용노동부</p>
+                                    <p>노동포털 바로가기</p>
+                                </div>
+                                <img src="/img/work__portal__transparent.png" alt="근로자 이음센터 캐릭터 이미지">
+                            </div>
                           </div>
+                         <!-- slide 4 -->
                           <div class="swiper-slide">
-                            <img src="/img/work__portal.jpg" alt="근로자이용센터 바로가기">
-                            <p class="item__desc">고용노동부
-                                <br>
-                                노동포털 바로가기
-                            </p>
+                            <div class="banner__box worker">
+                                <div class="banner__text">
+                                    <p>고용노동부</p>
+                                    <p>노동포털 바로가기</p>
+                                </div>
+                                <img src="/img/worker__transparent.png" alt="근로자 이음센터 캐릭터 이미지">
+                            </div>
                           </div>
+                          <!-- slide 5 -->
                           <div class="swiper-slide">
-                            <img src="/img/worker.jpg" alt="근로자이용센터 바로가기">
-                            <p class="item__desc">근로자 
-                                <br>
-                                 이음센터 바로가기
-                            </p>  
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="/img/work__condition.jpg" alt="근로자이용센터 바로가기">
-                        <p class="item__desc">근로조건 자율개선 <br>(수탁기관) 
-                        </p>
-                      </div>
+                            <div class="banner__box work__condition">
+                                <div class="banner__text">
+                                    <p>근로조건 자율개선</p>
+                                    <p>(수탁기관)</p>
+                                </div>
+                                <img src="/img/work__condition_transparent.png" alt="근로자 이음센터 캐릭터 이미지">
+                            </div>
+                          </div>
                         </div>
                       </div>
                 </div>
-                <div class="banner__btn">   
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+                    <div class="banner__btn">   
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
             </div>
          
          </section>
@@ -227,7 +246,7 @@
                                 </div>
                                 <div class="total__wrap">
                                     <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
+                                    <p class="detail">590 <span>(천원)</span></p>
                                 </div>
                             </div>
                             </div>
@@ -256,7 +275,7 @@
                                 </div>
                                 <div class="total__wrap">
                                     <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
+                                    <p class="detail">590<span>(천원)</span></p>
                                 </div>
                             </div>
                             </div>
@@ -287,7 +306,7 @@
                                 </div>
                                 <div class="total__wrap">
                                     <p class="money">부채</p>
-                                    <p class="detail">1590만원</p>
+                                    <p class="detail">1590 <span>(천원)</span></p>
                                 </div>
                             </div>
                             </div>
@@ -316,7 +335,69 @@
                                 </div>
                                 <div class="total__wrap">
                                     <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
+                                    <p class="detail">590 <span>(천원)</span></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item__wrap">
+                                <p class="index">5</p>
+                            <p class="title">삼성그룹 총기업 노동조합</p>
+                            <p class="group">전국민노동조합총연맹</p>
+                            <div class="btn__group">
+                                <button type="button" class="asset"><span>자산 & 부채</span></button>
+                                <button type="button" class="income"><span class="text">수입 & 지출</span></button>
+                            </div>
+                            <div class="graph">
+                                <div class="circle__graph">
+                                    <div class="text">
+                                        <p>자산</p>
+                                        <p>590</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <div class="total__wrap">
+                                    <p class="money">자산</p>
+                                    <p class="detail">1590 <span>(천원)</span></p>
+                                </div>
+                                <div class="total__wrap">
+                                    <p class="money">부채</p>
+                                    <p class="detail">590 <span>(천원)</span></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item__wrap">
+                                <p class="index">8</p>
+                            <p class="title">삼성그룹 총기업 노동조합</p>
+                            <p class="group">전국민노동조합총연맹</p>
+                            <div class="btn__group">
+                                <button type="button" class="asset"><span>자산 & 부채</span></button>
+                                <button type="button" class="income"><span class="text">수입 & 지출</span></button>
+                            </div>
+                            <div class="graph">
+                                <div class="circle__graph">
+                                    <div class="text">
+                                        <p>자산</p>
+                                        <p>590</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <div class="total__wrap">
+                                    <p class="money">자산</p>
+                                    <p class="detail">1590 <span>(천원)</span></p>
+                                </div>
+                                <div class="total__wrap">
+                                    <p class="money">부채</p>
+                                    <p class="detail">590 <span>(천원)</span></p>
                                 </div>
                             </div>
                             </div>
@@ -347,92 +428,30 @@
                                 </div>
                                 <div class="total__wrap">
                                     <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="item">
-                            <div class="item__wrap">
-                                <p class="index">1</p>
-                            <p class="title">삼성그룹 총기업 노동조합</p>
-                            <p class="group">전국민노동조합총연맹</p>
-                            <div class="btn__group">
-                                <button type="button" class="asset"><span>자산 & 부채</span></button>
-                                <button type="button" class="income"><span class="text">수입 & 지출</span></button>
-                            </div>
-                            <div class="graph">
-                                <div class="circle__graph">
-                                    <div class="text">
-                                        <p>자산</p>
-                                        <p>590</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="total">
-                                <div class="total__wrap">
-                                    <p class="money">자산</p>
-                                    <p class="detail">1590 <span>(천원)</span></p>
-                                </div>
-                                <div class="total__wrap">
-                                    <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="item">
-                            <div class="item__wrap">
-                                <p class="index">1</p>
-                            <p class="title">삼성그룹 총기업 노동조합</p>
-                            <p class="group">전국민노동조합총연맹</p>
-                            <div class="btn__group">
-                                <button type="button" class="asset"><span>자산 & 부채</span></button>
-                                <button type="button" class="income"><span class="text">수입 & 지출</span></button>
-                            </div>
-                            <div class="graph">
-                                <div class="circle__graph">
-                                    <div class="text">
-                                        <p>자산</p>
-                                        <p>590</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="total">
-                                <div class="total__wrap">
-                                    <p class="money">자산</p>
-                                    <p class="detail">1590 <span>(천원)</span></p>
-                                </div>
-                                <div class="total__wrap">
-                                    <p class="money">부채</p>
-                                    <p class="detail">590만원</p>
+                                    <p class="detail">590 <span>(천원)</span></p>
                                 </div>
                             </div>
                             </div>
                         </div>
                       </div>
                     </div>
+                    <!-- 메인 버튼 조작 기능 -->
                     <div class="main__btn__group">
                         <div class="pagination__bg">
                             <div class="swiper-pagination"></div>
                         </div>
                         <div class="swiper__pause">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <img src="/img/pause.png" alt="슬라이드 정지 버튼">
                             </a>
                         </div>
+                        <!-- 화살표, 정지 -->
                         <div class="main__arrow__group">
                             <div class="arrow__flex">
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
-                            <div class="more__main"></div>
-
+                                <div class="more__main"></div>
                             </div>
-                           
                         </div>
                     
                     </div>
@@ -446,7 +465,7 @@
                 <div class="bg"></div>
                 <div class="inner">
                     <div class="content">
-                        <div class="qa item">
+                        <div class="qa item" >
                             <div class="content__top">
                                 <h2 class="content__title">고객센터</h2>
                                 <a href="#" class="more">전체보기</a>
@@ -481,16 +500,16 @@
                     <div class="inner">
                         <div class="btn__flex">
                             <div class="top__btn">
-                                <a href="#">관련단체</a>
+                                <a href="#" title="관련단체">관련단체</a>
                             </div>
                             <div class="top__btn">
-                                <a href="#">정부기관</a>
+                                <a href="#" title="정부기관">정부기관</a>
                             </div>
                             <div class="top__btn">
-                                <a href="#">관련기관링크</a>
+                                <a href="#" title="관련기관링크">관련기관링크</a>
                             </div>
                             <div class="top__btn">
-                                <a class="last__btn" href="#">관련기관링크</a>
+                                <a class="last__btn" href="#" title="관련기관링크">관련기관링크</a>
                             </div>
                         </div>
                     </div>
@@ -544,7 +563,12 @@
             </footer>
         </div>
     </div>
+
+    <!-- jquery 스와이퍼 cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <!-- 스와이퍼 js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/default.js"></script>
 

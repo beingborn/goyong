@@ -9,20 +9,23 @@ var swiper = new Swiper(".bannerSwiper", {
 
     navigation: {
       nextEl: ".banner__btn .swiper-button-next",
-      prevEl: ".banner__btn swiper-button-prev",
+      prevEl: ".banner__btn .swiper-button-prev",
     },
 
     breakpoints: {
 
-   
-
-      1024: {
+      767: {
         slidesPerView : 3,
-        spaceBetween: 24,
+        spaceBetween: 20,
+      },
+
+      1080: {
+        slidesPerView : 3,
+        spaceBetween: 20,
       },
 
       1440: {
-        slidesPerView : 'auto',
+        slidesPerView : 3,
         spaceBetween: 32,
       }
     }
@@ -30,13 +33,17 @@ var swiper = new Swiper(".bannerSwiper", {
   });
 
   var swiper = new Swiper(".mainSwiper", {
-    autoplay: {
-      delay: 3000,
-    },
+    
+    slidesPerView : 'auto', // 슬라이드가 하나씩 보이게 되면 무조건 slide가 화면의 100%로 잡히기 때문에 auto를 줌으로써 width를 유동적으로 변경 시켜주어야한다.
+    centeredSlides: false,
+    // slidesBetWeen : 16,
 
-    slidesPerView : 1,
-    slidesBetWeen : 16,
-    centeredSlides: true,
+    loop: true,
+    loopAdditionalSlides : 1,
+
+    // autoplay: {
+    //   delay: 3000,
+    // },
 
     pagination: {
       el: '.swiper-pagination',
@@ -50,8 +57,11 @@ var swiper = new Swiper(".bannerSwiper", {
 
     breakpoints: {
 
-     1024: {
-      slidesPerView : 2,
+
+        
+
+     1080: {
+      slidesPerView : 'auto',
       centeredSlides: false, 
      }, 
 
@@ -67,7 +77,7 @@ var swiper = new Swiper(".bannerSwiper", {
    * 
    */
 
-  $('.swiper__pause > img').click(function() {
+  $('.swiper__pause img').click(function() {
     const img = $(this);
 
     if (swiper.autoplay.running) {

@@ -43,11 +43,11 @@ body {
     display: none;
 }
 
-// 웹 접근성 skip navigation
-
-a:focus {
-    outline: 2px dashed #0cc;
+.header__btm .right__icon__set .hamburger {
+    display: none;
 }
+
+// 웹 접근성 skip navigation
 
 .skip__nav {
 	position: relative;
@@ -67,4 +67,5 @@ a:focus {
 .skip__nav a:focus {
 	top: 0;
 	z-index: 100;
+    outline: 2px dashed #0cc;
 }

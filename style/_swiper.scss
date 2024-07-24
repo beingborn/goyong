@@ -1,6 +1,10 @@
 
 .swiper__container {
-    width: 1092px;
+
+    // 스와이퍼 컨테이너의 %가 inner 안의 들어가 있지 않아서 직접 분기별로 width를 지정해주어야한다.
+
+    // border: 2px solid blueviolet;
+    width: 1096px;
     padding-left: 92px;
     padding-right: 92px;
 }
@@ -9,9 +13,6 @@
     position: relative;
     margin-bottom: 60px;
 
-    .content {
-        // padding: 0 92px;
-    }
 
    .swiper__wrapper {
     display: flex; /* flexbox 레이아웃을 사용 */
@@ -25,15 +26,8 @@
         justify-content: center;
         align-items: center;
         height: 160px;
-        max-width: 344px;
+        // max-width: 344px;
         position: relative;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        // max-width: 340px;    
 
     
             .item__desc {
@@ -51,28 +45,57 @@
             
         
     }
-
 }
 
 
+// 배너 이미지 재 작업 
+
+.banner__box {
+    width: 100%;
+    height: 100%;
+    position: relative; border-radius: 8px; overflow: hidden;
+
+    .banner__text {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            line-height: 150%;
+            font-weight: 700;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 98;
+    }
+}
+
+.worker {background-color: #06A8E7;}
+.work__condition {background-color: #0184FE;}
+.work__portal {background-color: #3A43BA;}
+
+
 .banner__btn {
-    position: absolute;
+    // border: 1px dashed blue;
+    position: absolute; // banner 부모 대상
     width: 1280px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 
-    .swiper-button-next {background: url(/img/swiper__next__btn.png) no-repeat center; padding: 20px; }
-    .swiper-button-prev {background: url(/img/swiper__prev__btn.png) no-repeat center; padding: 20px;}
+    .swiper-button-next {background: url(/img/swiper__next__btn.png) no-repeat center; padding: 20px; background-size: contain; right: 12px; }
+    .swiper-button-prev {background: url(/img/swiper__prev__btn.png) no-repeat center; padding: 20px; background-size: contain; left: 12px;}
 
     .swiper-button-prev , .swiper-button-next {
-        // width: 16px;
-        // height: 16px;
-        // color: #1d1d1d;
-        // padding: 14px;
-        // border-radius: 50%;
-        // border: 1px solid  #E4E4E4;   
-        // transform: translateY(-25%); 
-        
+ 
         &::after {display: none;}
         
     }
@@ -120,7 +143,6 @@
 }
 
 .main__swiper .bg {
-    // left: 596px;
     right: -272px;
     position: absolute;
     height: 600px;
@@ -357,8 +379,10 @@
 
                     .detail {
                         font-size: 17px;
+                        font-weight: 600;
 
                         span {
+                            font-weight: 400;
                             font-size: 13px;
                             color: #767676;
                         }
@@ -412,7 +436,7 @@
         margin-left: -32px; /* 패딩 값을 무시하고 좌측으로 이동 */
         margin-right: -32px; /* 패딩 값을 무시하고 우측으로 이동 */
         padding-bottom: 16px;
-        padding-top: 8px;
+        padding-top: 12px;
 
         .total__wrap:nth-child(1){
             border-right: 1.5px solid lightgray;
