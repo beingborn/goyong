@@ -91,11 +91,14 @@
     transform: translateY(-50%);
     z-index: 999;
 
-    .swiper-button-next {background: url(/img/swiper__next__btn.png) no-repeat center; padding: 20px; background-size: contain; right: 12px; }
-    .swiper-button-prev {background: url(/img/swiper__prev__btn.png) no-repeat center; padding: 20px; background-size: contain; left: 12px;}
+    .swiper-button-next {background: url(/img/swiper__next__btn.png) no-repeat center;  background-size: contain; right: 12px; }
+    .swiper-button-prev {background: url(/img/swiper__prev__btn.png) no-repeat center;  background-size: contain; left: 12px;}
+
 
     .swiper-button-prev , .swiper-button-next {
- 
+        width: 64px;
+        height: 64px;
+
         &::after {display: none;}
         
     }
@@ -126,20 +129,16 @@
         width: 150px;
         border: 0;
         border-bottom: 1px solid #dbdbdb;
-        height: 56px;
-        line-height: 56px;
-        // padding: 16px;
+        padding: 16px;
         font-size: 19px;
         -webkit-appearance:none; /* 크롬 화살표 없애기 */
         -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
         appearance:none; /* 화살표 없애기 */
-        padding-right: 20px;
-        background: url(/img/icon__arrow__20.png) no-repeat right;
-
+        // padding-right: 20px;
+        background: url(/img/icon__arrow__20.png) no-repeat;
+        background-position: right 16px center;
    
     }
-
- 
 }
 
 .main__swiper .bg {
@@ -147,7 +146,7 @@
     position: absolute;
     height: 600px;
     bottom: 0;
-    z-index: -3;
+    z-index: 1;
     width: 1920px;
     background-color: #003675;
     border-radius: 60px 0px 0 60px ;
@@ -228,6 +227,7 @@
 
     .swiper {
         overflow: visible;
+        z-index: 2;
     }
 
     .swiper-slide {
@@ -268,6 +268,8 @@
 
 
                 .btn__group {
+                    position: relative;
+                    z-index: 2;
                     display: flex;
                     margin-bottom: 32px;
 
@@ -278,24 +280,24 @@
                         font-size: 17px;
                         border-radius: 30px;
                         border: 0;
+                        cursor: pointer;
+                        // z-index: 3;
                     }
 
                     .asset {
                         position: relative;
                         left: 20px;
-                        z-index: 4;
-                        background-color: #003675;
-                        color: #fff;
-
+                        // z-index: 4;
+                        // color: #fff
                     }
 
                     .income {
                         position: relative;
                         right: 20px;
-                        background-color: #fff;
-                        color: #1d1d1d;
+                        // background-color: #fff;
+                        // color: #1d1d1d;
                         top: 0;
-                        z-index: 3;
+                        // z-index: 3;
 
                         .text {
                             padding-left: 12px;
@@ -402,15 +404,30 @@
 }
 
 
+// 클래스 별 각각 다른 스타일 지정해주기 
+.swiper-slide-active .active--style {background-color: #003675; color: #fff;}
+.swiper-slide:not(.swiper-slide-active) .active--style {background-color: #444444; color: #fff;}
+
 // 스와이퍼 active시 적용
+.active--style {
+    background-color: #003675;
+    color: #fff;
+    z-index: 4;
+}
 
 .main__swiper .swiper-slide-active .item {
     background-color: #246BEB;
-    color: #fff;
     margin-top: 0;
 
+
+    .item__wrap .circle__graph .text p {color: #fff;}
+    
     // 그래프
     .item__wrap {
+
+
+        .index , .title {color: #fff;}
+
         .graph {
             .circle__graph {
     
@@ -458,15 +475,15 @@
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item {
     margin-top: 50px;
 
-    .btn__group {
-        .asset {
-            background-color: #444444;
-        }
+    // .btn__group {
+    //     .asset {
+    //         background-color: #444444;
+    //     }
 
-        .income {
-            border: 1px solid #444444;
-        }
-    }
+    //     .income {
+    //         border: 1px solid #444444;
+    //     }
+    // }
 
     .item__wrap .graph {
         .circle__graph {
@@ -478,5 +495,6 @@
     }
 }
 
+// btn 
 
 

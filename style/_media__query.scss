@@ -59,6 +59,7 @@
         .count__group .count {width: calc(25% - 16px);}
 
         .banner__btn {width: 1024px;}
+        .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
 
 
     }
@@ -117,6 +118,8 @@
          .banner__swiper .swiper-slide-active {visibility: visible;}
          .banner__swiper .swiper-slide:not(.swiper-slide-active) {visibility: hidden;}
          .banner__swiper .swiper-slide { max-width: none;}
+         .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
+
 
         // 고객센터 영역
         .cs__center {height: auto;}
@@ -170,6 +173,7 @@
          .cs__center .content .visitor__graph img {width: 90%;}
 
          .banner__box .banner__text p {font-size: 20px;}
+         .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
          
 
   }
@@ -240,6 +244,8 @@
             max-width: 330px;
             margin-right: 16px;
         }
+        .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
+
         
 
         .main__swiper .main__btn__group { left: 50%; transform: translateX(-50%);}
@@ -253,7 +259,7 @@
         .main__swiper .form__select {width: calc(100% - 32px); margin-top: 24px;}
         .main__swiper .swiper-slide .item {width: 100%;}
         .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1) { border: none;}
-
+        
 
         // 고객센터 영역
         .cs__center {height: auto;}
