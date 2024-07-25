@@ -1,4 +1,5 @@
 
+
 // 배너 스와이퍼
 var swiper = new Swiper(".bannerSwiper", {
     slidesPerView : 1,
@@ -35,7 +36,7 @@ var swiper = new Swiper(".bannerSwiper", {
     var swiper = new Swiper(".mainSwiper", {
       slidesPerView : 'auto',
       loop: true,               
-      loopAdditionalSlides : 1,
+      // loopAdditionalSlides : 1,
       centeredSlides: false,
   
       // autoplay: {
@@ -62,28 +63,70 @@ var swiper = new Swiper(".bannerSwiper", {
           centeredSlides: false, 
         }
       },
-      on: {
-        slideChange: function() {
-  
-        }
-      }
-      // loop 때문에 tab키가 내부에서 계속해서 이동하는 것이다. 스와이퍼 영역에서 tab키를 7번 누르면 (7개의 슬라이드를 다 확인해봤다는 가정하에 이 값을 TRUE값으로 바꾸고 탭을 다음거로 이동하는 것을 JAVASCRIPT로 짜야겠다.)
     });
 
       $(document).on('keydown', function(event) {
         if (event.key === 'Tab') {
-            var slides = $('.swiper-slide:not(.swiper-slide-duplicate)');
-    
-            // 각 슬라이드의 버튼 그룹을 검사
+           console.log("탭 키 눌렸음")
+            var slides = $('.main__swiper .swiper-slide:not(.swiper-slide-duplicate)');
+            var swiperContainer = $('.mainSwiper')
+
+            if(!swiper) {
+              console.error("swiper인스턴스없음");
+              return;
+            }
+
+
             slides.each(function() {
-                var buttons = $(this).find('.button__group button');
-                var lastButton = buttons[buttons.length + 1];
+
+
+                let mainbuttons = $(slides).find('.btn__group button');
+
+                var errorButton = mainbuttons.eq(9)
+                var errorButton1 = mainbuttons.eq(10)
+                var errorButton2 = mainbuttons.eq(11)
+                var errorButton3 = mainbuttons.eq(12)
+
+                // var buttons = $(this).find('.button__group button');
+                // console.log(mainbuttons)
+
+                var lastButton = mainbuttons[mainbuttons.length - 1];
     
                 // 마지막 버튼에 포커스가 있을 때
-                if ($(document.activeElement).is(lastButton)) {
-                    event.preventDefault();
-                    $('#next__event').focus();
-                }
+                // if ($(document.activeElement).is(errorButton)) {
+                //   console.log("왜안나왐")
+                //   event.preventDefault();
+                //   $('#last__prev__asset').focus();
+                //   $('#last__prev__asset').css("border", "2px dashed #0cc");
+                //     console.log("마지막 전 버튼입니다!")
+                // }
+
+                // if ($(document.activeElement).is(errorButton)) {
+                //   console.log("왜안나왐")
+                //   event.preventDefault();
+                //   $('#last__prev__asset').focus();
+                //   $('#last__prev__asset').css("border", "2px dashed #0cc");
+                //     console.log("마지막 전 버튼입니다!")
+                // }
+              //   if ($(document.activeElement).is(errorButton)) {
+              //     console.log("마지막 버튼입니다!");
+  
+              //     event.preventDefault();
+                  
+              //     // 다음 슬라이드의 버튼에 포커스 이동
+              //     var mainswiper = $('.mainSwiper').swiper;
+              //     mainswiper.slideNext(); // 다음 슬라이드로 이동
+              //     setTimeout(function() {
+              //         var nextSlideButtons = $($('.main__swiper .swiper-slide')[swiper.activeIndex]).find('.btn__group button');
+              //         if (nextSlideButtons.length > 0) {
+              //             nextSlideButtons.first().focus();
+              //         }
+              //     }, 300); // 슬라이드 전환 후 포커스 설정
+              // }
+                
+
+                
+                
             });
         }
     });
