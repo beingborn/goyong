@@ -70,6 +70,7 @@
 /* 모바일 가로 & 테블릿 세로 480px ~ 767px */ 
 @media all and (min-width:480px) and (max-width:767px) {
 
+
     .wrap {
         .inner {width: 100%; padding: 0 16px;}
         .swiper__container {width: 100%; padding: 0 92px;} 
@@ -83,7 +84,6 @@
         .mobile__logo {display: block;}
         .header__btm {margin: 8px 0;}
         .base__gnb {display: none;}
-
 
         .header__btm .right__icon__set .talk {display: none;}
         .header__btm .right__icon__set .sign__up {display: none;}
@@ -198,6 +198,11 @@
   @media all and (max-width:479px){
 
     .wrap {
+
+        .top__banner .banner__wrap {line-height: 150%; padding: 8px 0;}
+        .banner__text a {margin-left: 0;}
+
+
         .inner {width: 100%; padding: 0 16px;}
         .header__top {display: none;}
         .top__banner {height: auto;}
@@ -208,7 +213,8 @@
 
     
         .logo {display: none;}
-        .mobile__logo {display: block;}
+        .mobile__logo {display: block; position: relative;}
+        .mobile__logo img {position: absolute; top: 50%; transform: translateY(-50%);}
         .header__btm {margin: 8px 0;}
         .base__gnb {display: none;}
     

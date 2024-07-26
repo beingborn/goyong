@@ -1205,6 +1205,13 @@ footer .footer__top .btn__flex .top__btn .last__btn {
 }
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
 @media all and (max-width: 479px) {
+  .wrap .top__banner .banner__wrap {
+    line-height: 150%;
+    padding: 8px 0;
+  }
+  .wrap .banner__text a {
+    margin-left: 0;
+  }
   .wrap .inner {
     width: 100%;
     padding: 0 16px;
@@ -1232,6 +1239,12 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   }
   .wrap .mobile__logo {
     display: block;
+    position: relative;
+  }
+  .wrap .mobile__logo img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .wrap .header__btm {
     margin: 8px 0;
