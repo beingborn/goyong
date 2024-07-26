@@ -823,19 +823,19 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   margin-right: 8px;
 }
 .sns__info .icon__wrap .insta {
-  background: url(img/Social__medialink_base.png);
+  background: url(../img/Social__medialink_base.png);
 }
 .sns__info .icon__wrap .youtube {
-  background: url(img/Social__medialink_base-1.png);
+  background: url(../img/Social__medialink_base-1.png);
 }
 .sns__info .icon__wrap .twitter {
-  background: url(img/Social__medialink_base-2.png);
+  background: url(../img/Social__medialink_base-2.png);
 }
 .sns__info .icon__wrap .facebook {
-  background: url(img/Social__medialink_base-3.png);
+  background: url(../img/Social__medialink_base-3.png);
 }
 .sns__info .icon__wrap .naverblog {
-  background: url(img/Social__medialink_base-4.png);
+  background: url(../img/Social__medialink_base-4.png);
 }
 
 .footer__global {
