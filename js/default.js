@@ -33,15 +33,6 @@ var swiper = new Swiper(".bannerSwiper", {
   });
 
 
-
-
-
-
-
-
-
-
-  
   /** 
    * autoplay 토글 
    * 접근성 FOCUS, ENTER, HOVER

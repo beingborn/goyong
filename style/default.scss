@@ -47,7 +47,7 @@ body {
     display: none;
 }
 
-// 웹 접근성 skip navigation
+// 웹 접근성 skip navigation, blind
 
 .skip__nav {
 	position: relative;
@@ -68,4 +68,18 @@ body {
 	top: 0;
 	z-index: 100;
     outline: 2px dashed #0cc;
+}
+
+.blind {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: -999999px;
+    left: -999999px;
+    width: 1px;
+    height: 1px;
+    line-height: 0;
+    font-size: 0;
+    text-indent: -999999px;
+    z-index: 0;
 }
