@@ -366,7 +366,7 @@
   -webkit-appearance: none; /* 크롬 화살표 없애기 */
   -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
   appearance: none; /* 화살표 없애기 */
-  background: url(img/icon__arrow__20.png) no-repeat;
+  background: url(../img/icon__arrow__20.png) no-repeat;
   background-position: right 16px center;
 }
 
@@ -431,15 +431,15 @@
   margin-left: 8px;
   width: 40px;
   height: 40px;
-  background: url(img/more__main.png) no-repeat center;
+  background: url(../img/more__main.png) no-repeat center;
 }
 .main__swiper .main__btn__group .swiper-button-prev {
-  background: url(img/swiper__main__prev.png) no-repeat center;
+  background: url(../img/swiper__main__prev.png) no-repeat center;
   background-size: contain;
 }
 .main__swiper .main__btn__group .swiper-button-next {
   margin-left: 8px;
-  background: url(img/swiper__main__next.png) no-repeat center;
+  background: url(../img/swiper__main__next.png) no-repeat center;
   background-size: contain;
 }
 .main__swiper .main__btn__group .swiper-pagination-fraction {
