@@ -7,7 +7,6 @@ $(document).on('keydown', function(event) {
 
         // 현재 포커스된 요소
         let focusedElement = $(document.activeElement);
-        console.log("현재 포커스된 요소: ", focusedElement);
 
         // 9번째에서 12번째 버튼에 포커스가 있을 때
         errorButtons.each(function(index) {
@@ -75,20 +74,6 @@ $(document).on('keydown', function(event) {
       },
 
     }
-    //   slidesLengthChange: function(){
-    //     console.log("length 바뀜")
-    //     logSlides();
-    //   },
-    //   slideChange: function() {
-    //     logSlides();
-    //   },
-
-    // },
-
-
-
-
-    
   });
 
 
@@ -171,18 +156,4 @@ $(document).on('keydown', function(event) {
 
 
 
-
-  function logSlides() {
-    const allSlides = swiper.slides;
-    
-    allSlides.forEach((slide, index) => {
-      // 복사된 슬라이드를 식별하기 위해 'swiper-slide-duplicate' 클래스를 확인
-      const isDuplicate = slide.classList.contains('swiper-slide-duplicate');
-      console.log(`Slide ${index}: ${isDuplicate ? 'Duplicate' : 'Original'}`);
-      
-    
-
-    });
-  }
-  logSlides();
 
