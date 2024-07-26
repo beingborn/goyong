@@ -32,104 +32,6 @@ var swiper = new Swiper(".bannerSwiper", {
 
   });
 
-  // 메인 스와이퍼
-    var swiper = new Swiper(".mainSwiper", {
-      slidesPerView : 'auto',
-      loop: true,               
-      // loopAdditionalSlides : 1,
-      centeredSlides: false,
-  
-      // autoplay: {
-      //   delay: 3000,
-      // },
-  
-      pagination: {
-        el: '.swiper-pagination',
-        type: "fraction",
-      },
-  
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  
-      breakpoints: {  
-       1080: {
-        slidesPerView : 'auto',
-        centeredSlides: false, 
-       }, 
-        1440: {
-          slidesPerView : 'auto',
-          centeredSlides: false, 
-        }
-      },
-    });
-
-      $(document).on('keydown', function(event) {
-        if (event.key === 'Tab') {
-           console.log("탭 키 눌렸음")
-            var slides = $('.main__swiper .swiper-slide:not(.swiper-slide-duplicate)');
-            var swiperContainer = $('.mainSwiper')
-
-            if(!swiper) {
-              console.error("swiper인스턴스없음");
-              return;
-            }
-
-
-            slides.each(function() {
-
-
-                let mainbuttons = $(slides).find('.btn__group button');
-
-                var errorButton = mainbuttons.eq(9)
-                var errorButton1 = mainbuttons.eq(10)
-                var errorButton2 = mainbuttons.eq(11)
-                var errorButton3 = mainbuttons.eq(12)
-
-                // var buttons = $(this).find('.button__group button');
-                // console.log(mainbuttons)
-
-                var lastButton = mainbuttons[mainbuttons.length - 1];
-    
-                // 마지막 버튼에 포커스가 있을 때
-                // if ($(document.activeElement).is(errorButton)) {
-                //   console.log("왜안나왐")
-                //   event.preventDefault();
-                //   $('#last__prev__asset').focus();
-                //   $('#last__prev__asset').css("border", "2px dashed #0cc");
-                //     console.log("마지막 전 버튼입니다!")
-                // }
-
-                // if ($(document.activeElement).is(errorButton)) {
-                //   console.log("왜안나왐")
-                //   event.preventDefault();
-                //   $('#last__prev__asset').focus();
-                //   $('#last__prev__asset').css("border", "2px dashed #0cc");
-                //     console.log("마지막 전 버튼입니다!")
-                // }
-              //   if ($(document.activeElement).is(errorButton)) {
-              //     console.log("마지막 버튼입니다!");
-  
-              //     event.preventDefault();
-                  
-              //     // 다음 슬라이드의 버튼에 포커스 이동
-              //     var mainswiper = $('.mainSwiper').swiper;
-              //     mainswiper.slideNext(); // 다음 슬라이드로 이동
-              //     setTimeout(function() {
-              //         var nextSlideButtons = $($('.main__swiper .swiper-slide')[swiper.activeIndex]).find('.btn__group button');
-              //         if (nextSlideButtons.length > 0) {
-              //             nextSlideButtons.first().focus();
-              //         }
-              //     }, 300); // 슬라이드 전환 후 포커스 설정
-              // }
-                
-
-                
-                
-            });
-        }
-    });
 
 
 
@@ -147,7 +49,7 @@ var swiper = new Swiper(".bannerSwiper", {
 
 
 
-  document.addEventListener('DOMContentLoaded', function() {
+  // document.addEventListener('DOMContentLoaded', function() {
     const img = document.querySelector('.swiper__pause img');
   
     const updateImage = (isPlaying) => {
@@ -180,7 +82,7 @@ var swiper = new Swiper(".bannerSwiper", {
     img.addEventListener('blur', function() {
       updateImage(swiper.autoplay.running);
     });
-  });
+  // });
 
 
   /**
