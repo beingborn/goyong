@@ -1434,6 +1434,7 @@ footer .footer__top .btn__flex .top__btn .last__btn {
 /* 소형 노트북 & 태블릿 가로 사이즈  1024px ~ 1079px */
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
 #wrap {
