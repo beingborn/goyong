@@ -29,7 +29,7 @@
   display: inline-block;
   width: 28px;
   height: 20px;
-  background: url(img/태극기_medium.png) no-repeat center;
+  background: url(../img/태극기_medium.png) no-repeat center;
   position: relative;
   top: 4px;
 }
@@ -51,7 +51,7 @@
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: url(img/icon__arrow__down.svg) no-repeat center;
+  background: url(../img/icon__arrow__down.svg) no-repeat center;
 }
 
 .header__top {
@@ -74,7 +74,7 @@
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: url(img/icon__arrow__down.svg) no-repeat center;
+  background: url(../img/icon__arrow__down.svg) no-repeat center;
 }
 
 .header__btm {
@@ -132,7 +132,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  background: url(img/icon__arrow__20.png) no-repeat center;
+  background: url(../img/icon__arrow__20.png) no-repeat center;
   margin-left: 8px;
 }
 
@@ -768,7 +768,7 @@ footer .footer__top .btn__flex .top__btn a::after {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(img/plus__icon.png) no-repeat center;
+  background: url(../img/plus__icon.png) no-repeat center;
 }
 footer .footer__top .btn__flex .top__btn .last__btn {
   border-right: 1px solid #D8D8D8;
