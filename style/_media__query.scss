@@ -121,6 +121,8 @@
          .banner__swiper .swiper-slide { max-width: none;}
          .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
 
+         .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1)::after {display: none;}
+
 
         // 고객센터 영역
         .cs__center {height: auto;}
@@ -175,6 +177,9 @@
 
          .banner__box .banner__text p {font-size: 20px;}
          .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
+
+         .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1)::after {display: none;}
+
          
 
   }
@@ -218,6 +223,8 @@
             text-align: center;
         }
 
+
+
         .top__visual .main__hero .main__text .main__bold {font-size: 32px; padding-bottom: 32px;}
         .top__visual .main__hero .quick__menu {position: static; padding-top: 100px; padding-bottom: 40px; justify-content: center;} 
         .top__visual .main__hero .quick__menu .quick__wrap {width: 100px; height: 100px; margin: 0;}
@@ -246,13 +253,16 @@
             margin-right: 16px;
         }
         .banner__btn .swiper-button-next  , .banner__btn .swiper-button-prev {width: 40px; height: 40px;}
+        .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1)::after {display: none;}
+
 
         
-
+        .main__swiper .swiper-slide .item .item__wrap .total .total__wrap {padding: 16px 0;}
         .main__swiper .main__btn__group { left: 50%; transform: translateX(-50%);}
         .main__swiper .swiper-slide .item .item__wrap {padding: 36px 24px 0 24px}
+        .main__swiper .swiper-slide-active .item .item__wrap .graph {padding-bottom: 24px;}
         .main__swiper .swiper-slide .item {max-height: 560px;}
-        .main__swiper .swiper-slide .item .item__wrap .total {margin-top: 16px;}
+        // .main__swiper .swiper-slide .item .item__wrap .total {margin-top: 16px;}
         .main__swiper .swiper-slide .item .item__wrap .btn__group button {width: 50%;}
         .main__swiper .swiper-slide .item .item__wrap .btn__group .income {width: 65%; right: 16px;}
         .main__swiper .swiper-slide:not(.swiper-slide-active) .item {margin-top: 0;}
@@ -260,6 +270,7 @@
         .main__swiper .form__select {width: calc(100% - 32px); margin-top: 24px;}
         .main__swiper .swiper-slide .item {width: 100%;}
         .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1) { border: none;}
+        .main__swiper .swiper-slide .item .item__wrap .title {line-height: 1;}
         
 
         // 고객센터 영역
