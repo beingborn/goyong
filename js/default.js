@@ -53,7 +53,7 @@ var swiper = new Swiper(".bannerSwiper", {
     const img = document.querySelector('.swiper__pause img');
   
     const updateImage = (isPlaying) => {
-      img.src = isPlaying ? '/img/pause.png' : '/img/play.png';
+      img.src = isPlaying ? 'img/pause.png' : 'img/play.png';
     };
   
     img.addEventListener('click', function() {
