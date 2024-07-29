@@ -1,3 +1,4 @@
+/* 큰 화면에서 중앙 정렬이 안맞는 오류가 있었음*/
 @media all and (min-width: 1441px) {
    .banner__swiper .swiper-button-next, .swiper-button-prev {margin-top: calc(0px - (64px / 2))};
 }
@@ -175,8 +176,6 @@
     
     .main__swiper .swiper-slide-active .item .item__wrap .total .total__wrap:nth-child(1)::after { display: none; }
 
-         
-
   }
   
   
@@ -254,7 +253,6 @@
         .main__swiper .swiper-slide .item .item__wrap { padding: 3.6rem 2.4rem 0 2.4rem; } // 36px / 10, 24px / 10
         .main__swiper .swiper-slide-active .item .item__wrap .graph { padding-bottom: 2.4rem; } // 24px / 10
         .main__swiper .swiper-slide .item { max-height: 56rem; } // 560px / 10
-        // .main__swiper .swiper-slide .item .item__wrap .total { margin-top: 1.6rem; } // 16px / 10
         .main__swiper .swiper-slide .item .item__wrap .btn__group button { width: 50%; }
         .main__swiper .swiper-slide .item .item__wrap .btn__group .income { width: 65%; right: 1.6rem; } // 16px / 10
         .main__swiper .swiper-slide:not(.swiper-slide-active) .item { margin-top: 0; }

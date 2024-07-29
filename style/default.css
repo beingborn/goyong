@@ -897,6 +897,7 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   font-size: 1.5rem;
 }
 
+/* 큰 화면에서 중앙 정렬이 안맞는 오류가 있었음*/
 @media all and (min-width: 1441px) {
   .banner__swiper .swiper-button-next, .swiper-button-prev {
     margin-top: -32px;
