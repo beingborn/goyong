@@ -78,6 +78,9 @@
 .work__portal {background-color: #3A43BA;}
 
 
+
+
+
 .banner__btn {
     // border: 0.1rem dashed blue;
     position: absolute; // banner 부모 대상
@@ -85,6 +88,8 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
+
+
 
     .swiper-button-next {
         background: url(../img/swiper__next__btn.png) no-repeat center;  
@@ -128,6 +133,7 @@
     }
 
     .form__select {
+        font-family: inherit;
         width: 15rem;
         border: 0;
         border-bottom: 0.1rem solid #dbdbdb;
@@ -136,7 +142,6 @@
         -webkit-appearance: none; /* 크롬 화살표 없애기 */
         -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
         appearance: none; /* 화살표 없애기 */
-        // padding-right: 2rem;
         background: url(../img/icon__arrow__20.png) no-repeat;
         background-position: right 1.6rem center;
     }

@@ -1,3 +1,7 @@
+@media all and (min-width: 1441px) {
+   .banner__swiper .swiper-button-next, .swiper-button-prev {margin-top: calc(0px - (64px / 2))};
+}
+
 
 /* 노트북 소형~ 중형 1080px ~ 1440px */
 @media all and (min-width: 1080px) and (max-width: 1440px) {
@@ -335,6 +339,8 @@
 
    
   }
+
+
 
 
 

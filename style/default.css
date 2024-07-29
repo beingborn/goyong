@@ -237,6 +237,8 @@
   font-weight: 600;
 }
 .count__group .count .subc {
+  display: flex;
+  align-items: center;
   font-size: 5rem;
   font-weight: 700;
   color: #246BEB;
@@ -246,6 +248,7 @@
   font-size: 1.6rem;
   color: #000000;
   opacity: 0.3;
+  padding-left: 8px;
 }
 
 .swiper__container {
@@ -365,6 +368,7 @@
   color: #246BEB;
 }
 .main__swiper .form__select {
+  font-family: inherit;
   width: 15rem;
   border: 0;
   border-bottom: 0.1rem solid #dbdbdb;
@@ -893,6 +897,11 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   font-size: 1.5rem;
 }
 
+@media all and (min-width: 1441px) {
+  .banner__swiper .swiper-button-next, .swiper-button-prev {
+    margin-top: -32px;
+  }
+}
 /* 노트북 소형~ 중형 1080px ~ 1440px */
 @media all and (min-width: 1080px) and (max-width: 1440px) {
   .wrap .inner {
