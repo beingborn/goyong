@@ -14,11 +14,6 @@ $(document).on('keydown', function(event) {
                 if (index >= 9 && index < 13) {
                     console.log(index + "번째 버튼입니다!");
 
-                    // event.preventDefault(); // 기본 탭 동작 방지
-
-                    // 다음 버튼으로 포커스 이동
-                    // errorButtons.eq(index + 1).css("border", "3px solid #000"); // 동작됌
-                    
                     setTimeout(function(){
                         // errorButtons.eq(index + 1).focus();
                         $('#last__prev__income').focus();
