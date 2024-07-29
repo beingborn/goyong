@@ -1,70 +1,65 @@
-
 .swiper__container {
 
     // 스와이퍼 컨테이너의 %가 inner 안의 들어가 있지 않아서 직접 분기별로 width를 지정해주어야한다.
 
-    // border: 2px solid blueviolet;
-    width: 1096px;
-    padding-left: 92px;
-    padding-right: 92px;
+    // border: 0.2rem solid blueviolet;
+    width: 109.6rem;
+    padding-left: 9.2rem;
+    padding-right: 9.2rem;
 }
 
 .banner__swiper {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
-
-   .swiper__wrapper {
-    display: flex; /* flexbox 레이아웃을 사용 */
-    justify-content: center; /* 슬라이드를 중앙에 배치 */
-    margin: 0 auto;
-
-   }
+    .swiper__wrapper {
+        display: flex; /* flexbox 레이아웃을 사용 */
+        justify-content: center; /* 슬라이드를 중앙에 배치 */
+        margin: 0 auto;
+    }
     
-      .swiper-slide {
+    .swiper-slide {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 160px;
-        // max-width: 344px;
+        height: 16rem;
+        // max-width: 34.4rem;
         position: relative;
 
-    
-            .item__desc {
-                font-size: 24px;
-                margin-left: 24px;
-                font-weight: 700;
-                color: #fff;
-                text-align: left;
-                line-height: 150%;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 24px;
-            }
-            
-        
+        .item__desc {
+            font-size: 2.4rem;
+            margin-left: 2.4rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: left;
+            line-height: 150%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2.4rem;
+        }
     }
 }
-
 
 // 배너 이미지 재 작업 
 
 .banner__box {
     width: 100%;
     height: 100%;
-    position: relative; border-radius: 8px; overflow: hidden;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
 
     .banner__text {
         position: absolute;
-        left: 24px;
+        left: 2.4rem;
         top: 50%;
         transform: translateY(-50%);
         z-index: 99;
 
         p {
             color: #fff;
-            font-size: 24px;
+            font-size: 2.4rem;
             line-height: 150%;
             font-weight: 700;
         }
@@ -84,40 +79,47 @@
 
 
 .banner__btn {
-    // border: 1px dashed blue;
+    // border: 0.1rem dashed blue;
     position: absolute; // banner 부모 대상
-    width: 1280px;
+    width: 128rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
 
-    .swiper-button-next {background: url(../img/swiper__next__btn.png) no-repeat center;  background-size: contain; right: 12px; }
-    .swiper-button-prev {background: url(../img/swiper__prev__btn.png) no-repeat center;  background-size: contain; left: 12px;}
+    .swiper-button-next {
+        background: url(../img/swiper__next__btn.png) no-repeat center;  
+        background-size: contain; 
+        right: 1.2rem; 
+    }
+    .swiper-button-prev {
+        background: url(../img/swiper__prev__btn.png) no-repeat center;  
+        background-size: contain; 
+        left: 1.2rem;
+    }
 
+    .swiper-button-prev, .swiper-button-next {
+        width: 6.4rem;
+        height: 6.4rem;
 
-    .swiper-button-prev , .swiper-button-next {
-        width: 64px;
-        height: 64px;
-
-        &::after {display: none;}
-        
+        &::after {
+            display: none;
+        }
     }
 }
 
-
 .main__swiper {
-    height: 854px;
+    height: 85.4rem;
 
     .section__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 48px;
+        margin-bottom: 4.8rem;
     }
 
     .section__title {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 4rem;
         line-height: 150%;
 
         .strong {
@@ -126,40 +128,41 @@
     }
 
     .form__select {
-        width: 150px;
+        width: 15rem;
         border: 0;
-        border-bottom: 1px solid #dbdbdb;
-        padding: 16px;
-        font-size: 19px;
-        -webkit-appearance:none; /* 크롬 화살표 없애기 */
-        -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
-        appearance:none; /* 화살표 없애기 */
-        // padding-right: 20px;
+        border-bottom: 0.1rem solid #dbdbdb;
+        padding: 1.6rem;
+        font-size: 1.9rem;
+        -webkit-appearance: none; /* 크롬 화살표 없애기 */
+        -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+        appearance: none; /* 화살표 없애기 */
+        // padding-right: 2rem;
         background: url(../img/icon__arrow__20.png) no-repeat;
-        background-position: right 16px center;
-   
+        background-position: right 1.6rem center;
     }
 }
+//
+
 
 .main__swiper .bg {
-    right: -272px;
+    right: -27.2rem;
     position: absolute;
-    height: 600px;
+    height: 60rem;
     bottom: 0;
     z-index: 1;
     width: 1920px;
     background-color: #003675;
-    border-radius: 60px 0px 0 60px ;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6rem 0 0 6rem ;
+    box-shadow: 0px 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .main__swiper {
     position: relative;
 
     .pagination__bg {
-        width: 67px;
-        height: 40px;
-        border-radius: 40px;
+        width: 6.7rem;
+        height: 4rem;
+        border-radius: 4rem;
         position: relative;
         background-color: #fff;
         text-align: center;
@@ -178,25 +181,24 @@
     .main__btn__group {
         display: flex;
         align-items: center;
-        width: calc(400px);
-        padding: 0 60px;
-
+        width: calc(40rem);
+        padding: 0 6rem;
         position: relative;
-        bottom: -42px;
+        bottom: -4.2rem;
         box-sizing: border-box;
 
         .swiper__pause {
-            height: 40px;
-            margin-left: 8px;
+            height: 4rem;
+            margin-left: 0.8rem;
         }
 
-        .arrow__flex {display: flex; margin-left: 8px;}
+        .arrow__flex {display: flex; margin-left: 0.8rem;}
 
 
         .swiper-button-next, .swiper-button-prev {
             margin-top: 0;
-            width: 40px;
-            height: 40px;
+            width: 4rem;
+            height: 4rem;
             position: static;
             &::after {
                 display: none;
@@ -205,23 +207,22 @@
         }
 
         .more__main {
-          margin-left: 8px;
-          width: 40px;
-          height: 40px;
+          margin-left: 0.8rem;
+          width: 4rem;
+          height: 4rem;
          background: url(../img/more__main.png) no-repeat center;
         }
 
         .swiper-button-prev {
-            // left: 180px;
             background: url(../img/swiper__main__prev.png) no-repeat center; background-size: contain;}
         .swiper-button-next {
-            margin-left: 8px;
+            margin-left: 0.8rem;
             background: url(../img/swiper__main__next.png) no-repeat center; background-size: contain;}
 
 
-        .swiper-pagination-fraction {font-weight: 700; bottom: 0;}
-        .swiper-pagination-current {margin-right: 4px; color: #246BEB;}
-        .swiper-pagination-total {margin-left: 4px;}
+        .swiper-pagination-fraction {font-weight: 700; bottom: 0; font-size: 1.7rem;}
+        .swiper-pagination-current {margin-right: 0.4rem; color: #246BEB;}
+        .swiper-pagination-total {margin-left: 0.4rem;}
     }
 
 
@@ -231,31 +232,31 @@
     }
 
     .swiper-slide {
-        margin-right: 40px;
+        margin-right: 4rem;
         transition: all 0.3s ease;
         width: auto;
         position: relative;
-        max-width: 400px;
+        max-width: 40rem;
 
 
         .item {
-            width: 400px;
-            height: 600px;
+            width: 40rem;
+            height: 60rem;
             background-color: #fff;
-            border-radius: 12px;
+            border-radius: 1.2rem;
             overflow: hidden;
-            box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0.4rem 0.4rem 4rem rgba(0, 0, 0, 0.2);
 
 
 
 
             .item__wrap {
-                padding: 55px 32px 0 32px;
+                padding: 5.5rem 3.2rem 0 3.2rem;
 
 
-                .index {font-size: 24px; font-weight: 700;}
+                .index {font-size: 2.4rem; font-weight: 700;}
 
-                .title { margin-bottom: 16px; font-size: 25px; font-weight: 700;};
+                .title { margin-bottom: 16px; font-size: 2.5rem; font-weight: 700;};
 
 
 
@@ -264,11 +265,11 @@
                     align-items: center;
                     background-color: #D3E1FB;
                     color: #246BEB;
-                    margin-bottom: 32px;
-                    font-size: 15px;
-                    height: 24px;
-                    padding: 6px 8px;
-                    border-radius: 2px;
+                    margin-bottom: 3.2rem;
+                    font-size: 1.5rem;
+                    height: 2.4rem;
+                    padding: 0.6rem 0.8rem;
+                    border-radius: 0.2rem;
                     box-sizing: border-box;
                 }
 
@@ -277,14 +278,14 @@
                     position: relative;
                     z-index: 2;
                     display: flex;
-                    margin-bottom: 32px;
+                    margin-bottom: 3.2rem;
 
                     button {
-                        width: 180px;
-                        height: 48px;
-                        line-height: 48px;
-                        font-size: 17px;
-                        border-radius: 30px;
+                        width: 18rem;
+                        height: 4.8rem;
+                        line-height: 4.8rem;
+                        font-size: 1.7rem;
+                        border-radius: 3rem;
                         border: 0;
                         cursor: pointer;
                         // z-index: 3;
@@ -292,21 +293,16 @@
 
                     .asset {
                         position: relative;
-                        left: 20px;
-                        // z-index: 4;
-                        // color: #fff
+                        left: 2rem;
                     }
 
                     .income {
                         position: relative;
-                        right: 20px;
-                        // background-color: #fff;
-                        // color: #1d1d1d;
+                        right: 2rem;
                         top: 0;
-                        // z-index: 3;
 
                         .text {
-                            padding-left: 12px;
+                            padding-left: 1.2rem;
                         }
                     }
                 }
@@ -315,9 +311,9 @@
                     display: flex;
                     justify-content: center;
                     .stick__graph-1, .stick__graph-2 {
-                        margin: 0 40px;
-                        width: 80px;
-                        height: 210px;
+                        margin: 0 4rem;
+                        width: 8rem;
+                        height: 21rem;
                     }    
 
                     .stick__graph-1 {
@@ -330,8 +326,8 @@
           
                 .circle__graph {
                     margin: 0px auto;
-                    width: 210px;
-                    height: 210px;
+                    width: 21rem;
+                    height: 21rem;
                     border-radius: 50%;
                     background: conic-gradient(
                       #003675 0% 70%, /* 첫 번째 색상 */
@@ -341,8 +337,8 @@
 
                     &::before {
                         content: '';
-                        width: 80px;
-                        height: 80px;
+                        width: 8rem;
+                        height: 8rem;
                         background-color: #fff; /* 배경색과 같은 색으로 설정 */
                         border-radius: 50%;
                         position: absolute;
@@ -359,7 +355,7 @@
                         text-align: center;
 
                         .detail {
-                            font-size: 24px;
+                            font-size: 2.4rem;
                             font-weight: 700;
                         }
                     }
@@ -381,17 +377,17 @@
                     }
                     
                     .money {
-                        font-size: 17px;
+                        font-size: 1.7rem;
                         font-weight: 700;
                     }
 
                     .detail {
-                        font-size: 17px;
+                        font-size: 1.7rem;
                         font-weight: 600;
 
                         span {
                             font-weight: 400;
-                            font-size: 13px;
+                            font-size: 1.3rem;
                             color: #767676;
                         }
                     }
@@ -433,7 +429,7 @@
     // 그래프
     .item__wrap {
 
-        .graph {padding-bottom: 32px;}
+        .graph {padding-bottom: 3.2rem;}
 
         .group {background-color: #fff; font-weight: 700;}
         .index , .title {color: #fff;}
@@ -459,14 +455,11 @@
     .item__wrap .total {
         background-color: #fff;
         box-sizing: content-box;
-        width: calc(100% + 64px); /* 부모의 padding 값을 고려하여 너비를 설정 */
-        margin-left: -32px; /* 패딩 값을 무시하고 좌측으로 이동 */
-        margin-right: -32px; /* 패딩 값을 무시하고 우측으로 이동 */
-        // padding-bottom: 16px;
-        // padding-top: 12px;
+        width: calc(100% + 6.4rem); /* 부모의 padding 값을 고려하여 너비를 설정 */
+        margin-left: -3.2rem; /* 패딩 값을 무시하고 좌측으로 이동 */
+        margin-right: -3.2rem; /* 패딩 값을 무시하고 우측으로 이동 */
 
         .total__wrap:nth-child(1){
-            // border-right: 1.5px solid lightgray;
             position: relative;
 
             &::after {
@@ -475,15 +468,14 @@
                 top: 50%; /* 요소의 상단에 맞춰 위치 */
                 transform: translateY(-50%);
                 right: 0; /* 요소의 오른쪽에 맞춰 위치 */
-                width: 1.5px; /* 선의 너비 */
-                height: 38px; /* 선의 높이 */
+                width: 0.15rem; /* 선의 너비 */
+                height: 3.8rem; /* 선의 높이 */
                 background-color: lightgray; /* 선의 색상 */
             }
         }
 
         .total__wrap p:nth-child(1) {
             color: #003675;
-            // margin-bottom: 16px;
         }
 
         .total__wrap p:nth-child(2){
@@ -497,15 +489,6 @@
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item {
     margin-top: 50px;
 
-    // .btn__group {
-    //     .asset {
-    //         background-color: #444444;
-    //     }
-
-    //     .income {
-    //         border: 1px solid #444444;
-    //     }
-    // }
 
     .item__wrap .graph {
         .circle__graph {
@@ -517,6 +500,5 @@
     }
 }
 
-// btn 
 
 

@@ -3,8 +3,8 @@
     width: 100%;
     z-index: 1000;
     background-color: #fff;
-    border-bottom: 1.5px solid #ededed;
-    transition: all .5s;
+    border-bottom: 0.15rem solid #ededed;
+    transition: all 0.5s;
 }
 
 .header__fixed {
@@ -15,44 +15,45 @@
     transform: translateY(0);
 }
 
-
 .top__banner {
-    height: 32px;
+    height: 3.2rem;
     background-color: #EDF1F5;
-
 
     .banner__wrap {
         // display: flex;
         // align-items: center;
         flex-wrap: nowrap;
-        line-height: 32px;
+        line-height: 3.2rem;
 
         .korea {
-            margin-right: 8px;
+            margin-right: 0.8rem;
             display: inline-block;
-            width: 28px;
-            height: 20px;
+            width: 2.8rem;
+            height: 2rem;
             background: url(../img/태극기_medium.png) no-repeat center;
             position: relative;
-            top: 4px;
+            top: 0.4rem;
         }
     }
 }
 
-.banner__text {display: inline-block;}
+.banner__text {
+    display: inline-block;
+    font-size: 1.6rem;
+}
 
 .banner__text a {
     color: #003675;
     font-weight: 500;
-    margin-left: 16px;
-    margin-right: 4px;
-      display: inline-flex;
+    margin-left: 1.6rem;
+    margin-right: 0.4rem;
+    display: inline-flex;
     align-items: center;
 
     &::after {
         content: '';
-        width: 16px;
-        height: 16px;
+        width: 1.6rem;
+        height: 1.6rem;
         display: inline-block;
         background: url(../img/icon__arrow__down.svg) no-repeat center;
     }
@@ -60,57 +61,53 @@
 
 .header__top {
     display: flex;
-    height: 40px;
+    height: 4rem;
     justify-content: end;
     align-items: center;
 
-    a:not(:last-child){
-        border-right: 2px solid #D8D8D8;
+    a:not(:last-child) {
+        border-right: 0.2rem solid #D8D8D8;
     }
 
     a {
         display: inline-flex;
         align-items: center;
-        margin-right: 12px;
-        padding-right: 12px;
+        margin-right: 1.2rem;
+        padding-right: 1.2rem;
+        font-size: 1.6rem;
 
         &::after {
             content: '';
-            width: 16px;
-            height: 16px;
+            width: 1rem;
+            height: 1rem;
             display: inline-block;
             background: url(../img/icon__arrow__down.svg) no-repeat center;
         }
     }
 }
 
-
 // 하단 헤더 영역
-
 .header__btm {
     position: relative;
     align-items: center;
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
 
     .right__icon__set {
         display: flex;
         align-items: center;
         margin-left: auto;
-        
 
         a {
-
             img {
-                margin-right: 8px;
+                margin-right: 0.8rem;
             }
 
             font-weight: bold;
-            font-size: 17px;
-            padding: 10px 12px;
+            font-size: 1.7rem;
+            padding: 1rem 1.2rem;
             display: inline-flex;
             align-items: center;
-
 
             span {
                 white-space: nowrap;
@@ -119,40 +116,39 @@
 
         .talk__count {
             display: inline-block;
-            width: 26px;
-            height: 20px;
-            line-height: 20px;
+            width: 2.6rem;
+            height: 2rem;
+            line-height: 2rem;
             text-align: center;
             background-color: #246BEB;
             color: #fff;
-            border-radius: 20px;
-            font-size: 15px;
-            font-size: 400;
-            margin-left: 8px;
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-left: 0.8rem;
         }
-
     }
 }
 
 .base__gnb {
-    height: 64px;
+    height: 6.4rem;
 
-    a{
-        line-height: 64px;
-        margin-right: 16px;
+    a {
+        line-height: 6.4rem;
+        margin-right: 1.6rem;
         font-weight: bold;
-        font-size: 19px;
+        font-size: 1.9rem;
         color: #555555;
         display: inline-flex;
         align-items: center;
 
         &::after {
             content: '';
-            width: 20px;
-            height: 20px;
+            width: 2rem;
+            height: 2rem;
             display: inline-block;
             background: url(../img/icon__arrow__20.png) no-repeat center;
-            margin-left: 8px;
+            margin-left: 0.8rem;
         }
     }
 }
@@ -160,5 +156,5 @@
 .border {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    border: 1px solid #D8D8D8;
+    border: 0.1rem solid #D8D8D8;
 }
