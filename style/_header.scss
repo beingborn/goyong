@@ -26,8 +26,6 @@
     background-color: #EDF1F5;
 
     .banner__wrap {
-        // display: flex;
-        // align-items: center;
         flex-wrap: nowrap;
         line-height: 3.2rem;
 
@@ -49,7 +47,7 @@
 }
 
 .banner__text a {
-    color: #003675;
+    color: $second-color;
     font-weight: 500;
     margin-left: 1.6rem;
     margin-right: 0.4rem;
@@ -126,7 +124,7 @@
             height: 2rem;
             line-height: 2rem;
             text-align: center;
-            background-color: #246BEB;
+            background-color: $main-color;
             color: #fff;
             border-radius: 2rem;
             font-size: 1.5rem;

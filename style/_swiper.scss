@@ -1,5 +1,4 @@
 .swiper__container {
-
     // 스와이퍼 컨테이너의 %가 inner 안의 들어가 있지 않아서 직접 분기별로 width를 지정해주어야한다.
     width: 109.6rem;
     padding-left: 9.2rem;
@@ -21,7 +20,6 @@
         justify-content: center;
         align-items: center;
         height: 16rem;
-        // max-width: 34.4rem;
         position: relative;
 
         .item__desc {
@@ -40,7 +38,6 @@
 }
 
 // 배너 이미지 재 작업 
-
 .banner__box {
     width: 100%;
     height: 100%;
@@ -74,9 +71,6 @@
 .worker {background-color: #06A8E7;}
 .work__condition {background-color: #0184FE;}
 .work__portal {background-color: #3A43BA;}
-
-
-
 
 
 .banner__btn {
@@ -152,7 +146,7 @@
     bottom: 0;
     z-index: 1;
     width: 1920px;
-    background-color: #003675;
+    background-color: $second-color;
     border-radius: 6rem 0 0 6rem ;
     box-shadow: 0px 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
 }
@@ -239,7 +233,6 @@
         position: relative;
         max-width: 40rem;
 
-
         .item {
             width: 40rem;
             height: 60rem;
@@ -248,18 +241,11 @@
             overflow: hidden;
             box-shadow: 0.4rem 0.4rem 4rem rgba(0, 0, 0, 0.2);
 
-
-
-
             .item__wrap {
                 padding: 5.5rem 3.2rem 0 3.2rem;
 
-
                 .index {font-size: 2.4rem; font-weight: 700;}
-
                 .title { margin-bottom: 16px; font-size: 2.5rem; font-weight: 700;};
-
-
 
                 .group {
                     display: inline-flex;
@@ -289,7 +275,6 @@
                         border-radius: 3rem;
                         border: 0;
                         cursor: pointer;
-                        // z-index: 3;
                     }
 
                     .asset {
@@ -355,6 +340,10 @@
                         transform: translate(-50%, -50%);
                         text-align: center;
 
+                        p:nth-child(1){
+                            font-size: 1.5rem;
+                        }
+
                         .detail {
                             font-size: 2.4rem;
                             font-weight: 700;
@@ -413,39 +402,31 @@
 
 // 스와이퍼 active시 적용
 .active--style {
-    background-color: #003675;
+    background-color: $second-color;
     color: #fff;
     z-index: 4;
 }
 
 .main__swiper .swiper-slide-active .item {
-    background-color: #246BEB;
+    background-color: $main-color;
     margin-top: 0;
 
-
-
-
-    .item__wrap .circle__graph .text p {color: #fff; font-weight: 700;}
+    .item__wrap .circle__graph .text p {color: #fff;}
+    .item__wrap .circle__graph .text .detial {font-weight: 700;}
     
     // 그래프
     .item__wrap {
-
         .graph {padding-bottom: 3.2rem;}
-
         .group {background-color: #fff; font-weight: 700;}
         .index , .title {color: #fff;}
-
         .graph {
             .circle__graph {
-    
                 &::before {
-                    background-color: #246BEB;
+                    background-color: $main-color;
                 } 
             }
-    
-            .stick__graph-1 {background: linear-gradient(to top, #003675 0 72%, #fff 32% 100%);}
-                            
-            .stick__graph-2 {background: linear-gradient(to top, #003675 0 26%, #fff 22% 100%);}
+            .stick__graph-1 {background: linear-gradient(to top, $second-color 0 72%, #fff 32% 100%);}               
+            .stick__graph-2 {background: linear-gradient(to top, $second-color 0 26%, #fff 22% 100%);}
         }
     }
   

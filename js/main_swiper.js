@@ -35,9 +35,9 @@ $(document).on('keydown', function(event) {
     loopAdditionalSlides : 1,
     centeredSlides: false,
 
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
 
     pagination: {
       el: '.swiper-pagination',
