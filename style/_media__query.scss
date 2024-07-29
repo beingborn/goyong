@@ -80,7 +80,7 @@
         .banner__wrap { display: flex; }
     
         .logo { display: none; }
-        .mobile__logo { display: block; }
+        .mobile__logo { display: block; width: 196px; display: flex; align-items: center;}
         .header__btm { margin: 0.8rem 0; } // 8px / 10
         .base__gnb { display: none; }
     
@@ -219,8 +219,8 @@
             padding-top: 6.3rem; // 63px / 10
             text-align: center;
         }
-    
-        .top__visual .main__hero .main__text .main__bold { font-size: 3.2rem; padding-bottom: 3.2rem; } // 32px / 10
+        
+        .top__visual .main__hero .main__text .main__bold { font-size: 3.2rem; padding-bottom: 3.2rem; margin-bottom: 0; } // 32px / 10
         .top__visual .main__hero .quick__menu { position: static; padding-top: 10rem; padding-bottom: 4rem; justify-content: center; } // 100px / 10, 40px / 10
         .top__visual .main__hero .quick__menu .quick__wrap { width: 10rem; height: 10rem; margin: 0; } // 100px / 10
         .top__visual .main__hero .quick__menu .quick__wrap:nth-child(2) { margin: 0 2.4rem; } // 24px / 10
@@ -291,15 +291,15 @@
         footer .footer__top .btn__flex .top__btn { width: 100%; border-bottom: 1px solid #D8D8D8; }
         footer .footer__top .btn__flex { flex-direction: column; }
         footer .footer__bottom .footer__flex { flex-direction: column; }
-    
+        .footer__bottom {padding-top: 4rem;}
         .footer__global .g__flex { flex-direction: column; }
         .footer__global .global__link { margin-top: 1.6rem; } // 16px / 10
         .footer__global .global__link a { display: block; width: 100%; margin-bottom: 1.6rem; } // 16px / 10
         .footer__bottom .footer__logo { display: none; }
         .footer__bottom .mobile__logo { padding-top: 4rem; } // 40px / 10
         .sns__info { padding-top: 3.2rem; } // 32px / 
-.sns__info .icon__wrap {padding: 3.2rem 0;}
-}
+        .sns__info .icon__wrap {padding: 3.2rem 0;}
+    }
   }
 
 
@@ -309,16 +309,19 @@
   @media all and (max-width:420px) {
 
     .wrap {
-        .mobile__logo { width: 30%; height: 4.7rem}
-        .mobile__logo img { width: 170%;}
+        // .mobile__logo { width: 30%; height: 4.7rem}
+        .mobile__logo {width: 196px;}
+        .mobile__logo img { width: 100%;}
         .header__btm .right__icon__set a { padding: 1rem 0.8rem; } // 10px / 10, 8px / 10
         
+
+        .top__visual .main__hero .main__text .main__bold {margin-bottom: 0;}
         .top__visual .main__hero .main__text .main__bold { 
             font-size: 2.4rem; // 24px / 10
             white-space: nowrap; 
         }
         .top__visual .main__hero .main__text .main__medium { 
-            font-size: 1.5rem; // 15px / 10 
+            font-size: 1.5rem;
         }
         .top__visual .main__hero .quick__menu .quick__wrap { 
             width: 9rem; // 90px / 10
@@ -332,10 +335,10 @@
         }
         .banner__text { font-size: 1.5rem; } // 15px / 10
     }
-
+    
     .footer__bottom {padding-top: 4rem;}
+    .footer__bottom .mobile__logo { margin-top: 4rem; } // 40px / 10
 
-   
   }
 
 
