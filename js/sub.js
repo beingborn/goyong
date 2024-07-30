@@ -9,7 +9,7 @@ $(document).ready(function(){
         subTabBtn.removeClass('active');
         $(this).addClass('active');
 
-        subTabContent.hide(500).eq(tabIndex).show(500);
+        subTabContent.hide().eq(tabIndex).show();
     });
 
     // 초기화: 첫 번째 탭과 콘텐츠를 활성화 

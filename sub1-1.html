@@ -92,8 +92,9 @@
             <div class="tab__content">
                 <div class="inner">
                     <div class="tab__1 tab">
+                        <!-- 상단 공시정보 -->
                         <div class="dis__info">
-                            <h2 class="data__title">공시정보</h2>
+                            <h2 class="data__title">공시정보</h2> 
                             <div class="tab__detail table__horizontal">
                                 <table>
                                     <caption>공시정보(회계연도, 회계기간)출력폼</caption>
@@ -109,9 +110,9 @@
                                             </th>
                                             <td>
                                                 <select name="셀렉트입니다" id="year--select">
-                                                    <option value="2021"></option>
-                                                    <option value="2021"></option>
-                                                    <option value="2021"></option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2021">2022</option>
+                                                    <option value="2021">2023</option>
                                                 </select>
                                             </td>
                                             <th scope="col">
@@ -122,6 +123,185 @@
                                                 <span>~</span>
                                                 <input type="text" value="">
                                             </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 자산 및 부채 현황 -->
+                        <div class="dis__info">
+                            <h2 class="data__title">자산 및 부채 현황</h2> 
+                            <div class="tab__detail table__vertical">
+                                <table>
+                                    <caption>자산 및 부채현황 {구분, 자산}</caption>
+                                    <colgroup>
+                                        <col width="15.38%">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th>자산</th>
+                                            <th>현금및예금</th>
+                                            <th>토지</th>
+                                            <th>건물</th>
+                                            <th>기타자산</th>
+                                            <th>부채</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 수입현황 -->
+                        <div class="dis__info earn__sit">
+                            <h2 class="data__title">수입 현황</h2> 
+                            <div class="tab__detail table__vertical">
+                                <table>
+                                    <caption>수입현황 {구분, 자산}</caption>
+                                    <colgroup>
+                                        <col width="15.38%">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">구분</th>
+                                            <th rowspan="2">수입총계</th>
+                                            <th rowspan="2">전년도 이월금</th>
+                                            <th colspan="8">당기수입</th>
+                                        </tr>
+                                        <tr>
+                                            <th>조합비</th>
+                                            <th>상급단체 교부금</th>
+                                            <th>하부조직 부과금</th>
+                                            <th>후원금</th>
+                                            <th>타회계 전입금</th>
+                                            <th>보조금 수입</th>
+                                            <th>수익사업 수입</th>
+                                            <th>기타</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,7627,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300005</td>
+                                            <td>4444060</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                            <td>552313</td>
+                                            <td>131331</td>
+                                            <td>23224</td>
+                                            <td>13132</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                            <td>552313</td>
+                                            <td>131331</td>
+                                            <td>23224</td>
+                                            <td>13132</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                            <td>552313</td>
+                                            <td>131331</td>
+                                            <td>23224</td>
+                                            <td>13132</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                            <td>552313</td>
+                                            <td>131331</td>
+                                            <td>23224</td>
+                                            <td>13132</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">a총계(=b+c+d+e)</th>
+                                            <td>135,767,948</td>
+                                            <td>535,154,151</td>
+                                            <td>300000</td>
+                                            <td>4444000</td>
+                                            <td>2323211</td>
+                                            <td>555555</td>
+                                            <td>552313</td>
+                                            <td>131331</td>
+                                            <td>23224</td>
+                                            <td>13132</td>
                                         </tr>
                                     </tbody>
                                 </table>

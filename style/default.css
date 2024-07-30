@@ -1604,7 +1604,7 @@ footer .footer__top .btn__flex .top__btn .last__btn {
 
 .table__horizontal {
   height: 4.5rem;
-  border-top: 1px solid #333;
+  border-top: 2px solid #333;
 }
 .table__horizontal table {
   height: 100%;
@@ -1627,6 +1627,7 @@ footer .footer__top .btn__flex .top__btn .last__btn {
 }
 .table__horizontal td {
   padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 .table__horizontal td select {
   width: 100%;
@@ -1643,6 +1644,43 @@ footer .footer__top .btn__flex .top__btn .last__btn {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+.tab .dis__info:not(:first-child) {
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+}
+.tab .table__vertical {
+  border-top: 2px solid #333;
+  width: 100%;
+}
+
+.table__vertical table tr th:nth-child(1) {
+  border-left: 1px solid #ddd;
+}
+.table__vertical table td {
+  text-align: right;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.table__vertical table thead tr th {
+  height: 6rem;
+  background-color: #F8F8F8;
+  line-height: 6rem;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+.table__vertical table tbody th {
+  background-color: #F8F8F8;
+}
+.table__vertical table tbody td {
+  padding-right: 8px;
+}
+.table__vertical table tbody td, .table__vertical table tbody th {
+  height: 6rem;
+  line-height: 6rem;
 }
 
 * {
