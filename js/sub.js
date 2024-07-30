@@ -1,3 +1,9 @@
+/** 
+ * 서브 탭 변환
+ * 
+ * 
+ */
+
 $(document).ready(function(){
     let subTabBtn = $('.tab__wrap .tab__btn button');
     let subTabContent = $('.tab__content .tab');

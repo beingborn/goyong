@@ -1,0 +1,37 @@
+
+/* 노트북 소형~ 중형 1080px ~ 1440px */
+@media all and (min-width: 1080px) and (max-width: 1440px) {
+
+        .table__horizontal table tbody th th {
+            font-size: 1.3rem;
+        }
+
+        .table__vertical table tbody td, .table__vertical table thead th {
+            font-size: 1.3rem;
+        } 
+}
+
+  /* pc 전환시까지 변환 유지 되어야 하는 영역 */
+  @media all and (min-width: 767px) and (max-width: 1079px) {
+    .table__horizontal table tbody th th {
+        font-size: 1.3rem;
+    }
+
+    .table__vertical table tbody td, .table__vertical table thead th {
+        font-size: 1.3rem;
+    } 
+  }
+
+
+
+  /* 모바일 가로 & 테블릿 세로 480px ~ 767px */ 
+  @media all and (min-width:480px) and (max-width:767px) {
+    .content .tab__wrap {
+        overflow: hidden;
+        flex-wrap: nowrap;
+
+        .tab__btn {
+           width: 130px;
+        }
+    }
+  }
