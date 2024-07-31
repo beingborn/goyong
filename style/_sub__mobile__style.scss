@@ -5,6 +5,8 @@
   margin-bottom: 40px;
 
   .swiper {
+    border: 1px dashed green;
+
     .swiper-slide {
       max-width: 130px;
       text-align: center;
@@ -27,6 +29,31 @@
         font-weight: 500;
         // white-space: nowrap;
       }
+    }
+  }
+
+  .swiper-button-next {
+    background: url(../img/mo__tab__next.png) no-repeat center;
+    background-size: 100% auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .swiper-button-prev {
+    background: url(../img/mo__tab__prev.png) no-repeat center;
+    background-size: 100% auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: 0;
+    margin-top: calc(0px - (24px / 2));
+
+    &::after {
+      display: none;
     }
   }
 }
@@ -114,6 +141,7 @@
 .data--open {
   cursor: pointer;
   width: 100%;
+  position: relative;
 }
 .data__toggle {
   font-size: 2.5rem;
@@ -123,7 +151,7 @@
 
 .data--open {
   position: relative;
-  border-top: 1px solid #ccc;
+  //   border-top: 1px solid #ccc;
   padding: 1.6rem 0;
 
   .arrow__wrap {
