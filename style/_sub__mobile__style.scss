@@ -63,6 +63,12 @@
 }
 
 .mo__open__wrap {
+
+  .mobile__con {margin: 4rem 0;
+    
+    .market {margin-bottom: 4rem;}
+  }
+
   table {
     font-size: 1.6rem;
     width: 100%;
@@ -125,6 +131,10 @@
 
 .mo__open__wrap .mo__column .sub__element.depth2 {
   padding-left: 16px;
+}
+
+.mo__open__wrap .mo__column .sub__item-depth2 {
+  padding-left: 1.2rem;
 }
 
 .mo__open__wrap .mo__column .sub__item-depth3 {

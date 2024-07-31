@@ -1791,6 +1791,9 @@ table caption {
   .content .mo__open__wrap {
     display: block;
   }
+  .content .mobile__con {
+    display: block;
+  }
 }
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
 @media all and (max-width: 479px) {
@@ -1809,6 +1812,9 @@ table caption {
     display: block;
   }
   .content .mo__open__wrap {
+    display: block;
+  }
+  .content .mobile__con {
     display: block;
   }
 }
@@ -1866,6 +1872,12 @@ table caption {
   margin-top: 5rem;
 }
 
+.mo__open__wrap .mobile__con {
+  margin: 4rem 0;
+}
+.mo__open__wrap .mobile__con .market {
+  margin-bottom: 4rem;
+}
 .mo__open__wrap table {
   font-size: 1.6rem;
   width: 100%;
@@ -1927,6 +1939,10 @@ table caption {
 
 .mo__open__wrap .mo__column .sub__element.depth2 {
   padding-left: 16px;
+}
+
+.mo__open__wrap .mo__column .sub__item-depth2 {
+  padding-left: 1.2rem;
 }
 
 .mo__open__wrap .mo__column .sub__item-depth3 {
@@ -2064,4 +2080,8 @@ body {
   font-size: 0;
   text-indent: -99999.9rem;
   z-index: 0;
+}
+
+.mobile__con {
+  display: none;
 }/*# sourceMappingURL=default.css.map */

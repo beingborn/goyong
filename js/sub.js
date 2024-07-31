@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   let moTabBtn = $(".mobile__tab .swiper .swiper-slide button");
-  let moTabContent = $(".mo__open__wrap .mobile__tab");
+  let moTabContent = $(".mo__open__wrap .mobile__con");
 
   moTabBtn.click(function () {
     let moTabIndex = $(this).parent().index();
@@ -37,7 +37,7 @@ $(document).ready(function () {
   });
 
   moTabBtn.eq(0).addClass("btn--active");
-  moTabContent.hide().eq(1).show(); //임시로 켜둠
+  moTabContent.hide().eq(0).show(); //임시로 켜둠
 });
 
 /** 모바일 슬라이드 토글
