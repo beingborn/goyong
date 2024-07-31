@@ -1,187 +1,253 @@
 // 서브 페이지들의 컨텐츠는 공통적으로 #sub__wrap을 이용합니다.
 // page 1 - 회계공시 열람
 
+.mo__open__wrap {
+  display: none;
+}
+
 table {
-    border: 0;
-    border-collapse: collapse;
-    border-spacing: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+  }
 }
 
 #sub__wrap {
-    .content {
-        .visual__bg {
-            width: 100%;
-            height: 25rem;
-            background: url(../img/bg__sub1-1.png) no-repeat center;
-            background-size: cover;
-            position: relative;
+  .content {
+    .visual__bg {
+      width: 100%;
+      height: 25rem;
+      background: url(../img/bg__sub1-1.png) no-repeat center;
+      background-size: cover;
+      position: relative;
 
-            .visual__text {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                color: #fff;
+      .visual__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
 
-                h2 {font-size: 3.2rem; margin-bottom: 2.8rem;}
-                p {font-size: 1.5rem;}
-            }
+        h2 {
+          font-size: 3.2rem;
+          margin-bottom: 2.8rem;
         }
+        p {
+          font-size: 1.5rem;
+        }
+      }
     }
+  }
+}
+
+.mobile__tab {
+  display: none;
+}
+.mobile__tab__content {
+  display: none;
 }
 
 .tab__wrap {
-    width: 1280px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    padding-top : 8rem;
+  width: 1280px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
 
-    
-    .tab__btn {
-        width: 25%;
-        height: 4.5rem;
-        text-align: center;
+  .tab__btn {
+    width: 25%;
+    height: 4.5rem;
+    text-align: center;
 
-        button {
-            width: 100%;
-            background: transparent;
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: 4.5rem;
-            color: #767676;
-            border-bottom: 1px solid #D8D8D8;
-        }
-
-        .active {
-            color :  $second-color;
-            border-bottom: 2px solid $second-color;
-        }
-
+    button {
+      width: 100%;
+      background: transparent;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      color: #767676;
+      border-bottom: 1px solid #d8d8d8;
     }
 
+    .active {
+      color: $second-color;
+      border-bottom: 2px solid $second-color;
+    }
+  }
 }
 
 .tab__content {
-    padding-top: 8rem;
+  padding-top: 8rem;
 
+  .data__title {
+    margin-bottom: 1.6rem;
+    text-align: left;
+    position: relative;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+  }
 
+  table {
+    width: 100%;
+    font-size: 1.5rem;
 
-    .data__title {
-        margin-bottom: 1.6rem;
-        text-align: left;
-        position: relative;
-        font-size: 2rem;
-        color: #333;
-        font-weight: 600;
+    tbody th {
+      font-weight: 500;
+      color: #000;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
     }
+  }
+}
 
-    table {
-        width: 100%;
-        font-size: 1.5rem;
-        
-        tbody th {    
-            font-weight: 500;
-            color: #000;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-        }
-
-        caption {
-            position: absolute;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            width: 1px;
-            height: 1px;
-            clip: rect(0, 0, 0, 0);
-            margin: -1px;
-        }
-    }
+.must__write {
+  position: relative;
+}
+.must__write::after {
+  content: " *";
+  color: #fe5555;
+  font-weight: bold;
+  // margin-left: 2px;
+  position: absolute;
+  right: -8px;
 }
 
 .table__horizontal {
-    height: 4.5rem;
-    border-top: 2px solid #333;
+  height: 5.8rem;
+  border-top: 2px solid #333;
 
+  table {
+    height: 100%;
+  }
 
-    table {height: 100%;}
+  tbody th {
+    background: #f8f8f8;
+    text-align: left;
+    padding: 0 1.5rem;
+    line-height: 4.5rem;
+  }
 
-    tbody th {
-        background: #F8F8F8;
-        text-align: left;
-        padding: 0 1.5rem;
-        line-height: 4.5rem;
-
-
-        .must__write {position: relative;}
-        .must__write::after {
-            content: " *";
-            color: #fe5555;
-            font-weight: bold;
-            // margin-left: 2px;
-            position: absolute;
-            right: -8px;
-        }
+  td {
+    padding: 10px;
+    select {
+      width: 100%;
+      height: 4rem;
+      border: 1px solid #ccc;
+      font-size: 1.5rem;
+      padding: 8px;
     }
-
-    td {
-        padding: 10px;
-        select {width: 100%; height: 4rem; border: 1px solid #ccc; font-size: 1.5rem; padding: 8px;}
-        input {width: calc(50% - 14px); border: 1px solid #ccc; height: 4rem; font-size: 1.5rem;}
-        border-bottom: 1px solid #ddd;
+    input {
+      width: calc(50% - 14px);
+      border: 1px solid #ccc;
+      height: 4rem;
+      font-size: 1.5rem;
     }
+    border-bottom: 1px solid #ddd;
+  }
+}
 
-    .input--flex {display: flex; justify-content: space-between; align-items: center; height: 100%;}
+.input--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .tab {
-    .dis__info:not(:first-child) {
-        padding-top: 5.6rem;
-        padding-bottom: 5.6rem;
-    }
+  .dis__info:not(:first-child) {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+  }
 
-    .table__vertical {
-        border-top: 2px solid #333;
-        width: 100%;
-    }
+  .table__vertical {
+    border-top: 2px solid #333;
+    width: 100%;
+  }
+}
+
+.table__vertical .align__cols,
+.table__horizontal .align__cols {
+  width: 15.38%;
 }
 
 .table__vertical table {
-    // 테이블 공통 영역
-    tr th:nth-child(1) { border-left: 1px solid #ddd;}
-    td {text-align: right; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+  // 테이블 공통 영역
+  tr th:nth-child(1) {
+    border-left: 1px solid #ddd;
+  }
+  td {
+    text-align: right;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
 
-    // 테이블 제목 영역
-    thead {
-        tr th {
-            height : 6rem;
-            background-color: #F8F8F8;
-            line-height: 6rem; border-right: 1px solid #ddd; 
-            border-bottom: 1px solid #ddd; text-align: center;
-            vertical-align: middle;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-        }
+  // 테이블 제목 영역
+  thead {
+    tr th {
+      height: 6rem;
+      background-color: #f8f8f8;
+      line-height: 6rem;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      vertical-align: middle;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
     }
+  }
 
-    // 테이블 내용 영역
-    tbody {
-        th {background-color: #F8F8F8;}
-        td {padding-right: 8px;}
-        td,th {height: 6rem; line-height: 6rem;}
+  // 테이블 내용 영역
+  tbody {
+    th {
+      background-color: #f8f8f8;
     }
+    td {
+      padding-right: 8px;
+    }
+    td,
+    th {
+      height: 6rem;
+      line-height: 6rem;
+    }
+  }
 }
 
-.expend__sit .table__vertical table thead tr th {line-height: 150%;}
-
-.tab__content .tab .expend__sit {padding-bottom: 0; margin-bottom: 5.6rem;}
+// 지출 현황
+.expend__sit .table__vertical table thead tr th {
+  line-height: 150%;
+}
+.tab__content .tab .expend__sit {
+  padding-bottom: 0;
+  margin-bottom: 5.6rem;
+}
 
 .expend__sit {
-    .tab__detail {overflow-x: auto;}
+  .tab__detail {
+    overflow-x: auto;
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+    overflow-x: auto;
+  }
+  // .min--width {min-width: 1400px;}
+}
 
-    table { table-layout:  fixed; width: 100%; overflow-x: auto;}
+// 주석폼
 
-
-    // .min--width {min-width: 1400px;}
+.table__last {
+  .input--flex input {
+    width: 100%;
+  }
 }

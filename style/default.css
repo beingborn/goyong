@@ -1532,10 +1532,24 @@ footer .footer__top .btn__flex .top__btn .last__btn {
     margin-top: 4rem;
   }
 }
+.mo__open__wrap {
+  display: none;
+}
+
 table {
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
+}
+table caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
 }
 
 #sub__wrap .content .visual__bg {
@@ -1559,6 +1573,14 @@ table {
   font-size: 1.5rem;
 }
 
+.mobile__tab {
+  display: none;
+}
+
+.mobile__tab__content {
+  display: none;
+}
+
 .tab__wrap {
   width: 1280px;
   margin: 0px auto;
@@ -1578,7 +1600,7 @@ table {
   font-weight: 700;
   line-height: 4.5rem;
   color: #767676;
-  border-bottom: 1px solid #D8D8D8;
+  border-bottom: 1px solid #d8d8d8;
 }
 .tab__wrap .tab__btn .active {
   color: #003675;
@@ -1606,39 +1628,31 @@ table {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.tab__content table caption {
+
+.must__write {
+  position: relative;
+}
+
+.must__write::after {
+  content: " *";
+  color: #fe5555;
+  font-weight: bold;
   position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-  margin: -1px;
+  right: -8px;
 }
 
 .table__horizontal {
-  height: 4.5rem;
+  height: 5.8rem;
   border-top: 2px solid #333;
 }
 .table__horizontal table {
   height: 100%;
 }
 .table__horizontal tbody th {
-  background: #F8F8F8;
+  background: #f8f8f8;
   text-align: left;
   padding: 0 1.5rem;
   line-height: 4.5rem;
-}
-.table__horizontal tbody th .must__write {
-  position: relative;
-}
-.table__horizontal tbody th .must__write::after {
-  content: " *";
-  color: #fe5555;
-  font-weight: bold;
-  position: absolute;
-  right: -8px;
 }
 .table__horizontal td {
   padding: 10px;
@@ -1657,7 +1671,8 @@ table {
   height: 4rem;
   font-size: 1.5rem;
 }
-.table__horizontal .input--flex {
+
+.input--flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1673,6 +1688,11 @@ table {
   width: 100%;
 }
 
+.table__vertical .align__cols,
+.table__horizontal .align__cols {
+  width: 15.38%;
+}
+
 .table__vertical table tr th:nth-child(1) {
   border-left: 1px solid #ddd;
 }
@@ -1683,7 +1703,7 @@ table {
 }
 .table__vertical table thead tr th {
   height: 6rem;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   line-height: 6rem;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -1691,12 +1711,13 @@ table {
   vertical-align: middle;
 }
 .table__vertical table tbody th {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 .table__vertical table tbody td {
   padding-right: 8px;
 }
-.table__vertical table tbody td, .table__vertical table tbody th {
+.table__vertical table tbody td,
+.table__vertical table tbody th {
   height: 6rem;
   line-height: 6rem;
 }
@@ -1719,13 +1740,27 @@ table {
   overflow-x: auto;
 }
 
+.table__last .input--flex input {
+  width: 100%;
+}
+
 /* 노트북 소형~ 중형 1080px ~ 1440px */
 @media all and (min-width: 1080px) and (max-width: 1440px) {
   .table__horizontal table tbody th th {
     font-size: 1.3rem;
   }
-  .table__vertical table tbody td, .table__vertical table thead th {
+  .table__vertical table tbody td,
+  .table__vertical table thead th {
     font-size: 1.3rem;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 880px) {
+  .table__vertical .align__cols {
+    width: 12.38%;
+  }
+  .table__vertical table tbody td,
+  .table__vertical table thead th {
+    font-size: 1.2rem;
   }
 }
 /* pc 전환시까지 변환 유지 되어야 하는 영역 */
@@ -1733,20 +1768,195 @@ table {
   .table__horizontal table tbody th th {
     font-size: 1.3rem;
   }
-  .table__vertical table tbody td, .table__vertical table thead th {
+  .table__vertical table tbody td,
+  .table__vertical table thead th {
     font-size: 1.3rem;
+    line-height: 3rem;
   }
 }
 /* 모바일 가로 & 테블릿 세로 480px ~ 767px */
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 480px) and (max-width: 766px) {
   .content .tab__wrap {
-    overflow: hidden;
-    flex-wrap: nowrap;
+    display: none;
   }
-  .content .tab__wrap .tab__btn {
-    width: 130px;
+  .content .tab__wrap {
+    display: none;
+  }
+  .content .tab__content {
+    display: none;
+  }
+  .content .mobile__tab {
+    display: block;
+  }
+  .content .mo__open__wrap {
+    display: block;
   }
 }
+/* 모바일 세로 (해상도 ~ 479px) 까지 */
+@media all and (max-width: 479px) {
+  #sub__wrap .content .visual__bg .visual__text {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content .tab__wrap {
+    display: none;
+  }
+  .content .tab__content {
+    display: none;
+  }
+  .content .mobile__tab {
+    display: block;
+  }
+  .content .mo__open__wrap {
+    display: block;
+  }
+}
+.mobile__tab {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mobile__tab .swiper .swiper-slide {
+  max-width: 130px;
+  text-align: center;
+}
+.mobile__tab .swiper .swiper-slide .btn--active {
+  color: #003675;
+  border-bottom: 2px solid #003675;
+  font-weight: 700;
+}
+.mobile__tab .swiper .swiper-slide button {
+  width: 100%;
+  height: 100%;
+  color: #555555;
+  background: transparent;
+  font-size: 1.9rem;
+  padding: 20px 16px;
+  white-space: nowrap;
+  border-bottom: 2px solid #ddd;
+  font-weight: 500;
+}
+
+.mobile__tab .first__mo {
+  margin-top: 5rem;
+}
+
+.mo__open__wrap table {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
+}
+.mo__open__wrap table tr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.mo__open__wrap table tr th:nth-of-type(2) {
+  margin-top: 2rem;
+}
+.mo__open__wrap table tr td {
+  margin-top: 1rem;
+}
+.mo__open__wrap table tr th,
+.mo__open__wrap table tr td {
+  width: 100%;
+}
+.mo__open__wrap table tr th select,
+.mo__open__wrap table tr td select {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.mo__open__wrap table tr th input,
+.mo__open__wrap table tr td input {
+  width: calc(50% - 14px);
+  border: 1px solid #ccc;
+  height: 4rem;
+}
+.mo__open__wrap .data__title {
+  font-size: 2.5rem;
+}
+
+.mo__open__wrap .mo__column thead tr {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.mo__open__wrap .mo__column tbody tr:nth-last-child(1) {
+  margin-bottom: 5rem;
+}
+
+.mo__open__wrap .mo__column tr {
+  flex-wrap: nowrap;
+  margin-top: 1.6rem;
+}
+
+.mo__open__wrap .mo__column .sub__element {
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-left: 8px;
+  color: #333;
+  margin-top: 2.4rem;
+}
+
+.mo__open__wrap .mo__column .sub__element.depth2 {
+  padding-left: 16px;
+}
+
+.mo__open__wrap .mo__column .sub__item-depth3 {
+  padding-left: 16px;
+}
+
+.mo__open__wrap .mo__column td {
+  margin-top: 0;
+}
+
+.mo__open__wrap .mo__column tr td:nth-child(2) {
+  text-align: right;
+}
+
+.data--open {
+  cursor: pointer;
+  width: 100%;
+}
+
+.data__toggle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.data--open {
+  position: relative;
+  border-top: 1px solid #ccc;
+  padding: 1.6rem 0;
+}
+.data--open .arrow__wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.data--open .arrow__wrap .arrow__top {
+  display: none;
+}
+.data--open .arrow__wrap .arrow__bottom {
+  display: block;
+}
+
+.data--open.on .arrow__top {
+  display: block;
+}
+
+.data--open.on .arrow__bottom {
+  display: none;
+}
+
+.mo__open__wrap table thead tr th {
+  font-size: 2rem;
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
