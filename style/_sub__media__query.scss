@@ -1,3 +1,8 @@
+// pc 비활성화
+.motab-1 {
+  display: none;
+}
+
 /* 노트북 소형~ 중형 1080px ~ 1440px */
 @media all and (min-width: 1080px) and (max-width: 1440px) {
   .table__horizontal table tbody th th {
@@ -32,10 +37,24 @@
     font-size: 1.3rem;
     line-height: 3rem;
   }
+
+  .motab-1 {
+    display: none;
+  }
 }
 
 /* 모바일 가로 & 테블릿 세로 480px ~ 767px */
 @media all and (min-width: 480px) and (max-width: 766px) {
+  #sub__wrap .content .visual__bg .visual__text {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
   // 기존 PC용 탭을 안보이게 합니다.
   .content {
     .tab__wrap {
@@ -46,10 +65,35 @@
       display: block;
     }
 
+    .tab__1 {
+      display: none;
+    }
+
     .motab-1,
     .motab-2 {
       display: block;
     }
+  }
+
+  .tab__content table {
+    font-size: 1.4rem;
+  }
+
+  .mo__open__wrap .motab-1 .market .market__info tr th {
+    margin-top: 2rem;
+  }
+}
+
+@media all and (min-width: 551px) and (max-width: 766px) {
+  .content .mobile__tab .swiper .swiper-slide {
+    max-width: 25%;
+  }
+}
+
+// 해상도 ~ 550px 까지는 max-width 130px , min-width 551~766까지는 max-width: 25%
+@media all and (max-width: 550px) {
+  .content .mobile__tab .swiper .swiper-slide {
+    max-width: 130px;
   }
 }
 

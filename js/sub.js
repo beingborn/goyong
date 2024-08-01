@@ -16,8 +16,11 @@ $(document).ready(function () {
     let currentActiveTabIndex = subTabBtn.index(
       $(".tab__wrap .tab__btn button.active")
     );
+
     activeTabIndex =
-      currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex; // 활성화 된 값이 없으면 기존 값 0을 그대로 유지
+      currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex;
+    // 활성화 된 값이 없으면 기존 값 0을 그대로 유지 근데 이 상태에서 모바일 화면으로 바껴서 다른 탭을 누르면 탭끼리 연동이 되지 않는데? => 그럼 다시 0번이 활성화 되겠구나
+    // 그러면 활성화된 값을 비교해봐야겠네. 모바일 탭에서의 값도 저장을 해야될 것 같고
 
     if (window.innerWidth > 767) {
       // 전체 콘텐츠를 숨기고 현재 활성화된 탭을 표시

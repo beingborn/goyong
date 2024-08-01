@@ -1,5 +1,15 @@
 // Pie Chart 1
 var pieChart1 = echarts.init(document.getElementById("pieChart1"));
+
+// 크기에 맞게 줄어드는 함수 기본 eChart class에 width 100%로 넘어둠. 그리고 그걸 감싸는 chartWrapper는 inner에 width의 퍼센트를 참고 하고 있음
+window.onresize = function () {
+  pieChart1.resize();
+  pieChart2.resize();
+  pieChart3.resize();
+  pieChart4.resize();
+  barChart1.resize();
+  barChart2.resize();
+};
 var pieOption1 = {
   chart__title: {
     text: "Pie Chart 1",
@@ -17,11 +27,11 @@ var pieOption1 = {
       type: "pie",
       radius: "50%",
       data: [
-        { value: 1048, name: "Search Engine" },
-        { value: 735, name: "Direct" },
-        { value: 580, name: "Email" },
-        { value: 484, name: "Union Ads" },
-        { value: 300, name: "Video Ads" },
+        { value: 1048, name: "현금 및 예금" },
+        { value: 735, name: "토지" },
+        { value: 580, name: "건물" },
+        { value: 484, name: "기타자산" },
+        { value: 300, name: "부재재" },
       ],
     },
   ],
@@ -47,11 +57,11 @@ var pieOption2 = {
       type: "pie",
       radius: "50%",
       data: [
-        { value: 1048, name: "Search Engine" },
-        { value: 735, name: "Direct" },
-        { value: 580, name: "Email" },
-        { value: 484, name: "Union Ads" },
-        { value: 300, name: "Video Ads" },
+        { value: 1048, name: "현금 및 예금" },
+        { value: 735, name: "토지" },
+        { value: 580, name: "건물" },
+        { value: 484, name: "기타자산" },
+        { value: 300, name: "부재재" },
       ],
     },
   ],
@@ -77,11 +87,11 @@ var pieOption3 = {
       type: "pie",
       radius: "50%",
       data: [
-        { value: 1048, name: "Search Engine" },
-        { value: 735, name: "Direct" },
-        { value: 580, name: "Email" },
-        { value: 484, name: "Union Ads" },
-        { value: 300, name: "Video Ads" },
+        { value: 1048, name: "현금 및 예금" },
+        { value: 735, name: "토지" },
+        { value: 580, name: "건물" },
+        { value: 484, name: "기타자산" },
+        { value: 300, name: "부재재" },
       ],
     },
   ],
@@ -107,11 +117,11 @@ var pieOption4 = {
       type: "pie",
       radius: "50%",
       data: [
-        { value: 1048, name: "Search Engine" },
-        { value: 735, name: "Direct" },
-        { value: 580, name: "Email" },
-        { value: 484, name: "Union Ads" },
-        { value: 300, name: "Video Ads" },
+        { value: 1048, name: "현금 및 예금" },
+        { value: 735, name: "토지" },
+        { value: 580, name: "건물" },
+        { value: 484, name: "기타자산" },
+        { value: 300, name: "부재재" },
       ],
     },
   ],
@@ -130,7 +140,7 @@ var barOption1 = {
   },
   xAxis: {
     type: "category",
-    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    data: ["자산", "부채"],
   },
   yAxis: {
     type: "value",
@@ -138,7 +148,27 @@ var barOption1 = {
   series: [
     {
       type: "bar",
-      data: [120, 200, 150, 80, 70, 110, 130],
+      data: [
+        {
+          value: 1807,
+          label: {
+            show: true,
+          },
+          itemStyle: {
+            color: "#8ECCE2",
+          },
+        },
+        {
+          value: 1807,
+          label: {
+            show: true,
+          },
+          itemStyle: {
+            color: "#91cc75",
+          },
+        },
+      ],
+      barWidth: "40%",
     },
   ],
 };
@@ -156,7 +186,7 @@ var barOption2 = {
   },
   xAxis: {
     type: "category",
-    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    data: ["자산", "부채"],
   },
   yAxis: {
     type: "value",
@@ -164,7 +194,27 @@ var barOption2 = {
   series: [
     {
       type: "bar",
-      data: [120, 200, 150, 80, 70, 110, 130],
+      data: [
+        {
+          value: 1807,
+          label: {
+            show: true,
+          },
+          itemStyle: {
+            color: "#A4D594",
+          },
+        },
+        {
+          value: 1807,
+          label: {
+            show: true,
+          },
+          itemStyle: {
+            color: "#F8C862",
+          },
+        },
+      ],
+      barWidth: "40%",
     },
   ],
 };
