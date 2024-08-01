@@ -58,15 +58,18 @@
   }
 }
 
+// 첫번째 모바일 탭만 마진탑 5em
 .mobile__tab .first__mo {
   margin-top: 5rem;
 }
 
+// 전체 테이블 기본 스타일
 .mo__open__wrap {
-
-  .mobile__con {margin: 4rem 0;
-    
-    .market {margin-bottom: 4rem;}
+  .mobile__con {
+    margin: 4rem 0;
+    .market {
+      margin-bottom: 4rem;
+    }
   }
 
   table {
@@ -110,42 +113,60 @@
   }
 }
 
-.mo__open__wrap .mo__column thead tr {
-  padding-bottom: 1.3rem;
-  border-bottom: 1px solid #ccc;
-}
-.mo__open__wrap .mo__column tbody tr:nth-last-child(1) {
-  margin-bottom: 5rem;
-}
-.mo__open__wrap .mo__column tr {
-  flex-wrap: nowrap;
-  margin-top: 1.6rem;
-}
-.mo__open__wrap .mo__column .sub__element {
-  font-weight: 700;
-  font-size: 1.8rem;
-  padding-left: 8px;
-  color: #333;
-  margin-top: 2.4rem;
-}
+// 아코디언 테이블 스타일
+.mo__open__wrap {
+  .mo__column {
+    thead {
+      tr {
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid #ccc;
+      }
+    }
 
-.mo__open__wrap .mo__column .sub__element.depth2 {
-  padding-left: 16px;
-}
+    tbody {
+      tr:nth-last-child(1) {
+        margin-bottom: 5rem;
+      }
+    }
 
-.mo__open__wrap .mo__column .sub__item-depth2 {
-  padding-left: 1.2rem;
-}
+    tr {
+      flex-wrap: nowrap;
+      margin-top: 1.6rem;
 
-.mo__open__wrap .mo__column .sub__item-depth3 {
-  padding-left: 16px;
-}
+      td {
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
 
-.mo__open__wrap .mo__column td {
-  margin-top: 0;
-}
-.mo__open__wrap .mo__column tr td:nth-child(2) {
-  text-align: right;
+    // 계층 구조 1 (당기수입)
+    .sub__element {
+      font-weight: 700;
+      font-size: 1.8rem;
+      padding-left: 8px;
+      color: #333;
+      margin-top: 2.4rem;
+
+      &.depth2 {
+        padding-left: 16px;
+      }
+    }
+
+    // 계층 구조 2 (하부내역)
+    .sub__item-depth2 {
+      padding-left: 1.2rem;
+    }
+
+    // 계층 구조 3 (하부내역)
+    .sub__item-depth3 {
+      padding-left: 16px;
+    }
+
+    td {
+      margin-top: 0;
+    }
+  }
 }
 
 .data--open {
@@ -188,4 +209,21 @@
 
 .mo__open__wrap table thead tr th {
   font-size: 2rem;
+}
+
+// 노동 조합 정보
+
+.list__btn__group {
+  text-align: right;
+
+  button {
+    background-color: #0c3975;
+    color: #fff;
+    border: 0;
+    font-size: 1.6rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    padding: 0 4.2rem;
+    margin-top: 6rem;
+  }
 }

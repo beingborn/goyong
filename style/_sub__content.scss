@@ -1,9 +1,9 @@
 // 서브 페이지들의 컨텐츠는 공통적으로 #sub__wrap을 이용합니다.
 // page 1 - 회계공시 열람
 
-.mo__open__wrap {
-  display: none;
-}
+// .mo__open__wrap {
+//   display: none;
+// }
 
 table {
   border: 0;
@@ -40,6 +40,7 @@ table {
         h2 {
           font-size: 3.2rem;
           margin-bottom: 2.8rem;
+          white-space: nowrap;
         }
         p {
           font-size: 1.5rem;
