@@ -58,6 +58,9 @@
 
 /* 모바일 가로 & 테블릿 세로 480px ~ 767px */
 @media all and (min-width: 480px) and (max-width: 766px) {
+
+  .content .tab__content {padding-top: 4rem;}
+
   #sub__wrap .content .visual__bg .visual__text {
     text-align: center;
     left: 50%;
@@ -112,6 +115,10 @@
 
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
 @media all and (max-width: 479px) {
+
+  .content .tab__content {padding-top: 4rem;}
+
+
   #sub__wrap .content .visual__bg .visual__text {
     text-align: center;
     left: 50%;

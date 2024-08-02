@@ -1,11 +1,9 @@
 /**
  * 서브 탭 변환
- *
- *
  */
 
-
-
+// 현재 문제 : 클릭 시 activeTabIndex값은 잘 출력되고 있으나. 어딘가에서 초기화가 되서 모바일보다 작아질 시 
+// 해당 값이 초기화되고 있음
 
 $(document).ready(function () {
   let subTabBtn = $(".tab__wrap .tab__btn button");
@@ -16,48 +14,52 @@ $(document).ready(function () {
   let activeTabIndex = 0; // PC 및 모바일 공통의 활성화된 탭 인덱스
   let isMobileView = window.innerWidth < 767; // 초기 화면 크기 판단
 
-  function initializeTabs() {
-    // 현재 활성화된 탭의 인덱스를 저장
-    let currentActiveTabIndex = subTabBtn.index(
-      $(".tab__wrap .tab__btn button.active")
-    );
-    activeTabIndex =
-      currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex;
 
+
+  function initializeTabs() {
+    let currentActiveTabIndex;
+    if ($('.tab__wrap').css('display') == 'block') {
+      currentActiveTabIndex = subTabBtn.index($(".tab__wrap .tab__btn button.active"));
+    } else {
+      currentActiveTabIndex = moTabBtn.index($(".mobile__tab .swiper .swiper-slide button.btn--active"));
+    }
+    console.log(currentActiveTabIndex)
+    activeTabIndex = currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex;
     updateView();
   }
 
   function updateView() {
     if (isMobileView) {
-  
+      moTabBtn.removeClass("btn--active");
+      moTabBtn.eq(activeTabIndex).addClass("btn--active");
+      moTabContent.hide().eq(activeTabIndex).show();
+
       if (activeTabIndex == 2) {
         moTabContent.hide();
         $('.tab__3').show() // 모바일로 변해도 pc컨텐츠 유지한 tab show하기
       } else if (activeTabIndex == 3) {
         $(".tab__4").show();
-      } else {
-        moTabBtn.removeClass("btn--active");
-        moTabBtn.eq(activeTabIndex).addClass("btn--active");
-        moTabContent.hide().eq(activeTabIndex).show();
-      }
+      } 
     }
     
     // 모바일 뷰가 아닐때
     subTabBtn.removeClass("active");
     subTabBtn.eq(activeTabIndex).addClass("active");
     subTabContent.hide().eq(activeTabIndex).show();
+
+
+    if($('.content .motab-1').css('display') == 'block') {
+      subTabContent.eq(0).hide();
+    }
   }
-
-
 
   function handleResize() {
     // 화면이 변경될때마다 isMobileView 부분을 true, false 를 검사함
     isMobileView = window.innerWidth < 767;
-
     // 초기화 함수가 실행될 때 initailaizeTabs 함수가 실행됌
     initializeTabs();
   }
-
+      
   subTabBtn.click(function () {
     let tabIndex = $(this).parent().index();
 
@@ -82,6 +84,7 @@ $(document).ready(function () {
       $(".tab__4").hide();
       $(".tab__3").show();
     } else if (moTabIndex == 3) {
+      subTabContent.hide();
       moTabContent.hide();
       $(".tab__3").hide();
       $(".tab__4").show();
@@ -89,6 +92,7 @@ $(document).ready(function () {
 
     // 모바일 탭 인덱스를 PC 탭 인덱스에도 반영
     activeTabIndex = moTabIndex;
+    console.log('모바일 버튼 클릭시', activeTabIndex)
     if (!isMobileView) {
       subTabBtn.removeClass("active");
       subTabBtn.eq(activeTabIndex).addClass("active");
@@ -96,7 +100,6 @@ $(document).ready(function () {
     }
   });
 
-  // 초기화: 첫 번째 탭과 콘텐츠를 활성화
   initializeTabs();
 
   // 화면 크기 변경 시 초기화 함수 재실행
@@ -105,10 +108,11 @@ $(document).ready(function () {
   });
 });
 
-/** 모바일 슬라이드 토글
- *
- *
- */
+
+         
+/** 모바일 슬라이드 토글 */
+ 
+ 
 
 let dataOpen = $(".data--open");
 
@@ -137,3 +141,17 @@ var swiper = new Swiper(".moTabSwiper", {
     prevEl: ".moTabSwiper.swiper-button-prev",
   },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1135,6 +1135,7 @@
                       <col width="auto" />
                       <col width="15.38%" />
                       <col width="auto" />
+                      <col width="auto" />
                     </colgroup>
                     <tbody>
                       <tr>
@@ -1670,18 +1671,124 @@
               </div>
             </div>
             <!-- 탭 4 시계열 차트 -->
+             
             <div class="tab__4 tab">
               <div class="container">
                 <div class="inner">
+                  <!-- input -->   
+                  <div
+                  class="tab__detail table__horizontal tab__4__table"
+                  style="border-top: 1px solid #ccc"
+                >
+                  <table>
+                    <caption>
+                      시계열차트
+                    </caption>
+                    <colgroup>
+                      <col width="15.38%" class="first__col"/>
+                      <col width="auto" />
+                      <col width="15.38%" class="third__col"/>
+                      <col width="auto" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="col">
+                          <label for="" class="must__write" style="white-space: nowrap;">노동조합(산하조직)명</label>
+                        </th>
+                        <td>
+                          <input type="text" value="한국교통안전공단노동조합" style="width: 100%" />
+                        </td>
+                        <th scope="col">
+                          <label for="" class="must__write" style="white-space: nowrap;">설립연원일</label>
+                        </th>
+                        <td class="input--flex">
+                          <input type="text" value="">
+                          <span>~</span>
+                          <select name="셀렉트입니다" id="year--select">
+                            <option value="2021">2021</option>
+                            <option value="2021">2022</option>
+                            <option value="2021">2023</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mo__tab__table">
+                  <div class="mo__tab__detail">
+                    <table>
+                      <caption>
+                        시계열차트
+                      </caption>
+                      <colgroup>
+                        <col/>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <label for="" class="must__write" style="white-space: nowrap;">노동조합(산하조직)명</label>
+                          </th>
+                          <td class="mo__4__group__wrap">
+                          <input type="text" value="한국교통안전공단노동조합" style="width: 100%" class="mo__4__group" />
+                          </td>
+                          <th>
+                            <label for="" class="must__write" style="white-space: nowrap;">설립연원일</label>
+                          </th>
+                          <td class="input--flex">
+                            <input type="text" value="" class="mo__4__input">
+                            <span>~</span>
+                            <select name="셀렉트입니다" id="year--select" class="mo__4__select">
+                              <option value="2021">2021</option>
+                              <option value="2021">2022</option>
+                              <option value="2021">2023</option>
+                            </select>
+                          </td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+             
+
+                <!--  -->
                   <div class="chart-block">
-                    <div class="chart__wrapper">
+                    <div class="tab__4__chart__wrapper">
                       <div class="chart__title">
-                        <h2>자산 및 부채현황</h2>
+                        <h2>자산</h2>
                         <span>(단위:천원)</span>
                       </div>
-                      <div id="pieChart1" class="echart"></div>
+                      <div id="barChart3" class="echart"></div>
+                    </div>
+                    <div class="tab__4__chart__wrapper">
+                      <div class="chart__title">
+                        <h2>부채</h2>
+                        <span>(단위:천원)</span>
+                      </div>
+                      <div id="barChart4" class="echart"></div>
+                    </div>
+                    <div class="tab__4__chart__wrapper">
+                      <div class="chart__title">
+                        <h2>수입</h2>
+                        <span>(단위:천원)</span>
+                      </div>
+                      <div id="barChart5" class="echart"></div>
+                    </div>
+                    <div class="tab__4__chart__wrapper">
+                      <div class="chart__title">
+                        <h2>지출</h2>
+                        <span>(단위:천원)</span>
+                      </div>
+                      <div id="barChart6" class="echart"></div>
+                    </div>
                     </div>
                 </div>
+              </div>
+              <div class="list__btn__group">
+                <button type="button">목록</button>
               </div>
             </div>
           </div>
@@ -1772,9 +1879,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/default.js"></script>
-    <script src="js/sub.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
     <script src="js/dataChart.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/sub.js"></script>
+
   </body>
 </html>

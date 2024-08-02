@@ -28,6 +28,7 @@
         border-bottom: 2px solid #ddd;
         font-weight: 500;
         // white-space: nowrap;
+        cursor: pointer;
       }
     }
   }
@@ -268,3 +269,9 @@
 
 .tab__content table tbody .cols2 {line-height: 130%; width: 15.38%; height: 100%;}
 .tab__content table tbody .cols2 .must__write {position: absolute; top: 50%; transform: translateY(-50%);}
+
+// 탭 4 시계열 차트
+
+.tab__4__table {
+  margin-bottom: 2.8rem;
+}

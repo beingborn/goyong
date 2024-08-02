@@ -1609,6 +1609,7 @@ table caption {
   text-align: center;
 }
 .tab__wrap .tab__btn button {
+  cursor: pointer;
   width: 100%;
   background: transparent;
   font-size: 2rem;
@@ -1819,6 +1820,9 @@ table caption {
 }
 /* 모바일 가로 & 테블릿 세로 480px ~ 767px */
 @media all and (min-width: 480px) and (max-width: 766px) {
+  .content .tab__content {
+    padding-top: 4rem;
+  }
   #sub__wrap .content .visual__bg .visual__text {
     text-align: center;
     left: 50%;
@@ -1859,6 +1863,9 @@ table caption {
 }
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
 @media all and (max-width: 479px) {
+  .content .tab__content {
+    padding-top: 4rem;
+  }
   #sub__wrap .content .visual__bg .visual__text {
     text-align: center;
     left: 50%;
@@ -1909,6 +1916,7 @@ table caption {
   white-space: nowrap;
   border-bottom: 2px solid #ddd;
   font-weight: 500;
+  cursor: pointer;
 }
 .mobile__tab .swiper-button-next {
   border-radius: 50%;
@@ -2122,6 +2130,10 @@ table caption {
   transform: translateY(-50%);
 }
 
+.tab__4__table {
+  margin-bottom: 2.8rem;
+}
+
 .chart-block {
   display: flex;
   justify-content: space-between;
@@ -2130,6 +2142,50 @@ table caption {
 
 .chart__wrapper {
   width: calc(50% - 20px);
+}
+
+.mo__tab__table {
+  display: none;
+  margin-bottom: 5rem;
+}
+
+.tab__content .mo__tab__table table {
+  font-size: 1.5rem;
+}
+
+.tab__content .mo__tab__table table tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab__content .mo__tab__table table tbody th {
+  font-size: 1.6rem;
+  text-align: left;
+  border: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tab__content .mo__tab__table table tbody td {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.mo__4__input, .mo__4__select {
+  height: 4rem;
+  line-height: 4rem;
+  border: 1px solid #CDCCCD;
+  width: calc(50% - 1rem);
+}
+
+.mo__4__group__wrap {
+  margin-bottom: 2rem;
+}
+
+.mo__4__group {
+  height: 4rem;
+  line-height: 4rem;
+  border: 1px solid #CDCCCD;
 }
 
 .echart {
@@ -2154,6 +2210,17 @@ table caption {
   font-size: 1.7rem;
 }
 
+.tab__4__table {
+  margin-bottom: 2rem;
+}
+.tab__4__table .input--flex input, .tab__4__table .input--flex select {
+  width: calc(50% - 1rem);
+}
+
+.tab__4__chart__wrapper {
+  width: calc(25% - 2rem);
+}
+
 @media all and (min-width: 480px) and (max-width: 766px) {
   .echart {
     width: 100%;
@@ -2162,6 +2229,18 @@ table caption {
     width: 100%;
   }
   .chart-block {
+    display: block;
+  }
+  .tab__4__chart__wrapper {
+    width: 100%;
+  }
+  .tab__4 .chart {
+    width: 100%;
+  }
+  .tab__4__table {
+    display: none;
+  }
+  .mo__tab__table {
     display: block;
   }
 }
@@ -2174,6 +2253,28 @@ table caption {
   }
   .chart-block {
     display: block;
+  }
+  .tab__4__chart__wrapper {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1079px) {
+  .tab__4__chart__wrapper {
+    width: calc(50% - 2rem);
+  }
+  .tab__4 .echart {
+    width: 100%;
+  }
+  .first__col, .third__col {
+    width: 12.38%;
+  }
+}
+@media all and (min-width: 1080px) and (max-width: 1440px) {
+  .tab__4__chart__wrapper {
+    width: calc(50% - 2rem);
+  }
+  .tab__4 .echart {
+    width: 100%;
   }
 }
 * {
