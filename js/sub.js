@@ -4,6 +4,9 @@
  *
  */
 
+
+
+
 $(document).ready(function () {
   let subTabBtn = $(".tab__wrap .tab__btn button");
   let subTabContent = $(".tab__content .tab");
@@ -21,24 +24,31 @@ $(document).ready(function () {
     activeTabIndex =
       currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex;
 
-    if (isMobileView) {
-      moTabBtn.removeClass("btn--active");
-      moTabBtn.eq(activeTabIndex).addClass("btn--active");
-      moTabContent.hide().eq(activeTabIndex).show();
+    updateView();
+  }
 
+  function updateView() {
+    if (isMobileView) {
+  
       if (activeTabIndex == 2) {
         moTabContent.hide();
-        $(".tab__3").show();
+        $('.tab__3').show() // 모바일로 변해도 pc컨텐츠 유지한 tab show하기
       } else if (activeTabIndex == 3) {
-        moTabContent.hide();
         $(".tab__4").show();
-      } // 모바일 뷰에 있을 경우 우선 다 숨기고 3,4번 컨텐츠는 숨겨놨던 pc 콘텐츠를 다시 보여줌
-    } else {
-      subTabBtn.removeClass("active");
-      subTabBtn.eq(activeTabIndex).addClass("active");
-      subTabContent.hide().eq(activeTabIndex).show();
-    } // 이 부분이 PC 뷰일 때
+      } else {
+        moTabBtn.removeClass("btn--active");
+        moTabBtn.eq(activeTabIndex).addClass("btn--active");
+        moTabContent.hide().eq(activeTabIndex).show();
+      }
+    }
+    
+    // 모바일 뷰가 아닐때
+    subTabBtn.removeClass("active");
+    subTabBtn.eq(activeTabIndex).addClass("active");
+    subTabContent.hide().eq(activeTabIndex).show();
   }
+
+
 
   function handleResize() {
     // 화면이 변경될때마다 isMobileView 부분을 true, false 를 검사함
@@ -53,27 +63,13 @@ $(document).ready(function () {
 
     subTabBtn.removeClass("active");
     $(this).addClass("active");
-
     subTabContent.hide().eq(tabIndex).show();
 
     // 클릭한 탭의 인덱스를 저장
     activeTabIndex = tabIndex;
-    if (isMobileView) {
-      moTabBtn.removeClass("btn--active");
-      moTabBtn.eq(activeTabIndex).addClass("btn--active");
-      moTabContent.hide().eq(activeTabIndex).show();
-
-      if (tabIndex == 2) {
-        moTabContent.hide();
-        $(".tab__3").show();
-      } else if (tabIndex == 3) {
-        moTabContent.hide();
-        $(".tab__4").show();
-      }
-    }
   });
 
-  moTabBtn.click(function () {
+    moTabBtn.click(function () {
     let moTabIndex = $(this).parent().index();
     moTabBtn.removeClass("btn--active");
     $(this).addClass("btn--active");
@@ -82,9 +78,12 @@ $(document).ready(function () {
 
     if (moTabIndex == 2) {
       moTabContent.hide();
+
+      $(".tab__4").hide();
       $(".tab__3").show();
     } else if (moTabIndex == 3) {
       moTabContent.hide();
+      $(".tab__3").hide();
       $(".tab__4").show();
     }
 
