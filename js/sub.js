@@ -4,33 +4,48 @@
  *
  */
 
-//현재 문제: 초기화 로직이 매번 이루어지는데 예를 들어 다른 버튼을 클릭한 상태에서 다시 줄어들었을 때 무조건 1번을 show 하기 떄문에 기존 정보를 잃어버린다.
-
 $(document).ready(function () {
   let subTabBtn = $(".tab__wrap .tab__btn button");
   let subTabContent = $(".tab__content .tab");
-  let activeTabIndex = 0; // 처음에는 첫 번째 탭을 활성화
+  let moTabBtn = $(".mobile__tab .swiper .swiper-slide button");
+  let moTabContent = $(".mo__open__wrap .mobile__con");
+
+  let activeTabIndex = 0; // PC 및 모바일 공통의 활성화된 탭 인덱스
+  let isMobileView = window.innerWidth < 767; // 초기 화면 크기 판단
 
   function initializeTabs() {
     // 현재 활성화된 탭의 인덱스를 저장
     let currentActiveTabIndex = subTabBtn.index(
       $(".tab__wrap .tab__btn button.active")
     );
-
     activeTabIndex =
       currentActiveTabIndex !== -1 ? currentActiveTabIndex : activeTabIndex;
-    // 활성화 된 값이 없으면 기존 값 0을 그대로 유지 근데 이 상태에서 모바일 화면으로 바껴서 다른 탭을 누르면 탭끼리 연동이 되지 않는데? => 그럼 다시 0번이 활성화 되겠구나
-    // 그러면 활성화된 값을 비교해봐야겠네. 모바일 탭에서의 값도 저장을 해야될 것 같고
 
-    if (window.innerWidth > 767) {
-      // 전체 콘텐츠를 숨기고 현재 활성화된 탭을 표시
+    if (isMobileView) {
+      moTabBtn.removeClass("btn--active");
+      moTabBtn.eq(activeTabIndex).addClass("btn--active");
+      moTabContent.hide().eq(activeTabIndex).show();
+
+      if (activeTabIndex == 2) {
+        moTabContent.hide();
+        $(".tab__3").show();
+      } else if (activeTabIndex == 3) {
+        moTabContent.hide();
+        $(".tab__4").show();
+      } // 모바일 뷰에 있을 경우 우선 다 숨기고 3,4번 컨텐츠는 숨겨놨던 pc 콘텐츠를 다시 보여줌
+    } else {
       subTabBtn.removeClass("active");
       subTabBtn.eq(activeTabIndex).addClass("active");
       subTabContent.hide().eq(activeTabIndex).show();
-    } else {
-      // 767px 보다 작으면 PC 콘텐츠를 모두 숨긴다.
-      subTabContent.hide();
-    }
+    } // 이 부분이 PC 뷰일 때
+  }
+
+  function handleResize() {
+    // 화면이 변경될때마다 isMobileView 부분을 true, false 를 검사함
+    isMobileView = window.innerWidth < 767;
+
+    // 초기화 함수가 실행될 때 initailaizeTabs 함수가 실행됌
+    initializeTabs();
   }
 
   subTabBtn.click(function () {
@@ -43,39 +58,20 @@ $(document).ready(function () {
 
     // 클릭한 탭의 인덱스를 저장
     activeTabIndex = tabIndex;
-  });
+    if (isMobileView) {
+      moTabBtn.removeClass("btn--active");
+      moTabBtn.eq(activeTabIndex).addClass("btn--active");
+      moTabContent.hide().eq(activeTabIndex).show();
 
-  // 초기화: 첫 번째 탭과 콘텐츠를 활성화 (화면 크기 조건 추가)
-  initializeTabs();
-
-  // 화면 크기 변경 시 초기화 함수 재실행
-  $(window).resize(function () {
-    initializeTabs();
-  });
-});
-
-// 모바일로 바뀌어도 tab-3는 바뀌면 안된다.
-// 여기서 만약에 3번이 눌리면 moTabContent가 아닌 ~ 해당 인덱스의
-$(document).ready(function () {
-  let moTabBtn = $(".mobile__tab .swiper .swiper-slide button");
-  let moTabContent = $(".mo__open__wrap .mobile__con");
-  let moActiveIndex = 0; // 처음에는 첫번째 컨텐츠를 활성화
-
-  function initializeMo() {
-    let currentMoActiveTabIndex = moTabBtn.index(
-      $(".mobile__tab .swiper .swiper-slide button.btn--active")
-    );
-    moActiveIndex =
-      currentMoActiveTabIndex !== -1 ? currentMoActiveTabIndex : moActiveIndex; // 활성화 된 값이 없으면 기존 값 0을 그대로 유지
-
-    // 767보다 화면 사이즈가 크면 전체 Content를 숨기고 1번만 show 시켜놓은다.
-    if (window.innerWidth < 767) {
-      moTabBtn.eq(0).addClass("btn--active");
-      moTabContent.hide().eq(moActiveIndex).show(); //임시로 켜둠
-    } else {
-      moTabContent.hide();
+      if (tabIndex == 2) {
+        moTabContent.hide();
+        $(".tab__3").show();
+      } else if (tabIndex == 3) {
+        moTabContent.hide();
+        $(".tab__4").show();
+      }
     }
-  }
+  });
 
   moTabBtn.click(function () {
     let moTabIndex = $(this).parent().index();
@@ -83,26 +79,30 @@ $(document).ready(function () {
     $(this).addClass("btn--active");
 
     moTabContent.hide().eq(moTabIndex).show();
-    $(".tab__3").hide();
-    $(".tab__4").hide();
 
     if (moTabIndex == 2) {
       moTabContent.hide();
-      $(".tab__4").hide();
       $(".tab__3").show();
     } else if (moTabIndex == 3) {
       moTabContent.hide();
-      $(".tab__3").hide();
       $(".tab__4").show();
+    }
+
+    // 모바일 탭 인덱스를 PC 탭 인덱스에도 반영
+    activeTabIndex = moTabIndex;
+    if (!isMobileView) {
+      subTabBtn.removeClass("active");
+      subTabBtn.eq(activeTabIndex).addClass("active");
+      subTabContent.hide().eq(activeTabIndex).show();
     }
   });
 
-  // 초기화: 첫 번째 탭과 콘텐츠를 활성화 (화면 크기 조건 추가)
-  initializeMo();
+  // 초기화: 첫 번째 탭과 콘텐츠를 활성화
+  initializeTabs();
 
   // 화면 크기 변경 시 초기화 함수 재실행
   $(window).resize(function () {
-    initializeMo();
+    handleResize();
   });
 });
 

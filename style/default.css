@@ -1670,7 +1670,7 @@ table caption {
   line-height: 4.5rem;
 }
 .table__horizontal td {
-  padding: 10px;
+  padding: 0 10px;
   border-bottom: 1px solid #ddd;
 }
 .table__horizontal td select {
@@ -1710,6 +1710,8 @@ table caption {
 
 .table__vertical table tr th:nth-child(1) {
   border-left: 1px solid #ddd;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 .table__vertical table td {
   text-align: right;
@@ -1741,25 +1743,36 @@ table caption {
   line-height: 150%;
 }
 
+.expend__sit .table__vertical table {
+  table-layout: fixed;
+}
+
 .tab__content .tab .expend__sit {
   padding-bottom: 0;
   margin-bottom: 5.6rem;
+}
+
+.earn__sit .tab__detail {
+  overflow-x: auto;
+}
+.earn__sit table {
+  min-width: 84rem;
 }
 
 .expend__sit .tab__detail {
   overflow-x: auto;
 }
 .expend__sit table {
+  min-width: 102.4rem;
   table-layout: fixed;
-  width: 100%;
-  overflow-x: auto;
 }
 
 .table__last .input--flex input {
   width: 100%;
 }
 
-.motab-1 {
+.motab-1,
+.motab-2 {
   display: none;
 }
 
@@ -1777,9 +1790,17 @@ table caption {
   .table__vertical .align__cols {
     width: 12.38%;
   }
+  .long__th {
+    width: 20%;
+  }
   .table__vertical table tbody td,
   .table__vertical table thead th {
     font-size: 1.2rem;
+  }
+  .table__vertical table tr th:nth-child(1) {
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 0 8px;
   }
 }
 /* pc 전환시까지 변환 유지 되어야 하는 영역 */
@@ -1890,11 +1911,13 @@ table caption {
   font-weight: 500;
 }
 .mobile__tab .swiper-button-next {
+  border-radius: 50%;
   background: url(../img/mo__tab__next.png) no-repeat center;
   background-size: 100% auto;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 .mobile__tab .swiper-button-prev {
+  border-radius: 50%;
   background: url(../img/mo__tab__prev.png) no-repeat center;
   background-size: 100% auto;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -2005,9 +2028,30 @@ table caption {
   width: 100%;
 }
 
+.last--open::after {
+  content: "";
+  display: inline-block;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+}
+
 .data--open {
   position: relative;
   padding: 1.6rem 0;
+}
+.data--open::before {
+  content: "";
+  display: inline-block;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
 }
 .data--open .arrow__wrap {
   position: absolute;
@@ -2017,9 +2061,15 @@ table caption {
 }
 .data--open .arrow__wrap .arrow__top {
   display: none;
+  width: 16px;
+  height: 16px;
+  background: url(../img/arrow__top.png) no-repeat center;
 }
 .data--open .arrow__wrap .arrow__bottom {
   display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/arrow__bottom.png) no-repeat center;
 }
 
 .data--open.on .arrow__top {
@@ -2046,6 +2096,30 @@ table caption {
   line-height: 4.8rem;
   padding: 0 4.2rem;
   margin-top: 6rem;
+}
+
+.mo__open__wrap .mobile__market__input {
+  width: 100%;
+}
+
+.mo__open__wrap .mobile__market__input__2 {
+  width: calc(50% - 1em);
+}
+
+.mo__open__wrap .mobile__market__input__3 {
+  width: calc(33.33% - 1em);
+}
+
+.tab__content table tbody .cols2 {
+  line-height: 130%;
+  width: 15.38%;
+  height: 100%;
+}
+
+.tab__content table tbody .cols2 .must__write {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .chart-block {
@@ -2080,11 +2154,6 @@ table caption {
   font-size: 1.7rem;
 }
 
-/* @media (max-width: 768px) {
-    .echart {
-      width: 100%;
-    }
-  } */
 @media all and (min-width: 480px) and (max-width: 766px) {
   .echart {
     width: 100%;

@@ -1,5 +1,7 @@
 // pc 비활성화
-.motab-1 {
+
+.motab-1,
+.motab-2 {
   display: none;
 }
 
@@ -20,10 +22,21 @@
     width: 12.38%;
   }
 
+  .long__th  {
+    width: 20%;
+  }
+  .wrap .tab__content table tbody .cols2 {}
   .table__vertical table tbody td,
   .table__vertical table thead th {
     font-size: 1.2rem;
   }
+
+  .table__vertical table tr th:nth-child(1) {
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+
 }
 
 /* pc 전환시까지 변환 유지 되어야 하는 영역 */

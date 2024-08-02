@@ -4,20 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회계공시 열람</title>
-
     <link rel="stylesheet" href="style/default.css" />
     <link rel="stylesheet" href="style/reset.css" />
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="img/korea__favicon.ico" />
-    <link
-      rel="stylesheet"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <div class="skip__nav">
@@ -126,104 +118,62 @@
             <div class="swiper-button-prev"></div>
           </div>
         </div>
+        <!-- 모바일컨테이너 -->
         <div class="mo__open__wrap">
           <div class="inner">
             <div class="mobile__con motab-1">
-              <!-- 노동 조합 정보 -->
+              <!-- 노동 조합 정보 모바일 -->
               <div class="market">
                 <h2 class="data__title">노동조합정보</h2>
                 <div class="mo__tab__detail">
-                  <table class="market__info">
-                    <caption>
-                      공시정보(회계연도,회계기간)출력폼
-                    </caption>
-                    <colgroup>
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
+                  <table class="market__info" id="UnionInformationMobile">
+                    <caption>공시정보(회계연도,회계기간)출력폼</caption>
+                    <colgroup><col /><col /><col /></colgroup>
                     <tbody>
                       <tr>
                         <th scope="col">
-                          <label for="" class="must__write"
-                            >노동자명칭(또는 산하조직)</label
-                          >
+                          <label for="" class="must__write">노동자명칭(또는 산하조직)</label>
                         </th>
                         <td>
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: 100%"
-                          />
+                          <input class="mobile__market__input" type="text"/>
                         </td>
+
                         <th scope="col">
-                          <label for="" class="must__write"
-                            >노동조합 약어명</label
-                          >
+                          <label for="" class="must__write" style="white-space: nowrap;">노동조합 약어명</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: 100%"
-                          />
+                          <input class="mobile__market__input" type="text"/>
                         </td>
+
                         <th scope="col">
                           <label for="" class="must__write">대표자</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: 100%"
-                          />
+                          <input class="mobile__market__input" type="text"/>
                         </td>
+
                         <th scope="col">
                           <label for="" class="must__write">조직형태</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: calc(50% - 1rem)"
-                          />
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: calc(50% - 1rem)"
-                          />
+                          <input class="mobile__market__input__2" type="text"/>
+                          <input class="mobile__market__input__2" type="text"/>
                         </td>
+
                         <th scope="col">
                           <label for="" class="must__write">조합원 수</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: 100%"
-                          />
+                          <input class="mobile__market__input" type="text"/>
                         </td>
+
                         <th scope="col">
-                          <label for="" class="must__write"
-                            >상급단체의 명칭</label
-                          >
+                          <label for="" class="must__write">상급단체의 명칭</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: calc(33.33% - 1rem)"
-                          />
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: calc(33.33% - 1rem)"
-                          />
-                          <input
-                            class="mobile__market__input"
-                            type="text"
-                            style="width: calc(33.33% - 1rem)"
-                          />
+                          <input class="mobile__market__input__3" type="text"/>
+                          <input class="mobile__market__input__3" type="text"/>
+                          <input class="mobile__market__input__3" type="text"/>
                         </td>
                       </tr>
                     </tbody>
@@ -236,7 +186,7 @@
               <div class="market">
                 <h2 class="data__title">공시정보</h2>
                 <div class="mo__tab__detail">
-                  <table class="market__info">
+                  <table class="market__info" id="DisclosureinformationMobile">
                     <caption>
                       공시정보(회계연도,회계기간)출력폼
                     </caption>
@@ -261,35 +211,24 @@
                           <label for="" class="must__write">회계기간</label>
                         </th>
                         <td class="input--flex">
-                          <input
-                            type="text"
-                            value=""
-                            placeholder="2022-07-31"
-                          />
+                          <input type="text" placeholder="2022-07-31"/>
                           <span>~</span>
-                          <input
-                            type="text"
-                            value=""
-                            placeholder="2022-08-31"
-                          />
+                          <input type="text" placeholder="2022-08-31"/>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <!-- 자산 및 부채 현황 주석 -->
+              <!-- 모바일 자산 및 부채 현황 주석 -->
               <div class="dis__info first__mo">
                 <div class="data--open">
-                  <div class="border" style="position: absolute; top: 0"></div>
+                  <!-- <div class="border" style="position: absolute; top: 0"></div> -->
                   <span class="data__toggle">자산 및 부채현황</span>
-                  <div
-                    class="border"
-                    style="position: absolute; bottom: 0"
-                  ></div>
+                  <!-- <div class="border" style="position: absolute; bottom: 0"></div> -->
                   <div class="arrow__wrap">
-                    <span class="arrow__top">↑</span>
-                    <span class="arrow__bottom">↓</span>
+                    <span class="arrow__top"></span>
+                    <span class="arrow__bottom"></span>
                   </div>
                 </div>
                 <div class="mo__tab__detail mo__slide">
@@ -297,7 +236,6 @@
                     <caption>
                       자산 및 부채현황
                     </caption>
-
                     <thead>
                       <tr>
                         <th>총계(=b+c+d+e)</th>
@@ -461,17 +399,17 @@
                 </div>
               </div>
 
-              <!-- 수입 현황 주석 -->
+              <!-- 모바일 수입 현황  -->
               <div class="dis__info">
                 <div class="data--open">
                   <span class="data__toggle">수입현황</span>
-                  <div
+                  <!-- <div
                     class="border"
                     style="position: absolute; bottom: 0"
-                  ></div>
+                  ></div> -->
                   <div class="arrow__wrap">
-                    <span class="arrow__top">↑</span>
-                    <span class="arrow__bottom">↓</span>
+                    <span class="arrow__top"></span>
+                    <span class="arrow__bottom"></span>
                   </div>
                 </div>
                 <!-- 데이터 오픈 엔드 하단 내역 스타트 -->
@@ -530,7 +468,6 @@
                         <td>3232</td>
                       </tr>
                     </tbody>
-                    <!-- 2 -->
                     <thead>
                       <tr>
                         <th>일반회계(=b+c+d+e)</th>
@@ -737,17 +674,17 @@
                   </table>
                 </div>
               </div>
-              <!-- 지출 현황  주석 -->
+              <!-- 모바일 지출 현황 주석 -->
               <div class="dis__info 지출">
-                <div class="data--open">
+                <div class="data--open last--open">
                   <span class="data__toggle">지출현황</span>
-                  <div
+                  <!-- <div
                     class="border"
                     style="position: absolute; bottom: 0"
-                  ></div>
+                  ></div> -->
                   <div class="arrow__wrap">
-                    <span class="arrow__top">↑</span>
-                    <span class="arrow__bottom">↓</span>
+                    <span class="arrow__top"></span>
+                    <span class="arrow__bottom"></span>
                   </div>
                 </div>
                 <!-- 데이터 오픈 엔드 하단 내역 스타트 -->
@@ -800,8 +737,8 @@
                         <td>기타운영비</td>
                         <td>3232</td>
                       </tr>
-                      <!-- 사업수행비용 -->
 
+                      <!-- 사업수행비용 -->
                       <tr class="sub__element depth2">
                         <td>> 사업수행비용</td>
                       </tr>
@@ -876,7 +813,6 @@
                         <td>3232</td>
                       </tr>
                       <!-- 사업수행비용 -->
-
                       <tr class="sub__element depth2">
                         <td>> 사업수행비용</td>
                       </tr>
@@ -1137,8 +1073,10 @@
           </div>
         </div>
         <!-- 모바일 탭 엔드 -->
+
+
         <!-- pc탭 -->
-        <!-- 노동조합정보 -->
+        <!-- PC 노동조합정보 -->
         <div
           class="tab__content"
           style="margin-bottom: 60px"
@@ -1160,15 +1098,22 @@
                       <col width="auto" />
                     </colgroup>
                     <tbody>
-                      <tr>
-                        <th scope="col">
-                          <label for="" class="must__write">회계연도</label>
+                      <tr style="position: relative">
+                        <th
+                          scope="col"
+                          class="long__th cols2"
+                        >
+                          <label for="" class="must__write" >
+                            노동조합명칭
+                            <br />
+                            (또는 산하조직)
+                          </label>
                         </th>
                         <td>
                           <input type="text" value="" style="width: 100%" />
                         </td>
                         <th scope="col">
-                          <label for="" class="must__write">회계기간</label>
+                          <label for="" style="white-space: nowrap;">노동조합 약어명</label>
                         </th>
                         <td class="input--flex">
                           <input type="text" value="" style="width: 100%" />
@@ -1226,13 +1171,13 @@
                     <tbody>
                       <tr>
                         <th scope="col">
-                          <label for="" class="must__write">조직형태</label>
+                          <label for="">조직형태</label>
                         </th>
                         <td>
                           <input type="text" value="" style="width: 100%" />
                         </td>
                         <th scope="col">
-                          <label for="" class="must__write">조합원 수</label>
+                          <label for="">조합원 수</label>
                         </th>
                         <td class="input--flex">
                           <input type="text" value="" style="width: 100%" />
@@ -1250,7 +1195,7 @@
                       공시정보(회계연도, 회계기간)출력폼
                     </caption>
                     <colgroup>
-                      <col width="15.38%" />
+                      <col width="15.38%" class="long__th" />
                       <col width="auto" />
                       <col width="auto" />
                       <col width="auto" />
@@ -1258,9 +1203,7 @@
                     <tbody>
                       <tr>
                         <th scope="col">
-                          <label for="" class="must__write"
-                            >상급단체의 명칭</label
-                          >
+                          <label for="">상급단체의 명칭</label>
                         </th>
                         <td>
                           <input type="text" value="" style="width: 100%" />
@@ -1659,7 +1602,7 @@
                   <tbody>
                     <tr>
                       <th scope="col">
-                        <label for="" class="must__write">주석</label>
+                        <label for="">주석</label>
                       </th>
                       <td class="input--flex">
                         <input type="text" value="" />
@@ -1727,7 +1670,20 @@
               </div>
             </div>
             <!-- 탭 4 시계열 차트 -->
-            <div class="tab__4 tab">d</div>
+            <div class="tab__4 tab">
+              <div class="container">
+                <div class="inner">
+                  <div class="chart-block">
+                    <div class="chart__wrapper">
+                      <div class="chart__title">
+                        <h2>자산 및 부채현황</h2>
+                        <span>(단위:천원)</span>
+                      </div>
+                      <div id="pieChart1" class="echart"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
