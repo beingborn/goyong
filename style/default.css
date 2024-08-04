@@ -1989,13 +1989,6 @@ table caption {
   font-size: 2.5rem;
 }
 
-.mo__open__wrap .mo__column thead tr {
-  padding-bottom: 1.3rem;
-  border-bottom: 1px solid #ccc;
-}
-.mo__open__wrap .mo__column tbody tr:nth-last-child(1) {
-  margin-bottom: 5rem;
-}
 .mo__open__wrap .mo__column tr {
   flex-wrap: nowrap;
   margin-top: 1.6rem;
@@ -2037,7 +2030,7 @@ table caption {
 
 .last--open::after {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   height: 1px;
@@ -2087,8 +2080,17 @@ table caption {
   display: none;
 }
 
-.mo__open__wrap table thead tr th {
+.t__title__wrap {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.mo__column .t__title {
   font-size: 2rem;
+}
+
+.t__last__data {
+  margin-bottom: 5rem;
 }
 
 .list__btn__group {

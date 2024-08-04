@@ -119,18 +119,6 @@
 // 아코디언 테이블 스타일
 .mo__open__wrap {
   .mo__column {
-    thead {
-      tr {
-        padding-bottom: 1.3rem;
-        border-bottom: 1px solid #ccc;
-      }
-    }
-
-    tbody {
-      tr:nth-last-child(1) {
-        margin-bottom: 5rem;
-      }
-    }
 
     tr {
       flex-wrap: nowrap;
@@ -187,7 +175,7 @@
 .last--open {
   &::after{
     content: '';
-    display: inline-block;
+    display: block;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     height: 1px;
@@ -241,9 +229,21 @@
   display: none;
 }
 
-.mo__open__wrap table thead tr th {
+//공통 table 스타일
+
+.t__title__wrap {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #ccc;
+}
+.mo__column .t__title {
   font-size: 2rem;
 }
+
+.t__last__data {
+  margin-bottom: 5rem;
+}
+
+
 
 // 노동 조합 정보
 
