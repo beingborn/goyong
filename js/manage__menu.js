@@ -15,34 +15,4 @@ $(document).ready(function() {
 });
 
 
-// 기본 css에 innerHeight로 값 주기 
-// lnb height 기본값이 auto 여서 slideToggle 기능 수행 시 document가 함께 늘어남. 
-// 그래서 innerHeight을 이용해서 값을 유동적으로 지정해줘서 그 안에서만 slide되게 지정함
-
-$(document).ready(function(){
-    let lnb = $('.main__content .sub .lnb')
-    let lnbHeight = lnb.innerHeight();
-
-    lnb.css('height', lnbHeight)
-})
-
-
-
-$(document).ready(function(){
-    let tablePagination = $('.pagination .page-link') 
-
-
-    tablePagination.click(function (e) {
-    e.preventDefault(); // 링크 기본 동작 방지
-
-
-
-    $(this).addClass("active");
-    tablePagination.not($(this)).removeClass('active')
-  });
-
-  tablePagination.eq(0).addClass('active')
-
-})
-
 

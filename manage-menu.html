@@ -18,7 +18,7 @@
         <a href="#main__content">본문 바로가기</a>
     </div>
 
-    <div class="wrap" id="wrap">
+    <div class="wrap manage__wrap" id="wrap">
         <!-- 상단 띠 영역 -->
         <div class="top__banner">
             <div class="inner">
@@ -79,6 +79,15 @@
             </div>
             </div>
         </header>
+        <div class="visual__bg">
+            <div class="inner">
+              <div class="visual__text">
+                <h2>시스템 관리</h2>
+                <p>시스템 관리를 통해 OO할 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+
        <main class="main__content">
         <div class="inner">
             <div class="function__group">
@@ -87,51 +96,50 @@
                 <button type="button">조회</button>
                 <button type="button">저장</button>
             </div>
-            <div class="content--flex">
+            <div class="content--flex system__margin  ">
                 <div class="sub" >
-                    <div class="lnb__wrap">
-                        <div class="lnb__title">
-                            <h2>메뉴</h2>
-                        </div>
-                        <ul class="lnb">
-                            <li class="menu__depth-1">
-                                <a href="#">홈</a>
-                              
+                    <div class="lnb__title">
+                        <h2>메뉴 상세정보</h2>
+                    </div>
+                    <div class="tree" style="border-top: 1px solid #ddd; padding-top: 20px;">
+                        <strong class="tree_tit"> 
+                            <span class="tree_label">
+                            HOME
+                            </span>
+                        </strong>
+                        <ul class="depth">
+                            <li class="depth__1__tree">
+                                <a href="" class="tree_label">
+                                    시스템안내
+                                </a>
+                                <ul>
+                                    <li class="depth__2__tree"> <a href="#" class="tree_lab el">회계공시 시스템이란</a></li>
+                                    <li class="depth__2__tree"> <a href="#" class="tree_label">주요회계 공시항목 설명</a></li>
+                                    <li class="depth__2__tree"> <a href="#" class="tree_label">공지사항</a></li>
+                                    <li class="tree_last_node depth__2__tree"><a href="#" class="tree_label">자주 묻는 질문</a></li>
+                                </ul>
                             </li>
-                            <li class="menu__depth-1">
-                                <a href="#">시스템안내</a>
-                                <ol>
-                                    <li class="menu__depth-2"><a href="#">- 회계공시시스템</a></li>
-                                    <li class="menu__depth-2"><a href="#">- 주요고객 공시항목 설명</a></li>
-                                    <li class="menu__depth-2"><a href="#">- 공지사항</a></li>
-                                    <li class="menu__depth-2"><a href="#">- 자주묻는질문</a></li>
-                                </ol>
-                                <div class="arrow__wrap">
-                                    <div class="arrow__top"></div>
-                                    <div class="arrow__bottom"></div>
-                                </div>
+
+                            <li class="depth__1__tree">
+                                <a class="tree_label">
+                                    회계공시열람
+                                </a>
+                                <ul>
+                                    <li class="depth__2__tree"> <a href="#" class="tree_label">회계공시 열람</a></li>
+                                    <li class="tree_last_node depth__2__tree"><a href="#" class="tree_label">회계공시여부 조회</a></li>
+                                </ul>
                             </li>
-                            <li class="menu__depth-1">
-                                <a href="#">회계공시열람</a>
-                                <ol>
-                                    <li class="menu__depth-2"><a href="#">- 회계공시 열람</a></li>
-                                    <li  class="menu__depth-2"><a href="#">- 회계공시 여부 조회</a></li>
-                                </ol>
+
+                            <li class="depth__1__tree tree_last_node">
+                                <a class="tree_label">
+                                    회계공시등록
+                                </a>
+                                <ul>
+                                    <li class="depth__2__tree"> <a href="#" class="tree_label">노동조합 관리</a></li>
+                                    <li class="tree_last_node depth__2__tree"><a href="#" class="tree_label">노동조합 최계관리</a></li>
+                                </ul>
                             </li>
-                            <li class="menu__depth-1">
-                                <a href="#">회계공시등록</a>
-                                <ol>
-                                    <li  class="menu__depth-2"><a href="#">- 회계공시 열람</a></li>
-                                    <li  class="menu__depth-2"><a href="#">- 가맹노조(산하조직 관리)</a></li>
-                                </ol>
-                            </li>
-                            <li class="menu__depth-1">
-                                <a href="#">회계공시관리</a>
-                                <ol>
-                                    <li  class="menu__depth-2"><a href="#">- 노동조합관리</a></li>
-                                    <li  class="menu__depth-2"><a href="#">- 노동조합 최계관리</a></li>
-                                </ol>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -139,32 +147,36 @@
                     <div class="content">
                         <div class="lnb__title">
                             <h2>메뉴 상세정보</h2>
+
                         </div>
                         <div class="table__horizontal">
                             <table class="main__table">
                                 <caption>~~</caption>
                                 <colgroup>
-                                    <col class="main__th">
-                                    <col class="sub__th">
-                                    <col class="main__th">
-                                    <col class="sub__th">
+                                    <col class="menu__th">
+                                    <col class="menu__td">
+                                    <col class="menu__th">
+                                    <col class="menu__td">
                                 </colgroup>
                                 <tbody>
                                     <tr>
                                       <th scope="col">
-                                        <label for="example22" class="must__write">메뉴명</label>
+                                        <label for="example22">메뉴명</label>
                                       </th>
                                       <td>
                                         <input type="text" value="" style="width: 100%" id="example22">
                                       </td>
                                       <th scope="col">
-                                        <label for="examples11" class="must__write">사용여부</label>
+                                        <label for="examples11">노동조합 약어명</label>
                                       </th>
-                                      <td class="--flex">
-                                        <input type="radio" name="rdo_1-1" id="rdo_1-1">
-                                        <label for="rdo_1-1">사용</label>
-                                        <input type="radio" name="rdo_1-1" id="rdo_1-1">
-                                        <label for="rdo_1-1">미사용</label>
+                                      <td class="radio__wrap">
+                                        <div class="flex">
+                                            <input type="radio" name="rdo_1-1" id="rdo_1-1">
+                                            <label for="rdo_1-1">사용</label>
+                                            <input type="radio" name="rdo_1-1" id="rdo_1-1">
+                                            <label for="rdo_1-1">미사용</label>
+                                        </div>
+                        
                                       </td>
                                     </tr>
                                   </tbody>
@@ -175,10 +187,10 @@
                             <table class="main__table">
                                 <caption>~~</caption>
                                 <colgroup>
-                                    <col class="main__th">
-                                    <col class="sub__th">
-                                    <col class="main__th">
-                                    <col class="sub__th">
+                                    <col class="menu__th">
+                                    <col class="menu__td">
+                                    <col class="menu__th">
+                                    <col class="menu__td">
                                 </colgroup>
                                 <tbody>
                                     <tr>
@@ -190,7 +202,7 @@
                                         <input type="submit" value="검색">
                                       </td>
                                       <th scope="col">
-                                        <label for="examples11" class="must__write">메뉴순서</label>
+                                        <label for="examples11">설립연월일</label>
                                       </th>
                                       <td>
                                         <input type="text" name="text" id="text_1-1" class="input--flex">
@@ -203,8 +215,8 @@
                             <table class="main__table">
                                 <caption>~~</caption>
                                 <colgroup>
-                                    <col class="main__th">
-                                    <col class="sub__th">
+                                    <col class="menu__th">
+                                    <col>
                                 </colgroup>
                                 <tbody>
                                     <tr>
@@ -223,8 +235,8 @@
                             <table class="main__table">
                                 <caption>~~</caption>
                                 <colgroup>
-                                    <col class="main__th">
-                                    <col class="sub__th">
+                                    <col class="menu__th">
+                                    <col class="note__menu__td">
                                 </colgroup>
                                 <tbody>
                                     <tr>
@@ -232,7 +244,7 @@
                                         <label for="example22">비고</label>
                                       </th>
                                       <td>
-                                        <textarea name="text-area" id="text-area" title="내용" maxlength="100" placehorder="기본 값 비고입니다"></textarea>
+                                        <textarea name="text-area" id="text-area" title="내용" maxlength="100" placehorder="기본 값 비고입니다" readonly contenteditable='true'>전국민주노동조합총연맹</textarea>
                                       </td>
                                     </tr>
                                   </tbody>
