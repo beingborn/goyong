@@ -2348,18 +2348,28 @@ table caption {
 }
 .lnb .menu__depth-1 > a {
   display: block;
-  line-height: 4rem;
-  padding: 1rem;
+  padding: 2.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.lnb .menu__depth-1 li:first-child {
+  padding-top: 1rem;
+  border-top: 3px solid #16408D;
 }
 .lnb .menu__depth-1 li:last-child {
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .lnb .menu__depth-2 {
   font-size: 1.5rem;
 }
 .lnb .menu__depth-2 > a {
+  line-height: 4.8rem;
   display: block;
-  padding: 0.8rem 1.8rem;
+  padding: 0 1.5rem;
+  color: #767676;
+}
+.lnb .active > a {
+  color: #000;
 }
 
 /* depth-1 항목에 active 클래스 추가 시 스타일 변경 */
@@ -2374,18 +2384,24 @@ table caption {
   display: none;
 }
 
-.menu__depth-1 > a:not(:last-child) {
+.menu__depth-1 > a {
   position: relative;
 }
-.menu__depth-1 > a:not(:last-child)::after {
+.menu__depth-1 > a::after {
   content: "";
   position: absolute;
   top: 50%;
   right: 1.8rem;
   transform: translateY(-50%);
-  background: url(../img/arrow__bottom.png) no-repeat center;
-  width: 1.6rem;
-  height: 1.6rem;
+  background: url(../img/arrow__top-blue.png) no-repeat center;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  rotate: 0deg;
+}
+
+.menu__depth-1.active a::after {
+  background: url(../img/arrow__bottom-blue.png) no-repeat center;
 }
 
 .main__content .sub {
