@@ -2371,6 +2371,10 @@ table caption {
 .lnb .active > a {
   color: #000;
 }
+.lnb .active > a span {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 
 /* depth-1 항목에 active 클래스 추가 시 스타일 변경 */
 .menu__depth-1.active ol {

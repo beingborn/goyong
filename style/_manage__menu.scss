@@ -117,10 +117,14 @@
     }
     .active > a {
         color: #000;
+
+        span {
+            text-decoration: underline;
+            text-underline-position : under;
+        }
     }
 }
 
-// .menu__depth-1 ol {display: none;}
 
 
 

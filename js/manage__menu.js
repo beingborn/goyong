@@ -51,6 +51,7 @@ $(document).ready(function(){
     $('.menu__depth-2').click(function(e){
         e.preventDefault(); // 링크 기본 동작 방지
 
+
         $(this).addClass("active");
         $('.menu__depth-2').not($(this)).removeClass('active')
 
@@ -58,6 +59,7 @@ $(document).ready(function(){
     })
 
     $('.menu__depth-2').eq(0).addClass('active');
+    $('.auth__wrap').hide().eq(0).show();
 })
 
 
