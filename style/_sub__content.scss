@@ -133,6 +133,7 @@ table {
   }
 
   tbody th {
+    font-weight: 500;
     background: #f8f8f8;
     text-align: left;
     padding: 0 1.5rem;
@@ -186,6 +187,7 @@ table {
 .table__vertical table {
   // 테이블 공통 영역
   tr th:nth-child(1) {
+    font-weight: 500;
     border-left: 1px solid #ddd;
     word-break: keep-all;
     white-space: nowrap;
@@ -199,6 +201,7 @@ table {
   // 테이블 제목 영역
   thead {
     tr th {
+      font-weight: 500;
       height: 6rem;
       background-color: #f8f8f8;
       line-height: 6rem;
