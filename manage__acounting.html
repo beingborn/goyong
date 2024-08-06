@@ -92,7 +92,7 @@
         <div class="inner">
             <div class="function__group">
                 <button type="button">초기화</button>
-                <button type="button">조회</button>
+                <button type="button" class="check__data">조회</button>
                 <button type="button">다운로드</button>
                 <button type="button">업로드</button>
             </div>
@@ -148,7 +148,7 @@
                           </tbody>
                     </table>
             </div>
-            <div class="content--flex system__margin">
+            <div class="content--flex system__margin data__modal__wrap">
                 <div class="sub">
                     <div class="lnb__title">
                         <h2>노동조합 체계</h2>
@@ -184,10 +184,9 @@
                 <div class="main">
                     <div class="content">
                         <div class="lnb__title flex__title">
-                            <h2>조회결과</h2>
-                            <span>건수:3건</span>
+                            <h2>회계공시 대상년월 : 2024-07</h2>
                         </div>
-                        <div class="dis__info check__result">
+                        <div class="dis__info check__result check__year__result">
                             <div class="tab__detail table__vertical">
                               <table>
                                 <caption>
@@ -203,26 +202,29 @@
                                   <col>
                                   <col>
                                   <col>
+                                  <col>
                                 </colgroup>
                                 <thead>
                                   <tr>
                                     <th scope="col">번호</th>
-                                    <th>노동조합명</th>
-                                    <th class="ex">주/부 여부</th>
-                                    <th>연합단체</th>
-                                    <th>단위노동조합</th>
-                                    <th>지부</th>
-                                    <th>지회</th>
-                                    <th>분회</th>
-                                    <th>사용여부</th>
+                                    <th>구분</th>
+                                    <th class="ex">노동조합명</th>
+                                    <th>공시대상</th>
+                                    <th>주/부여부</th>
+                                    <th>관리기관</th>
+                                    <th>관할지청</th>
+                                    <th>주소지관할</th>
+                                    <th>사업자등록번호</th>
+                                    <th>대표자</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
                                     <th scope="row">1</th>
+                                    <td class="division">신규</td>
                                     <td class="name">테스트</td>
-                                    <td class="ex">주</td>
                                     <td></td>
+                                    <td class="ex">주</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -231,9 +233,10 @@
                                   </tr>
                                   <tr>
                                     <th scope="row">2</th>
+                                    <td class="division">수정</td>
                                     <td class="name">테스트</td>
-                                    <td class="ex">주</td>
                                     <td></td>
+                                    <td class="ex">주</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -242,9 +245,10 @@
                                   </tr>
                                   <tr>
                                     <th scope="row">3</th>
+                                    <td class="division">수정</td>
                                     <td class="name">테스트</td>
-                                    <td class="ex">주</td>
                                     <td></td>
+                                    <td class="ex">주</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -277,132 +281,183 @@
                             </div>
                           </div>
 
-                        <!-- 시스템 정보 -->
-                         <div class="system__infomation">
-                            <div class="lnb__title">
-                                <h2>조회결과</h2>
-                            </div>
-                            <div class="table__horizontal">
-                                <table class="main__table">
-                                    <caption>~~</caption>
-                                    <colgroup>
-                                        <col class="main__th">
-                                        <col style="width: 487px;">
-                                        <col class="main__th">
-                                        <col style="width: auto;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                          <th scope="col">
-                                            <label for="example22">노동조합명</label>
-                                          </th>
-                                          <td>
-                                            <input type="text" value="" id="example22">
-                                          </td>
-                                          <th scope="col">
-                                            <label for="examples11">주 / 부 여부</label>
-                                          </th>
-                                          <td>
-                                            <select name="category" id="category" class="select--no--style select__renew">
-                                                <option value="전체">전체</option>
-                                            </select>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                </table>
-                            </div>
-                            <!-- 총연합단체 -->
-                            <div class="table__horizontal">
-                                <table class="main__table">
-                                    <caption>~~</caption>
-                                    <colgroup>
-                                        <col class="main__th">
-                                        <col style="width: auto;">
-                                        <col class="main__th">
-                                        <col style="width: auto;">
-                                        <col class="main__th">
-                                        <col style="width: auto;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                          <th scope="col">
-                                            <label for="example22">총연합단체</label>
-                                          </th>
-                                          <td>
-                                            <select name="category" id="category" class="select--no--style select__renew">
-                                                <option value="선택">선택</option>
-                                            </select>
-                                          </td>
-                                          <th scope="col">
-                                            <label for="examples11" >연합단체</label>
-                                          </th>
-                                          <td>
-                                            <select name="category" id="category" class="select--no--style select__renew">
-                                                <option value="선택">선택</option>
-                                            </select>
-                                          </td>
-                                          <th scope="col">
-                                            <label for="examples11">단위 노동조합</label>
-                                          </th>
-                                          <td>
-                                            <select name="category" id="category" class="select--no--style select__renew">
-                                                <option value="선택">선택</option>
-                                            </select>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                </table>
-                            </div>
-                            <div class="table__horizontal">
-                                <table class="main__table">
-                                    <caption>~~</caption>
-                                    <colgroup>
-                                        <col class="main__th">
-                                        <col style="width: auto;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                          <th scope="col">
-                                            <label for="example22">사용여부</label>
-                                          </th>
-                                          <td class="radio__wrap">
-                                            <div class="flex">
-                                                <input type="radio" name="rdo_1-1" id="rdo_1-1">
-                                                <label for="rdo_1-1">사용</label>
-                                                <input type="radio" name="rdo_1-1" id="rdo_1-1">
-                                                <label for="rdo_1-1">미사용</label>
-                                            </div>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                </table>
-                            </div>
-                                   
-                        <!-- 비고 -->
-                        <div class="table__horizontal table__note">
-                            <table class="main__table">
-                                <caption>~~</caption>
-                                <colgroup>
-                                    <col class="main__th">
-                                    <col>
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                      <th scope="col" class="note__th">
-                                        <label for="example22">비고</label>
-                                      </th>
-                                      <td>
-                                        <textarea name="text-area" id="text-area" title="내용" maxlength="100" placehorder="기본 값 비고입니다"></textarea>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                            </table>
-                        </div>
-                         </div>
+                        <!-- 해당 데이터 정보 -->
+                          <div class="year__data__wrap">
+                            <img src="img/example__excel__data.jpg" alt="회계 공시 데이타">
+                          </div>
+                          <div class="close__btn__wrap">
+                            <button type="button" class="close__btn">닫기</button>
+                          </div>
                       
                  
                     </div>
                 </div>
+                <div class="data__modal">
+                    <div class="modal__inner">
+                        <div class="data__group__title">
+                            <h2>홍길동 조합 상세정보</h2>
+                        </div>
+                        <div class="modal__table">
+                            <div class="lnb__title flex__title">
+                                <h2>회계공시 대상년월 : 2024-07</h2>
+                            </div>
+                            <div class="dis__info modal__result">
+                                <div class="tab__detail table__vertical">
+                                  <table>
+                                    <caption>
+                                      자산 및 부채현황 {구분, 자산}
+                                    </caption>
+                                    <colgroup>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">회계년월</th>
+                                        <th>노동조합명</th>
+                                        <th class="ex">주/부</th>
+                                        <th>대표자</th>
+                                        <th>조직형태</th>
+                                        <th>조직단위</th>
+                                        <th>조합원수</th>
+                                        <th>총연합</th>
+                                        <th>연합단체</th>
+                                        <th>
+                                            단위노동(산별지역)
+                                        </th>
+                                        <th>지부</th>
+                                        <th>지회</th>
+                                        <th>분회</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>2024-07</td>
+                                        <td class="name">신규</td>
+                                        <td class="ex">주</td>
+                                        <td>홍길동</td>
+                                        <td>기업</td>
+                                        <td>단위</td>
+                                        <td class="count">999</td>
+                                        <td>전국민주노동조합명</td>
+                                        <td>전국화학연합</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__table">
+                            <div class="lnb__title flex__title">
+                                <h2>회계공시 대상년월 : 2024-07</h2>
+                            </div>
+                            <div class="dis__info modal__result">
+                                <div class="tab__detail table__vertical">
+                                  <table>
+                                    <caption>
+                                      자산 및 부채현황 {구분, 자산}
+                                    </caption>
+                                    <colgroup>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col>
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">회계년월</th>
+                                        <th>노동조합명</th>
+                                        <th class="ex">주/부</th>
+                                        <th>대표자</th>
+                                        <th>조직형태</th>
+                                        <th>조직단위</th>
+                                        <th>조합원수</th>
+                                        <th>총연합</th>
+                                        <th>연합단체</th>
+                                        <th>
+                                            단위노동(산별지역)
+                                        </th>
+                                        <th>지부</th>
+                                        <th>지회</th>
+                                        <th>분회</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>2024-07</td>
+                                        <td class="name">신규</td>
+                                        <td class="ex">주</td>
+                                        <td>홍길동</td>
+                                        <td>기업</td>
+                                        <td>단위</td>
+                                        <td class="count">999</td>
+                                        <td>전국민주노동조합명</td>
+                                        <td>전국화학연합</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+
+                                      <!-- 2 -->
+                                      <tr>
+                                        <td>2024-07</td>
+                                        <td class="name">신규</td>
+                                        <td class="ex">주</td>
+                                        <td>홍길동</td>
+                                        <td>기업</td>
+                                        <td>단위</td>
+                                        <td class="count">999</td>
+                                        <td>전국민주노동조합명</td>
+                                        <td>전국화학연합</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+
+
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    
+    
+    
+    
+                        <div class="modal__close">
+                            <button type="button">닫기</button>
+                        </div>
+                    </div>
+
             </div>
         </div>
        </main>
@@ -483,7 +538,8 @@
     <!-- 스와이퍼 js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/default.js"></script>
-    <script src="js/manage__menu.js"></script>
+    <script src="js/manage__accounting.js"></script>
+    <!-- <script src="js/manage__menu.js"></script> -->
     
 
 

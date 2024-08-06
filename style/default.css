@@ -2313,7 +2313,6 @@ table caption {
   border: 0;
   font-size: 2rem;
   height: 5.6rem;
-  line-height: 5.6rem;
   padding: 0 2rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -2841,6 +2840,124 @@ a {
 }
 .auth__wrap .radio__wrap input[type=radio]:not(:checked) {
   border: 1px solid #ddd;
+}
+
+.check__year__result .pagination {
+  margin-bottom: 6rem;
+}
+.check__year__result .table__vertical table td {
+  padding-right: 0;
+}
+.check__year__result .table__vertical colgroup col:nth-child(1), .check__year__result .table__vertical colgroup col:nth-child(2) {
+  width: 6.6%;
+}
+.check__year__result .table__vertical colgroup col:not(:nth-child(1)):not(:nth-child(2)) {
+  width: 9.6444444444%; /* 6.6% * 2 = 13.2% */
+}
+.check__year__result .division {
+  text-align: center;
+  border-left: 1px solid #ddd;
+}
+
+.year__data__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 40rem;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.year__data__wrap img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.close__btn__wrap {
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.close__btn__wrap .close__btn {
+  border: 0;
+  background-color: #246BEB;
+  height: 5.6rem;
+  line-height: 4.8rem;
+  padding: 0.4rem 2rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+}
+
+.data__modal .data__group__title {
+  margin-top: 4rem;
+}
+.data__modal .data__group__title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.data__modal__wrap {
+  position: relative;
+}
+.data__modal__wrap .data__modal {
+  display: none;
+  width: calc(100% - 2rem);
+  height: 72rem;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #CBCCCD;
+}
+.data__modal__wrap .data__modal .modal__inner {
+  width: calc(100% - 7.2rem);
+  margin: 0px auto;
+}
+.data__modal__wrap .data__modal .modal__close {
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.data__modal__wrap .data__modal .modal__close button {
+  border: 0;
+  background-color: #246BEB;
+  height: 5.6rem;
+  line-height: 4.8rem;
+  padding: 0.4rem 2rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.data__modal .modal__table {
+  padding-top: 5.8rem;
+}
+
+.modal__result {
+  border-top: 2px solid #000;
+}
+.modal__result table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.modal__result table thead tr th:nth-child(1), .modal__result table thead tr th:nth-last-child(1) {
+  border-right: 0;
+}
+.modal__result table tbody tr td {
+  text-align: center;
+  padding-right: 0;
+}
+.modal__result table tbody tr td:nth-last-child(1) {
+  border-right: 0;
+}
+.modal__result table .count {
+  background-color: #DCE7FC;
 }
 
 * {
