@@ -251,72 +251,116 @@
                     </div>
                 <div class="data__modal">
                     <div class="modal__inner">
-                        <div class="data__group__title">
-                            <h2>홍길동 조합 상세정보</h2>
-                        </div>
                         <div class="modal__table">
                             <div class="lnb__title flex__title">
-                                <h2>회계공시 대상년월 : 2024-07</h2>
+                                <h2>조회정보</h2>
                             </div>
                             <div class="dis__info modal__result">
-                                <div class="tab__detail table__vertical">
-                                  <table>
-                                    <caption>
-                                      자산 및 부채현황 {구분, 자산}
-                                    </caption>
-                                    <colgroup>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                    </colgroup>
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">회계년월</th>
-                                        <th>노동조합명</th>
-                                        <th class="ex">주/부</th>
-                                        <th>대표자</th>
-                                        <th>조직형태</th>
-                                        <th>조직단위</th>
-                                        <th>조합원수</th>
-                                        <th>총연합</th>
-                                        <th>연합단체</th>
-                                        <th>
-                                            단위노동(산별지역)
-                                        </th>
-                                        <th>지부</th>
-                                        <th>지회</th>
-                                        <th>분회</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>2024-07</td>
-                                        <td class="name">신규</td>
-                                        <td class="ex">주</td>
-                                        <td>홍길동</td>
-                                        <td>기업</td>
-                                        <td>단위</td>
-                                        <td class="count">999</td>
-                                        <td>전국민주노동조합명</td>
-                                        <td>전국화학연합</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                <div class="table__horizontal report__check__table">
+                                    <table class="main__table width__100">
+                                        <caption>~~</caption>
+                                        <colgroup>
+                                            <col class="result__th">
+                                            <col class="input__th">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                              <th scope="col" class="border-btm">
+                                                <label for="example22">노동조합명</label>
+                                              </th>
+                                              <td class="search__work__group">
+                                                <input type="text" value="" id="example22" placeholder="노동조합명을 입력하세요.">
+                                              </td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
                                 </div>
+                                <div class="table__horizontal report__check__table select__wrap">
+                                    <table class="main__table">
+                                        <caption>~~</caption>
+                                        <colgroup>
+                                        <col class="result__th">
+                                            <col style="width: 14.2%;">
+                                            <col class="result__th">
+                                            <col style="width: 24%;">
+                                            <col class="result__th">
+                                            <col style="width: 24%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                              <th scope="col">
+                                                <label for="example22">총연합단체</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                              <th scope="col">
+                                                <label for="examples11" >연합단체</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                              <th scope="col">
+                                                <label for="examples11">단위 노동조합</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="table__horizontal report__check__table select__wrap" >
+                                    <table class="main__table">
+                                        <caption>~~</caption>
+                                        <colgroup>
+                                            <col class="result__th">
+                                            <col style="width: 14.2%;">
+                                            <col class="result__th">
+                                            <col style="width: 24%;">
+                                            <col class="result__th">
+                                            <col style="width: 24%;">
+                                        </colgroup>
+                                        <tbody class="last__select">
+                                            <tr>
+                                              <th scope="col">
+                                                <label for="example22">지부</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                              <th scope="col">
+                                                <label for="examples11">지회</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                              <th scope="col">
+                                                <label for="examples11">분회</label>
+                                              </th>
+                                              <td>
+                                                <select name="category" id="category" class="select--no--style select__renew">
+                                                    <option value="선택">선택</option>
+                                                </select>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+
                             </div>
                         </div>
 
