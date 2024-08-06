@@ -2794,6 +2794,39 @@ a {
   margin-bottom: 15rem;
 }
 
+.auth__wrap {
+  display: flex;
+}
+.auth__wrap .auth__control {
+  width: calc(100% - 290px);
+}
+.auth__wrap .radio__wrap {
+  position: absolute;
+}
+.auth__wrap .radio__wrap .flex {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.auth__wrap .radio__wrap .flex label:nth-of-type(1) {
+  margin-right: 2rem;
+}
+.auth__wrap .radio__wrap .flex label {
+  font-size: 1.5rem;
+}
+.auth__wrap .radio__wrap input[type=radio] {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.auth__wrap .radio__wrap input[type=radio]:not(:checked) {
+  border: 1px solid #ddd;
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;

@@ -532,3 +532,58 @@ a {color: #000;}
 .system__infomation .table__note {border-bottom: 1px solid #ddd;}
 
 .system__margin { margin-bottom: 15rem;}
+
+
+
+
+
+
+
+
+
+// 권한별 메뉴관리
+
+
+.auth__wrap {
+    display: flex;
+
+
+
+    .auth__control { width: calc(100% - 290px);}
+
+
+
+
+
+    .radio__wrap {
+        position: absolute;
+        // padding-top: 7rem;
+    
+        .flex {
+            display: flex;
+            align-items: center;
+            height: 40px;
+    
+            label:nth-of-type(1){
+                margin-right: 2rem;
+            }
+
+            label {font-size: 1.5rem;}
+        }
+
+    
+        input[type="radio"]{
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            margin-right: 0.7rem;
+            appearance: none;
+
+        }
+        input[type="radio"]:not(:checked) {
+            border: 1px solid #ddd;
+        }
+
+    }
+}
+
