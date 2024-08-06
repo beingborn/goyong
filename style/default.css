@@ -2880,6 +2880,7 @@ a {
   padding-top: 1.2rem;
 }
 .close__btn__wrap .close__btn {
+  cursor: pointer;
   border: 0;
   background-color: #246BEB;
   height: 5.6rem;
@@ -2958,6 +2959,63 @@ a {
 }
 .modal__result table .count {
   background-color: #DCE7FC;
+}
+
+.search__report .border-btm {
+  width: 16rem;
+}
+.search__report .search__report__bg {
+  background-color: #FAFAFB;
+}
+
+.report__content .content {
+  width: 100%;
+}
+
+.check__result .report__col col:nth-child(1) {
+  width: 3.5%;
+}
+.check__result .report__col col:nth-child(2) {
+  width: 7.5%;
+}
+.check__result .report__col col:nth-child(3) {
+  width: 4.7%;
+}
+.check__result .report__col col:nth-child(4) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(5) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(6) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(7) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(8) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(9) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(10) {
+  width: 6.6%;
+}
+.check__result .report__col col:nth-child(11) {
+  width: 7.5%;
+}
+.check__result .report__col col:nth-child(12) {
+  width: 7.5%;
+}
+.check__result .report__col col:nth-child(13) {
+  width: 7.5%;
+}
+.check__result .report__col col:nth-child(14) {
+  width: 7.5%;
+}
+.check__result .report__col col:nth-child(15) {
+  width: 7.5%;
 }
 
 * {

@@ -133,6 +133,8 @@ $(document).ready(function(){
 
 
 
+
+
 let unionAuthScroll = $('.union__auth').offset().top;
 
 // 메뉴들을 배열로 정리
@@ -165,6 +167,15 @@ $('.union__auth .radio__wrap').eq(index).css('margin-top', (menuOffsetTop - unio
 
 
 
+// 회계공시 조합
+$(document).ready(function(){
+    for (i = 0; i <= 21; i++) {
+        if(i % 2 == 0 ){
+            $('.union__auth .radio__wrap input[type="radio"]').eq(i).first().prop('checked', true)
+        }
+    }
+
+})
 
 
 

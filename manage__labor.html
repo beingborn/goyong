@@ -350,9 +350,9 @@
                                           </th>
                                           <td class="radio__wrap">
                                             <div class="flex">
-                                                <input type="radio" name="rdo_1-1" id="rdo_1-1">
+                                                <input type="radio" name="rdo_5-1" id="rdo_5-1">
                                                 <label for="rdo_1-1">사용</label>
-                                                <input type="radio" name="rdo_1-1" id="rdo_1-1">
+                                                <input type="radio" name="rdo_5-2" id="rdo_5-2">
                                                 <label for="rdo_1-1">미사용</label>
                                             </div>
                                           </td>
@@ -467,6 +467,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/default.js"></script>
     <script src="js/manage__menu.js"></script>
+    <script>
+        $(document).ready(function(){
+        for (i = 0; i <= 4; i++) {
+        if(i % 2 == 0 ){
+            $('.radio__wrap input[type="radio"]').eq(i).first().prop('checked', true)
+        }
+        }
+        })
+    </script>
     
 
 

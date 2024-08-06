@@ -335,6 +335,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/default.js"></script>
     <script src="js/manage__menu.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        for (i = 0; i <= 2; i++) {
+        if(i % 2 == 0 ){
+            $('.radio__wrap input[type="radio"]').eq(i).first().prop('checked', true)
+        }
+        }
+        })
+    </script>
+    
     
 
 

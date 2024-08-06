@@ -665,6 +665,7 @@ a {color: #000;}
     text-align: center;
     padding-top: 1.2rem;
     .close__btn {
+        cursor: pointer;
         border: 0;
         background-color: #246BEB;
         height: 5.6rem;
@@ -748,4 +749,51 @@ a {color: #000;}
 
 
 
+}
+
+
+.search__report {
+
+    .border-btm {
+        width: 16rem;
+    }
+
+    .search__report__bg {
+        background-color: #FAFAFB;
+    }
+
+}
+
+
+.report__content .content {
+    width: 100%;
+}
+
+
+
+.check__result .report__col {
+    col {
+        &:nth-child(1) {
+            width: 3.5%;
+        }
+        &:nth-child(2) {
+            width: 7.5%;
+        }
+        &:nth-child(3) {
+            width: 4.7%;
+        }
+
+        @for $i from 4 through 10 {
+            &:nth-child(#{$i}) {
+              width: 6.6%;
+            }
+          }
+
+          @for $j from 11 through 15 {
+            &:nth-child(#{$j}) {
+              width: 7.5%;
+            }
+          }
+     
+    }
 }
