@@ -558,6 +558,9 @@ a {color: #000;}
 
 
 
+
+
+
 // 권한별 메뉴관리
 
 
@@ -692,6 +695,8 @@ a {color: #000;}
 .data__modal__wrap {
     position: relative;
 
+    
+
     .data__modal {
         display: none;
         width: calc(100% - 2rem); height: 72rem;  overflow-y: auto;background-color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
@@ -721,6 +726,11 @@ a {color: #000;}
                 cursor: pointer;
             }
         }
+    }
+
+
+    .manage__report__modal {
+        height: 83.6rem;
     }
 }
 
@@ -810,6 +820,7 @@ a {color: #000;}
     }
 } 
 
+.table__horizontal .main__table .report__th {padding-left: 3rem;}
 .table__horizontal .main__table td {border-bottom: 0;}
 
 .select__wrap  {
@@ -819,6 +830,26 @@ a {color: #000;}
 .last__select {border-bottom: 1px solid #ddd;}
 
 
+
+
+
 .modal__result .report__check__table tbody tr td {
     padding: 0 10px;
 }
+
+
+
+.wrap .report__content .table__horizontal .main__table .radio__wrap .flex label {
+    margin-right: 2rem;
+}
+
+
+.modal__result .radio__table tr td {
+    text-align: left;
+}
+
+.modal__result tr {line-height: 5.8rem;}
+
+
+
+

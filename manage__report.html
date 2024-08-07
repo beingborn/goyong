@@ -249,7 +249,7 @@
                  
                  
                     </div>
-                <div class="data__modal">
+                <div class="data__modal manage__report__modal">
                     <div class="modal__inner">
                         <div class="modal__table">
                             <div class="lnb__title flex__title">
@@ -266,7 +266,7 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                              <th scope="col" class="border-btm">
+                                              <th scope="col" class="border-btm report__th">
                                                 <label for="example22">노동조합명</label>
                                               </th>
                                               <td class="search__work__group">
@@ -290,7 +290,7 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                              <th scope="col">
+                                              <th scope="col" class="report__th">
                                                 <label for="example22">총연합단체</label>
                                               </th>
                                               <td>
@@ -298,7 +298,7 @@
                                                     <option value="선택">선택</option>
                                                 </select>
                                               </td>
-                                              <th scope="col">
+                                              <th scope="col" class="report__th">
                                                 <label for="examples11" >연합단체</label>
                                               </th>
                                               <td>
@@ -306,7 +306,7 @@
                                                     <option value="선택">선택</option>
                                                 </select>
                                               </td>
-                                              <th scope="col">
+                                              <th scope="col" class="report__th">
                                                 <label for="examples11">단위 노동조합</label>
                                               </th>
                                               <td>
@@ -332,7 +332,7 @@
                                         </colgroup>
                                         <tbody class="last__select">
                                             <tr>
-                                              <th scope="col">
+                                              <th scope="col" class="report__th">
                                                 <label for="example22">지부</label>
                                               </th>
                                               <td>
@@ -340,7 +340,7 @@
                                                     <option value="선택">선택</option>
                                                 </select>
                                               </td>
-                                              <th scope="col">
+                                              <th scope="col" class="report__th">
                                                 <label for="examples11">지회</label>
                                               </th>
                                               <td>
@@ -348,8 +348,8 @@
                                                     <option value="선택">선택</option>
                                                 </select>
                                               </td>
-                                              <th scope="col">
-                                                <label for="examples11">분회</label>
+                                              <th scope="col" class="report__th">
+                                                <label for="examples11">분회 </label>
                                               </th>
                                               <td>
                                                 <select name="category" id="category" class="select--no--style select__renew">
@@ -361,99 +361,126 @@
                                     </table>
                                 </div>
 
+
+
+
+
                             </div>
                         </div>
 
-                        <div class="modal__table">
-                            <div class="lnb__title flex__title">
-                                <h2>회계공시 대상년월 : 2024-07</h2>
-                            </div>
-                            <div class="dis__info modal__result">
-                                <div class="tab__detail table__vertical">
-                                  <table>
-                                    <caption>
-                                      자산 및 부채현황 {구분, 자산}
-                                    </caption>
-                                    <colgroup>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                      <col>
-                                    </colgroup>
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">회계년월</th>
-                                        <th>노동조합명</th>
-                                        <th class="ex">주/부</th>
-                                        <th>대표자</th>
-                                        <th>조직형태</th>
-                                        <th>조직단위</th>
-                                        <th>조합원수</th>
-                                        <th>총연합</th>
-                                        <th>연합단체</th>
-                                        <th>
-                                            단위노동(산별지역)
+                            <div class="modal__table" id="result__object">
+                              <div class="lnb__title flex__title">
+                                <h2>결과항목</h2>
+                              </div>
+                              <div class="dis__info modal__result table__template__radio">
+                                <table class="radio__table">
+                                    <caption>~~</caption>
+                                    <tr>
+                                        <th scope="col">자산 및 부채</th>
+                                        <td class="radio__wrap">
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">전체</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">현금 및 예금</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">토지</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">건물</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">기타 자산</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
+                                                <label for="rdo_1-1">부채</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">
+                                          <label for="example">
+                                            사용여부
+                                          </label>
                                         </th>
-                                        <th>지부</th>
-                                        <th>지회</th>
-                                        <th>분회</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>2024-07</td>
-                                        <td class="name">신규</td>
-                                        <td class="ex">주</td>
-                                        <td>홍길동</td>
-                                        <td>기업</td>
-                                        <td>단위</td>
-                                        <td class="count">999</td>
-                                        <td>전국민주노동조합명</td>
-                                        <td>전국화학연합</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-
-                                      <!-- 2 -->
-                                      <tr>
-                                        <td>2024-07</td>
-                                        <td class="name">신규</td>
-                                        <td class="ex">주</td>
-                                        <td>홍길동</td>
-                                        <td>기업</td>
-                                        <td>단위</td>
-                                        <td class="count">999</td>
-                                        <td>전국민주노동조합명</td>
-                                        <td>전국화학연합</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-
-
-
-                                  
+                                        <td class="radio__wrap">
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">전체</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">수입총계</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">전년도 이월금</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">조합비</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">상급단체 교부금</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
+                                                <label for="rdo_1-1">하부조직 부과금</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
+                                                <label for="rdo_1-1">후원금</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
+                                                <label for="rdo_1-1">타회계 전입금</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
+                                                <label for="rdo_1-1">보조금 수입</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
+                                                <label for="rdo_1-1">수익사업 수입</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
+                                                <label for="rdo_1-1">기타</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">사용여부</th>
+                                        <td class="radio__wrap">
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1">전체</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1">지출총계</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1"> 일반관리비용 전체</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1"> 인건비</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1">업무추진비</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
+                                                <label for="rdo_1-1">기타운영비</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
+                                                <label for="rdo_1-1">사업수행 비용전체</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
+                                                <label for="rdo_1-1"> 총회 등 대회비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
+                                                <label for="rdo_1-1">  조직 사업비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
+                                                <label for="rdo_1-1">  정책 사업비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
+                                                <label for="rdo_1-1"> 교육홍보 사업비</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
+                                                <label for="rdo_1-1">교섭 쟁의 사업비</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
+                                                <label for="rdo_1-1">  상급단체 부과금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
+                                                <label for="rdo_1-1">  하부조직 교부금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
+                                                <label for="rdo_1-1">  타회계 전출금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
+                                                <label for="rdo_1-1">  기타</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="radio" name="rdo_6-7" id="rdo_6-7">
+                                                <label for="rdo_1-1">기타 사업비</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                                 </div>
                             </div>
                         </div>
-                    
-    
-    
-    
+            
                         <div class="modal__close">
                             <button type="button">닫기</button>
                         </div>

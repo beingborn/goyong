@@ -2935,6 +2935,9 @@ a {
   font-size: 2rem;
   cursor: pointer;
 }
+.data__modal__wrap .manage__report__modal {
+  height: 83.6rem;
+}
 
 .data__modal .modal__table {
   padding-top: 5.8rem;
@@ -3026,6 +3029,10 @@ a {
   width: 40.6%;
 }
 
+.table__horizontal .main__table .report__th {
+  padding-left: 3rem;
+}
+
 .table__horizontal .main__table td {
   border-bottom: 0;
 }
@@ -3040,6 +3047,268 @@ a {
 
 .modal__result .report__check__table tbody tr td {
   padding: 0 10px;
+}
+
+.wrap .report__content .table__horizontal .main__table .radio__wrap .flex label {
+  margin-right: 2rem;
+}
+
+.modal__result .radio__table tr td {
+  text-align: left;
+}
+
+.modal__result tr {
+  line-height: 5.8rem;
+}
+
+.table__template__radio tr {
+  display: flex;
+}
+.table__template__radio th {
+  line-height: 100%;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #F9F9FA;
+  font-weight: 500;
+}
+.table__template__radio td {
+  border-bottom: 1px solid #ddd;
+}
+
+.table__template__radio .radio__wrap input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  border: 1px solid #ccc;
+}
+.table__template__radio .radio__wrap input[type=radio]:checked {
+  border: 0.6rem solid #000;
+}
+.table__template__radio .radio__wrap .flex {
+  padding-left: 1rem;
+}
+
+.radio__table th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+.radio__table th {
+  width: 12.5%;
+  line-height: 5.8rem;
+}
+
+.radio__table td {
+  width: 87.5%;
+}
+
+.radio__table tr {
+  line-height: 5.8rem;
+}
+
+.radio__table .flex {
+  display: flex;
+  align-items: center;
+}
+
+.radio__table .flex label:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.table__template__horizontal table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.table__template__horizontal tr {
+  display: flex;
+}
+.table__template__horizontal th {
+  line-height: 100%;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #F9F9FA;
+  font-weight: 500;
+}
+.table__template__horizontal td {
+  border-bottom: 1px solid #ddd;
+}
+.table__template__horizontal .default__table tr {
+  line-height: 5.8rem;
+}
+.table__template__horizontal .default__table th, .table__template__horizontal .default__table td {
+  border-bottom: 1px solid #ddd;
+}
+.table__template__horizontal .default__table th {
+  width: auto;
+}
+.table__template__horizontal .default__table td {
+  width: auto;
+}
+
+.sign__up__inner {
+  padding-top: 7rem;
+}
+
+.must__help__message span, .must__help__message p {
+  font-size: 1.5rem;
+}
+
+.td--flex {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  flex-wrap: nowrap;
+}
+.td--flex .td--width {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign__up__table__wrap {
+  border-top: 2px solid #000;
+}
+
+.sign__up__table tr {
+  line-height: 5.8rem;
+  width: 100%;
+}
+.sign__up__table th {
+  width: 12.5%;
+  line-height: 5.8rem;
+  border-bottom: 1px solid #ddd;
+}
+.sign__up__table td {
+  width: 87.5%;
+  line-height: 100%;
+}
+.sign__up__table td input[type=text] {
+  border: 1px solid #ddd;
+  line-height: 4rem;
+  width: 100%;
+  padding: 0 8px;
+}
+.sign__up__table td input[type=submit] {
+  border: 1px solid #ddd;
+  line-height: 4rem;
+}
+.sign__up__table td input[type=file] {
+  background: 0;
+}
+.sign__up__table td select {
+  height: 4rem;
+  border: 1px solid #ddd;
+}
+.sign__up__table .with__submit input[type=text] {
+  width: 90%;
+}
+.sign__up__table .with__submit input[type=submit] {
+  width: calc(10% - 1rem);
+  background-color: #004A98;
+  color: #fff;
+}
+.sign__up__table .col2__th {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sign__up__table .col2__th span {
+  line-height: 2.9rem;
+  text-align: left;
+}
+
+.must__type {
+  position: relative;
+  text-align: left;
+}
+.must__type::after {
+  content: " *";
+  color: #FE5555;
+  position: absolute;
+  top: -0.2rem;
+  right: -1rem;
+  font-weight: bold;
+}
+
+.sign__up__table .with__select__triple select {
+  width: calc(33.33% - 0.4rem);
+}
+
+.sign__up__table .with__select__double .select__renew, .sign__up__table .with__select__triple .select__renew {
+  background: url(../img/select__renew.png) no-repeat 98% 50%;
+}
+
+.sign__up__table .with__select__double select {
+  width: calc(50% - 0.4rem);
+}
+
+.td__calender {
+  position: relative;
+  width: 33.33%;
+}
+.td__calender .calender__icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/calendar-days-regular.svg) no-repeat center;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.2rem;
+}
+
+.td__date {
+  width: 38%;
+}
+
+.s-select--no--style {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22%;
+  padding: 0 8px;
+}
+
+.sign__up__table .radio__wrap .flex {
+  display: flex;
+  align-items: center;
+}
+.sign__up__table .radio__wrap .flex label:nth-of-type(1) {
+  margin-right: 2rem;
+}
+.sign__up__table .radio__wrap input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  border: 1px solid #ccc;
+}
+.sign__up__table .radio__wrap input[type=radio]:checked {
+  border: 0.6rem solid #000;
+}
+
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-file-label {
+  background-color: #004A98; /* 원하는 배경 색상 */
+  color: white; /* 원하는 텍스트 색상 */
+  width: 10rem;
+  height: 4rem;
+  line-height: 4rem;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 10px;
 }
 
 * {

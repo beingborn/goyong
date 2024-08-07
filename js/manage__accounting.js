@@ -29,6 +29,9 @@ $(document).ready(function(){
 
 
 
+
+
+
 $(document).ready(function(){
 
 
@@ -39,4 +42,11 @@ $(document).ready(function(){
     $('.modal__close button').click(function(){
         $('.data__modal').hide()
     })
+
+    for (i = 0; i <= 34; i++) {
+        if(i % 2 == 0 ){
+            $('.table__template__radio .radio__wrap input[type="radio"]').eq(i).first().prop('checked', true)
+        }
+    }
+
 })
