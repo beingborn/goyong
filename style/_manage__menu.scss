@@ -821,7 +821,9 @@ a {color: #000;}
 } 
 
 .table__horizontal .main__table .report__th {padding-left: 3rem;}
-.table__horizontal .main__table td {border-bottom: 0;}
+// .table__horizontal .main__table td {border-bottom: 0;}
+
+.table__horizontal .main__table .border--no {border-bottom: none;}
 
 .select__wrap  {
     border-top: 1px solid #ddd;

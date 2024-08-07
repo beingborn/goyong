@@ -3033,8 +3033,8 @@ a {
   padding-left: 3rem;
 }
 
-.table__horizontal .main__table td {
-  border-bottom: 0;
+.table__horizontal .main__table .border--no {
+  border-bottom: none;
 }
 
 .select__wrap {
@@ -3309,6 +3309,123 @@ a {
   cursor: pointer;
   text-align: center;
   margin-right: 10px;
+}
+
+.public__register .tab__wrap .tab__btn {
+  width: 50%;
+}
+.public__register .tab__wrap .tab__btn.active {
+  color: #003675;
+  border-bottom: 2px solid #003675;
+}
+
+.public__table__wrap {
+  border-top: 2px solid #000;
+}
+
+.public__table tr {
+  line-height: 5.8rem;
+  width: 100%;
+}
+.public__table th {
+  width: 12.5%;
+  line-height: 5.8rem;
+  border-bottom: 1px solid #ddd;
+}
+.public__table td {
+  width: 87.5%;
+  line-height: 100%;
+}
+.public__table td select {
+  height: 4rem;
+  border: 1px solid #ddd;
+}
+.public__table td input[type=text] {
+  border: 1px solid #ddd;
+  line-height: 4rem;
+  width: 100%;
+  padding: 0 8px;
+}
+.public__table td input[type=submit] {
+  border: 1px solid #ddd;
+  line-height: 4rem;
+}
+.public__table .col2__th {
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+}
+.public__table .col2__th span {
+  line-height: 150%;
+  text-align: left;
+}
+.public__table .td--width--harf {
+  width: 50%;
+  border: 1px solid red;
+}
+.public__table .harf__td {
+  width: 37.5%;
+}
+.public__table .td--flex {
+  padding: 0 1rem;
+}
+
+.public__table .with__long__select .select__renew {
+  background: url(../img/select__renew.png) no-repeat 98% 50%;
+}
+
+.select__wrap__3 select:nth-of-type(1) {
+  width: calc(20% - 0.4rem);
+}
+.select__wrap__3 select:not(:first-of-type) {
+  width: calc(40% - 0.4rem);
+}
+
+.p-td__calender {
+  position: relative;
+}
+.p-td__calender .calender__icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/calendar-days-regular.svg) no-repeat center;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.2rem;
+}
+
+.p-td__date {
+  width: calc(100% - 3.6rem);
+}
+
+.p-select--no--style {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: calc(25% - 0.8rem);
+}
+
+.public__table .flex {
+  display: flex;
+  align-items: center;
+}
+.public__table .flex label:nth-of-type(1) {
+  margin-right: 2rem;
+}
+.public__table input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  margin: 0;
+  margin-right: 0.7rem;
+  border: 1px solid #ccc;
+}
+.public__table input[type=radio]:checked {
+  border: 0.6rem solid #000;
 }
 
 * {
