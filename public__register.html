@@ -82,7 +82,7 @@
         <div class="visual__bg">
             <div class="inner">
               <div class="visual__text">
-                <h2>회계공시관리</h2>
+                <h2>회계공시등록</h2>
               </div>
             </div>
           </div>
@@ -211,14 +211,14 @@
                                                     <option value="월 선택">월 선택</option>
                                                 </select>
                                                 <select name="d-4-1" id="d-4-1" class="p-select--no--style  select__renew">
-                                                    <option value="월 선택">월 선택</option>
+                                                    <option value=""></option>
                                                 </select>
                                                 <span>~</span>
                                                 <select name="d-4-1" id="d-4-1" class="p-select--no--style  select__renew">
                                                     <option value="월 선택">월 선택</option>
                                                 </select>
                                                 <select name="d-4-1" id="d-4-1" class="p-select--no--style  select__renew">
-                                                    <option value="월 선택">월 선택</option>
+                                                    <option value=""></option>
                                                 </select>
                                             </div>
                                         </div>
@@ -248,7 +248,7 @@
                                     </th>
                                     <td class="td--flex harf__td">
                                         <div class="td--width">
-                                            <input type="text" value="0">
+                                            <input type="text">
                                         </div>
                                     </td>
                                     <th>
@@ -449,7 +449,7 @@
                                     </th>
                                     <td class="td--flex harf__td">
                                         <div class="td--width">
-                                            <input type="text" value="0">
+                                            <input type="text">
                                         </div>
                                     </td>
                                     <th>
@@ -610,9 +610,16 @@
 
             subTabContent.hide().eq(0).show();
             subTabBtn.eq(0).addClass('active')
+
+
+
+
+            
+   
+            $('.radio__wrap input[type="radio"]').eq(0).first().prop('checked', true)
+
         })
     </script>
-    <!-- <script src="js/manage__menu.js"></script> -->
     
 
 

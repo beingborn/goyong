@@ -10,8 +10,7 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="img/korea__favicon.ico">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
 </head>
 <body>
     <div class="skip__nav">
@@ -263,14 +262,14 @@
                         <!-- 시스템 정보 -->
                          <div class="system__infomation">
                             <div class="lnb__title">
-                                <h2>조회결과</h2>
+                                <h2>노동조합 체계정보</h2>
                             </div>
                             <div class="table__horizontal">
                                 <table class="main__table">
                                     <caption>~~</caption>
                                     <colgroup>
                                         <col class="main__th">
-                                        <col style="width: 487px;">
+                                        <col style="width: 494px;">
                                         <col class="main__th">
                                         <col style="width: auto;">
                                     </colgroup>
@@ -342,6 +341,47 @@
                                     <colgroup>
                                         <col class="main__th">
                                         <col style="width: auto;">
+                                        <col class="main__th">
+                                        <col style="width: auto;">
+                                        <col class="main__th">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                          <th scope="col">
+                                            <label for="example22">지부</label>
+                                          </th>
+                                          <td>
+                                            <select name="category" id="category" class="select--no--style select__renew">
+                                                <option value="선택">선택</option>
+                                            </select>
+                                          </td>
+                                          <th scope="col">
+                                            <label for="examples11">지회</label>
+                                          </th>
+                                          <td>
+                                            <select name="category" id="category" class="select--no--style select__renew">
+                                                <option value="선택">선택</option>
+                                            </select>
+                                          </td>
+                                          <th scope="col">
+                                            <label for="examples11">분회</label>
+                                          </th>
+                                          <td>
+                                            <select name="category" id="category" class="select--no--style select__renew">
+                                                <option value="선택">선택</option>
+                                            </select>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                            <div class="table__horizontal">
+                                <table class="main__table">
+                                    <caption>~~</caption>
+                                    <colgroup>
+                                        <col class="main__th">
+                                        <col style="width: auto;">
                                     </colgroup>
                                     <tbody>
                                         <tr>
@@ -351,9 +391,9 @@
                                           <td class="radio__wrap">
                                             <div class="flex">
                                                 <input type="radio" name="rdo_5-1" id="rdo_5-1">
-                                                <label for="rdo_1-1">사용</label>
-                                                <input type="radio" name="rdo_5-2" id="rdo_5-2">
-                                                <label for="rdo_1-1">미사용</label>
+                                                <label for="rdo_5-1">사용</label>
+                                                <input type="radio" name="rdo_5-1" id="rdo_5-1">
+                                                <label for="rdo_5-1">미사용</label>
                                             </div>
                                           </td>
                                         </tr>
@@ -370,12 +410,12 @@
                                     <col>
                                 </colgroup>
                                 <tbody>
-                                    <tr>
+                                    <tr class="no__border__note">
                                       <th scope="col" class="note__th">
                                         <label for="example22">비고</label>
                                       </th>
                                       <td>
-                                        <textarea name="text-area" id="text-area" title="내용" maxlength="100" placehorder="기본 값 비고입니다"></textarea>
+                                        <textarea name="text-area" id="text-area" title="내용" maxlength="100" readonly>전국민주노동조합총연맹</textarea>
                                       </td>
                                     </tr>
                                   </tbody>

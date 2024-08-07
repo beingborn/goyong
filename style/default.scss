@@ -49,6 +49,17 @@ body {
   overflow-x: hidden;
 }
 
+
+input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], 
+input[type="search"], input[type="tel"], input[type="url"], input[type="color"], input[type="date"], 
+input[type="datetime-local"], input[type="month"], input[type="range"], input[type="time"], 
+input[type="week"], input[type="file"], input[type="submit"], input[type="button"], 
+input[type="reset"], textarea, select, button {
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, 
+  system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+  "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 .inner {
   width: 1280px;
   margin: 0px auto;

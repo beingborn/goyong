@@ -117,6 +117,17 @@
                                 </div>
                             </td>
                         </tr>
+
+                        <tr>
+                            <th>
+                                <span class="must__type">비밀번호 확인</span>
+                            </th>
+                            <td class="td--flex">
+                                <div class="td--width">
+                                    <input type="text">
+                                </div>
+                            </td>
+                        </tr>
                         <tr>
                             <th class="col2__th">
                                 <span>노동조합 명칭</span>
@@ -219,14 +230,14 @@
                                         <option value="월 선택">월 선택</option>
                                     </select>
                                     <select name="d-4-1" id="d-4-1" class="s-select--no--style  select__renew">
-                                        <option value="월 선택">월 선택</option>
+                                        <option value=""></option>
                                     </select>
                                     <span>~</span>
                                     <select name="d-4-1" id="d-4-1" class="s-select--no--style  select__renew">
-                                        <option value="월 선택">월 선택</option>
+                                        <option value="">월 선택</option>
                                     </select>
                                     <select name="d-4-1" id="d-4-1" class="s-select--no--style  select__renew">
-                                        <option value="월 선택">월 선택</option>
+                                        <option value=""></option>
                                     </select>
                                 </div>
                             </td>
@@ -326,7 +337,7 @@
             </div>
             <div class="must__help__message">
                 <p>
-                    <span style="color: #FE5555;">*</span>노동조합 또는 산하조직 대표자 명의의 회원가입 신청 공문을 스캔하여 파일로 첨부합니다.
+                    <span style="color: #FE5555;">*</span> 노동조합 또는 산하조직 대표자 명의의 회원가입 신청 공문을 스캔하여 파일로 첨부합니다.
                 </p>
                 <p>(공문에"노동조합 회계공시시스템 회원가입을 신청한다"는 의사를 명시하고 대표자 직인 날인, 파일은 1개만 첨부가능)</p>
             </div>
@@ -416,8 +427,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/default.js"></script>
     <script src="js/manage__accounting.js"></script>
-    <!-- <script src="js/manage__menu.js"></script> -->
-    
+    <script>
+
+
+        $(document).ready(function(){
+            $('.radio__wrap input[type="radio"]').eq(0).first().prop('checked', true)
+
+        })
+
+
+
+    </script>
 
 
 </body>

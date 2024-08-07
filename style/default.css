@@ -83,6 +83,7 @@
   height: 1rem;
   display: inline-block;
   background: url(../img/icon__arrow__down.svg) no-repeat center;
+  margin-left: 0.4rem;
 }
 
 .header__btm {
@@ -1616,11 +1617,11 @@ table caption {
   font-weight: 700;
   line-height: 4.5rem;
   color: #767676;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 0.1rem solid #d8d8d8;
 }
 .tab__wrap .tab__btn .active {
   color: #003675;
-  border-bottom: 2px solid #003675;
+  border-bottom: 0.4rem solid #003675;
 }
 
 .tab__content {
@@ -2327,6 +2328,7 @@ table caption {
 .lnb__title h2 {
   font-size: 2.5rem;
   margin-bottom: 1.6rem;
+  font-weight: 500;
 }
 
 .flex__title {
@@ -2455,6 +2457,7 @@ table caption {
 
 .main__table .menu__th {
   width: 18.9%;
+  min-width: 120px;
 }
 
 .main__table .menu__td {
@@ -2591,6 +2594,7 @@ table caption {
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
+  margin: 0;
   margin-right: 0.7rem;
 }
 
@@ -2781,6 +2785,10 @@ a {
 
 .note__th {
   border-bottom: 1px solid #ddd;
+}
+
+.no__border__note .note__th {
+  border-bottom: 0;
 }
 
 .system__infomation .table__horizontal td {
@@ -3217,9 +3225,12 @@ a {
 .sign__up__table .col2__th {
   flex-direction: column;
   align-items: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 5.8rem;
 }
 .sign__up__table .col2__th span {
-  line-height: 2.9rem;
+  line-height: 150%;
   text-align: left;
 }
 
@@ -3316,7 +3327,7 @@ a {
 }
 .public__register .tab__wrap .tab__btn.active {
   color: #003675;
-  border-bottom: 2px solid #003675;
+  border-bottom: 0.4rem solid #003675;
 }
 
 .public__table__wrap {
@@ -3404,6 +3415,7 @@ a {
      -moz-appearance: none;
           appearance: none;
   width: calc(25% - 0.8rem);
+  padding: 0 0.8rem;
 }
 
 .public__table .flex {
@@ -3450,6 +3462,14 @@ body {
   color: #1d1d1d;
   font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   overflow-x: hidden;
+}
+
+input, input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=search], input[type=tel], input[type=url], input[type=color], input[type=date],
+input[type=datetime-local], input[type=month], input[type=range], input[type=time],
+input[type=week], input[type=file], input[type=submit], input[type=button],
+input[type=reset], textarea, select, button {
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 .inner {

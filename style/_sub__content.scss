@@ -77,12 +77,12 @@ table {
       font-weight: 700;
       line-height: 4.5rem;
       color: #767676;
-      border-bottom: 1px solid #d8d8d8;
+      border-bottom: 0.1rem solid #d8d8d8;
     }
 
     .active {
       color: $second-color;
-      border-bottom: 2px solid $second-color;
+      border-bottom: 0.4rem solid $second-color;
     }
   }
 }
