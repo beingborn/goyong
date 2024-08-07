@@ -87,6 +87,8 @@ table {
   }
 }
 
+
+
 .tab__content {
   padding-top: 8rem;
 
@@ -111,6 +113,9 @@ table {
     }
   }
 }
+
+.no__border__wrap .table__horizontal table tbody th {border-bottom: 0}
+.no__border__wrap .table__horizontal td {border-bottom: 0}
 
 .must__write {
   position: relative;
@@ -184,14 +189,29 @@ table {
   width: 15.38%;
 }
 
+.tab__4 .table__horizontal table tbody th {border-bottom: 0;}
+.tab__4 .table__horizontal td {border-bottom: 0;}
+
 .table__vertical table {
   // 테이블 공통 영역
   tr th:nth-child(1) {
     font-weight: 500;
-    border-left: 1px solid #ddd;
+    // border-left: 1px solid #ddd;
     word-break: keep-all;
     white-space: nowrap;
   }
+
+  tr th:nth-last-child(1){
+    border-right: 0;
+  }
+
+
+  tr td:nth-last-child(1){
+    border-right: 0;
+  }
+
+  tr th.border-right {border-right: 1px solid #ddd;}
+
   td {
     text-align: right;
     border-right: 1px solid #ddd;
