@@ -40,7 +40,14 @@ html {
   font-size: 62.5%; // 접근성 향상 16px / 62.5%
 }
 
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
 body {
+  font-size: 1.6rem;
   color: #1d1d1d;
   font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",

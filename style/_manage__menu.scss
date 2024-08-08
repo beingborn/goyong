@@ -40,7 +40,6 @@
         border: 0;
         font-size: 2rem;
         height: 5.6rem;
-        // line-height: 5.6rem;
         padding: 0 2rem;
         margin-top: 4rem;
         margin-bottom: 2rem;
@@ -78,7 +77,7 @@
 
 .lnb {
     .menu__depth-1 {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 0.1rem solid #ddd;
         font-size: 1.7rem;
 
         ol {
@@ -96,7 +95,7 @@
 
         li:first-child {
             padding-top: 1rem;            
-            border-top: 3px solid #16408D;
+            border-top: 0.3rem solid #16408D;
         }
 
         li:last-child {
@@ -181,7 +180,7 @@
     
 
     .lnb__wrap {
-        width: 280px;
+        width: 28rem;
         margin-right: auto;
     }
 
@@ -191,11 +190,10 @@
     }
 
     .main {
-        width: calc(100% - (280px + 36px));
+        width: calc(100% - (28rem + 3.6rem));
         margin-left: auto;
 
         .content {
-            // padding: 0 24px;
 
             .main__table {
                 width: 100%;
@@ -219,7 +217,7 @@
     height: auto;
 }
 
-.content .table__horizontal {border-top: 1px solid #ddd;}
+.content .table__horizontal {border-top: 0.1rem solid #ddd;}
 
 // col group
 .main__table .main__th {width: 15.38%;}
@@ -228,7 +226,7 @@
 
 // 메뉴 상세정보 colgroup 
 
-.main__table .menu__th {width: 18.9%; min-width: 120px;}
+.main__table .menu__th {width: 18.9%; min-width: 12rem;}
 .main__table .menu__td {width: 30.6%;}
 
 
@@ -242,9 +240,6 @@
 // 회계공시 조회
 
 
-
-
-
 .search__accounting .main__th {width: 16rem;}
 .search__accounting .search__td {width: 28rem;}
 .search__accounting .radio__th {width: 13rem;}
@@ -252,7 +247,6 @@
 .search__accounting .main__table .radio__wrap .flex label:nth-of-type(2) {
     margin-right: 2rem;
 }
-// .search__accounting .radio__td {max-width: 25rem;}
 
 
 
@@ -267,16 +261,13 @@
     border-bottom: 0;
 
     input:nth-child(1){
-        // width: 80%;
         width: 18.35rem;
     }
     input:nth-child(2){
-        // width: 18%;
-        // width: calc(100% - 18.35rem);
         padding: 0.8rem 2.6rem;
         background-color: #fff;
         color: #000;
-        border: 1px solid #ccc;
+        border: 0.1rem solid #ccc;
         font-weight: 400;
         margin-left: 1rem;
     }
@@ -305,7 +296,7 @@
         margin-top: 0.8rem;
         height: calc(100% - 1.6rem);
         width: 100%;
-        border: 1px solid #ddd;
+        border: 0.1rem solid #ddd;
     }
 }
 
@@ -324,20 +315,18 @@
         width: 100%;
         height: 100%;
         height: 4rem;
-        padding: 8px 10px 8px 16px;
+        padding: 0.8rem 1rem 0.8rem 1.6rem;
         -webkit-appearance: none;  /* 크롬 화살표 없애기 */
         -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
         appearance: none;  /* 화살표 없애기 */
         position: relative;
         font-size: 1.6rem;
-        border: 1px solid #ccc;
-
+        border: 0.1rem solid #ccc;
     }
 
     .select__renew {
         background: url(../img/select__renew.png) no-repeat 93% 50%;
         background-color: #fff;
-
     }
 
     .search__work__group input {
@@ -347,18 +336,17 @@
 }
 
 .select--no--style {
-    
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        height: 4rem;
-        padding: 8px 10px 8px 16px;
-        -webkit-appearance: none;  /* 크롬 화살표 없애기 */
-        -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
-        appearance: none;  /* 화살표 없애기 */
-        position: relative;
-        font-size: 1.6rem;
-}  
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    height: 4rem;
+    padding: 0.8rem 1rem 0.8rem 1.6rem;
+    -webkit-appearance: none;  /* 크롬 화살표 없애기 */
+    -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+    appearance: none;  /* 화살표 없애기 */
+    position: relative;
+    font-size: 1.6rem;
+}
 
 .select__renew {
     background: url(../img/select__renew.png) no-repeat 93% 50%;
@@ -396,7 +384,7 @@
 
 
 
-.border-btm {border-bottom: 1px solid #ddd;}
+.border-btm {border-bottom: 0.1rem solid #ddd;}
 
 
 
@@ -407,10 +395,10 @@
 
 // 메뉴 계층
 
-.tree{font-size:15px;color:#000; width: 290px;}
-.tree_tit {font-size: 20px;}
+.tree{font-size:1.5rem;color:#000; width: 29rem;}
+.tree_tit {font-size: 2rem;}
 
-.tree_tit span {padding: 0 10px;}
+.tree_tit span {padding: 0 1rem;}
 
 .tree ul,.tree li,.tree span{margin:0;padding:0}
 
@@ -420,20 +408,19 @@ a {color: #000;}
 
 .tree li a:hover{color :#0c3975;}
 
-.tree .tree_label{margin-left:3px;vertical-align:top;text-decoration:none;   display: inline-block;} 
+.tree .tree_label{margin-left:0.3rem;vertical-align:top;text-decoration:none; display: inline-block;} 
 
-.tree .tree_label a{display:inline-block; margin:-1px 0 0 1px;padding-left:10px; ;font-size:15px;color:#aaa;letter-spacing:-1px;vertical-align:top; }
-.tree .tree_label span{padding: 0 10px;}
+.tree .tree_label a{display:inline-block; margin:-0.1rem 0 0 0.1rem;padding-left:1rem;font-size:1.5rem;color:#aaa;letter-spacing:-0.1rem;vertical-align:top;}
+.tree .tree_label span{padding: 0 1rem;}
 
+.tree ul{background:url(../img/bg_tree_stream.svg) repeat-y 0.9rem 0; padding-top: 2rem;}
 
-.tree ul{background:url(../img/bg_tree_stream.svg) repeat-y 9px 0; padding-top: 20px;}
+.tree li{padding-left:2.8rem;background:url(../img/bg_tree_branch.svg) no-repeat 0.9rem -1.25rem;}
 
-.tree li{padding-left:28px;background:url(../img/bg_tree_branch.svg) no-repeat 9px -12.5px}
+.tree li.tree_last_node{margin-bottom:0.4rem;background:url(../img/bg_tree_branch_last.svg) no-repeat 0.9rem -1rem;}
 
-.tree li.tree_last_node{margin-bottom:4px;background:url(../img/bg_tree_branch_last.svg) no-repeat 9px -10px}
-
-.depth__1__tree a {font-size: 16px; line-height: 40px; font-weight: 600;}
-.depth__2__tree a {font-size: 15px; line-height: 36px; font-weight: 500;}
+.depth__1__tree a {font-size: 1.6rem; line-height: 4rem; font-weight: 600;}
+.depth__2__tree a {font-size: 1.5rem; line-height: 3.6rem; font-weight: 500;}
 
 
 
@@ -441,7 +428,7 @@ a {color: #000;}
 
 .check__result {
         .table__vertical {
-            border-top: 2px solid #000;
+            border-top: 0.2rem solid #000;
         }
 
         table {width: 100%; font-size: 1.5rem;
@@ -463,7 +450,7 @@ a {color: #000;}
             .name {
                 text-align: left;
                 padding-left: 0.8rem;
-                border-left: 1px solid #ddd;
+                border-left: 0.1rem solid #ddd;
             }
 
             .ex {
@@ -477,7 +464,7 @@ a {color: #000;}
 .check__result .table__vertical table thead tr th:nth-last-child(1) {border-right: 0;}
 
 .check__result .table__vertical table tbody tr th:nth-child(1){
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.1rem solid #ddd;
     border-left: 0;
     background-color: #fff;
     border-left: 0;
@@ -536,7 +523,7 @@ a {color: #000;}
 }
 
 
-.note__th {border-bottom: 1px solid #ddd;}
+.note__th {border-bottom: 0.1rem solid #ddd;}
 
 .no__border__note .note__th {border-bottom: 0;}
 .system__infomation .table__horizontal td {border-bottom: 0;}
@@ -550,7 +537,7 @@ a {color: #000;}
         margin-right: 0.7rem;
 }
 
-.system__infomation .table__note {border-bottom: 1px solid #ddd;}
+.system__infomation .table__note {border-bottom: 0.1rem solid #ddd;}
 
 .system__margin { margin-bottom: 15rem;}
 
@@ -573,7 +560,7 @@ a {color: #000;}
 
 
 
-    .auth__control { width: calc(100% - 290px);}
+    .auth__control { width: calc(100% - 29rem);}
 
 
 
@@ -586,7 +573,7 @@ a {color: #000;}
         .flex {
             display: flex;
             align-items: center;
-            height: 40px;
+            height: 4rem;
     
             label:nth-of-type(1){
                 margin-right: 2rem;
@@ -605,7 +592,7 @@ a {color: #000;}
 
         }
         input[type="radio"]:not(:checked) {
-            border: 1px solid #ddd;
+            border: 0.1rem solid #ddd;
         }
 
     }
@@ -648,7 +635,7 @@ a {color: #000;}
 
     .division {
         text-align: center;
-        border-left: 1px solid #ddd;
+        border-left: 0.1rem solid #ddd;
     }
 
 
@@ -659,7 +646,7 @@ a {color: #000;}
     justify-content: center;
     align-items: start;
     height: 40rem; overflow: hidden;
-    border: 1px solid #ddd;
+    border: 0.1rem solid #ddd;
     
     img {
         width: 100%;
@@ -704,11 +691,11 @@ a {color: #000;}
     .data__modal {
         display: none;
         width: calc(100% - 2rem); height: 72rem;  overflow-y: auto;background-color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-        border: 3px solid #CBCCCD;
+        border: 0.3rem solid #CBCCCD;
 
         .modal__inner {
             width: calc(100% - 7.2rem);
-            margin: 0px auto;
+            margin: 0rem auto;
         }
 
 
@@ -744,7 +731,7 @@ a {color: #000;}
 }
 
 .modal__result {
-    border-top: 2px solid #000;
+    border-top: 0.2rem solid #000;
 
     table {width: 100%; font-size: 1.5rem;
         
@@ -830,17 +817,17 @@ a {color: #000;}
 .table__horizontal .main__table .border--no {border-bottom: none;}
 
 .select__wrap  {
-    border-top: 1px solid #ddd;
+    border-top: 0.1rem solid #ddd;
 }
 
-.last__select {border-bottom: 1px solid #ddd;}
+.last__select {border-bottom: 0.1rem solid #ddd;}
 
 
 
 
 
 .modal__result .report__check__table tbody tr td {
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 

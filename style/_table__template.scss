@@ -1,7 +1,7 @@
 .table__template__radio {
     tr {display: flex;}
     th {line-height: 100%; padding-left: 3rem; display: flex; align-items: center; justify-content: left; background-color: #F9F9FA; font-weight: 500;}
-    td {border-bottom: 1px solid #ddd;}
+    td {border-bottom: 0.1rem solid #ddd;}
 }
 
 
@@ -12,7 +12,7 @@
         height: 2.6rem;
         border-radius: 50%;
         margin-right: 0.7rem;
-        border: 1px solid #ccc;
+        border: 0.1rem solid #ccc;
     }
 
     input[type="radio"]:checked {
@@ -38,11 +38,11 @@
     table {width: 100%; font-size: 1.5rem;}
     tr {display: flex;}
     th {line-height: 100%; padding-left: 3rem; display: flex; align-items: center; justify-content: left; background-color: #F9F9FA; font-weight: 500;}
-    td {border-bottom: 1px solid #ddd;}
+    td {border-bottom: 0.1rem solid #ddd;}
 
     .default__table {
         tr {line-height: 5.8rem;}
-        th, td {border-bottom: 1px solid #ddd;}
+        th, td {border-bottom: .1rem solid #ddd;}
         th {width: auto;}
         td {width: auto;}
 

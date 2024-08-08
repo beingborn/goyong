@@ -34,7 +34,7 @@
   .table__vertical table tr th:nth-child(1) {
     word-break: keep-all;
     white-space: nowrap;
-    padding: 0 8px;
+    padding: 0 0.8rem;
   }
 
 }
@@ -109,7 +109,7 @@
 // 해상도 ~ 550px 까지는 max-width 130px , min-width 551~766까지는 max-width: 25%
 @media all and (max-width: 550px) {
   .content .mobile__tab .swiper .swiper-slide {
-    max-width: 130px;
+    max-width: 13rem;
   }
 }
 

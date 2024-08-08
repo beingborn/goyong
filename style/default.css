@@ -394,10 +394,10 @@
   height: 60rem;
   bottom: 0;
   z-index: 1;
-  width: 1920px;
+  width: 192rem;
   background-color: #003675;
   border-radius: 6rem 0 0 6rem;
-  box-shadow: 0px 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0rem 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .main__swiper {
@@ -499,7 +499,7 @@
   font-weight: 700;
 }
 .main__swiper .swiper-slide .item .item__wrap .title {
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -558,7 +558,7 @@
   background: linear-gradient(to top, #767676 0 26%, #DEDEDE 22% 100%);
 }
 .main__swiper .swiper-slide .item .item__wrap .circle__graph {
-  margin: 0px auto;
+  margin: 0rem auto;
   width: 21rem;
   height: 21rem;
   border-radius: 50%;
@@ -593,12 +593,12 @@
 .main__swiper .swiper-slide .item .item__wrap .total {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 8rem;
 }
 .main__swiper .swiper-slide .item .item__wrap .total .total__wrap {
   width: 50%;
   text-align: center;
-  padding: 16px 0;
+  padding: 1.6rem 0;
 }
 .main__swiper .swiper-slide .item .item__wrap .total .money {
   font-size: 1.7rem;
@@ -694,7 +694,7 @@
 }
 
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 .main__swiper .swiper-slide:not(.swiper-slide-active) .item .item__wrap .graph .circle__graph {
   background: conic-gradient(#767676 0% 70%, #ededed 70% 100%);
@@ -1561,10 +1561,10 @@ table caption {
   top: 0;
   left: 0;
   overflow: hidden;
-  width: 1px;
-  height: 1px;
+  width: 0.1rem;
+  height: 0.1rem;
   clip: rect(0, 0, 0, 0);
-  margin: -1px;
+  margin: -0.1rem;
 }
 
 #sub__wrap .content .visual__bg {
@@ -1598,7 +1598,7 @@ table caption {
 }
 
 .tab__wrap {
-  width: 1280px;
+  width: 128rem;
   margin: 0px auto;
   display: flex;
   align-items: center;
@@ -1642,8 +1642,8 @@ table caption {
 .tab__content table tbody th {
   font-weight: 500;
   color: #000;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-right: 0.1rem solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .no__border__wrap .table__horizontal table tbody th {
@@ -1663,12 +1663,12 @@ table caption {
   color: #fe5555;
   font-weight: bold;
   position: absolute;
-  right: -8px;
+  right: -0.8rem;
 }
 
 .table__horizontal {
   height: 5.8rem;
-  border-top: 2px solid #333;
+  border-top: 0.2rem solid #333;
 }
 .table__horizontal table {
   height: 100%;
@@ -1681,19 +1681,19 @@ table caption {
   line-height: 4.5rem;
 }
 .table__horizontal td {
-  padding: 0 10px;
-  border-bottom: 1px solid #ddd;
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid #ddd;
 }
 .table__horizontal td select {
   width: 100%;
   height: 4rem;
-  border: 1px solid #ccc;
+  border: 0.1rem solid #ccc;
   font-size: 1.5rem;
-  padding: 8px;
+  padding: 0.8rem;
 }
 .table__horizontal td input {
-  width: calc(50% - 14px);
-  border: 1px solid #ccc;
+  width: calc(50% - 1.4rem);
+  border: 0.1rem solid #ccc;
   height: 4rem;
   font-size: 1.5rem;
 }
@@ -1710,7 +1710,7 @@ table caption {
   padding-bottom: 5.6rem;
 }
 .tab .table__vertical {
-  border-top: 2px solid #333;
+  border-top: 0.2rem solid #333;
   width: 100%;
 }
 
@@ -1739,20 +1739,20 @@ table caption {
   border-right: 0;
 }
 .table__vertical table tr th.border-right {
-  border-right: 1px solid #ddd;
+  border-right: 0.1rem solid #ddd;
 }
 .table__vertical table td {
   text-align: right;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-right: 0.1rem solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 .table__vertical table thead tr th {
   font-weight: 500;
   height: 6rem;
   background-color: #f8f8f8;
   line-height: 6rem;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-right: 0.1rem solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
   text-align: center;
   vertical-align: middle;
 }
@@ -1760,7 +1760,7 @@ table caption {
   background-color: #f8f8f8;
 }
 .table__vertical table tbody td {
-  padding-right: 8px;
+  padding-right: 0.8rem;
 }
 .table__vertical table tbody td,
 .table__vertical table tbody th {
@@ -1829,7 +1829,7 @@ table caption {
   .table__vertical table tr th:nth-child(1) {
     word-break: keep-all;
     white-space: nowrap;
-    padding: 0 8px;
+    padding: 0 0.8rem;
   }
 }
 /* pc 전환시까지 변환 유지 되어야 하는 영역 */
@@ -1886,7 +1886,7 @@ table caption {
 }
 @media all and (max-width: 550px) {
   .content .mobile__tab .swiper .swiper-slide {
-    max-width: 130px;
+    max-width: 13rem;
   }
 }
 /* 모바일 세로 (해상도 ~ 479px) 까지 */
@@ -1918,19 +1918,19 @@ table caption {
   }
 }
 .mobile__tab {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .mobile__tab .swiper {
-  border: 1px dashed green;
+  border: 0.1rem dashed green;
 }
 .mobile__tab .swiper .swiper-slide {
-  max-width: 130px;
+  max-width: 13rem;
   text-align: center;
 }
 .mobile__tab .swiper .swiper-slide .btn--active {
   color: #003675;
-  border-bottom: 2px solid #003675;
+  border-bottom: 0.2rem solid #003675;
   font-weight: 700;
 }
 .mobile__tab .swiper .swiper-slide button {
@@ -1939,9 +1939,9 @@ table caption {
   color: #555555;
   background: transparent;
   font-size: 1.9rem;
-  padding: 20px 16px;
+  padding: 2rem 1.6rem;
   white-space: nowrap;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 0.2rem solid #ddd;
   font-weight: 500;
   cursor: pointer;
 }
@@ -1949,13 +1949,13 @@ table caption {
   border-radius: 50%;
   background: url(../img/mo__tab__next.png) no-repeat center;
   background-size: 100% auto;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.25);
 }
 .mobile__tab .swiper-button-prev {
   border-radius: 50%;
   background: url(../img/mo__tab__prev.png) no-repeat center;
   background-size: 100% auto;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.25);
 }
 .mobile__tab .swiper-button-next,
 .mobile__tab .swiper-button-prev {
@@ -1963,7 +1963,7 @@ table caption {
   width: 2.4rem;
   height: 2.4rem;
   margin-top: 0;
-  margin-top: -12px;
+  margin-top: calc(0px - 1.2rem);
 }
 .mobile__tab .swiper-button-next::after,
 .mobile__tab .swiper-button-prev::after {
@@ -2004,13 +2004,13 @@ table caption {
 .mo__open__wrap table tr td select {
   width: 100%;
   height: 4rem;
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 0.1rem solid #ccc;
+  padding: 0.8rem;
 }
 .mo__open__wrap table tr th input,
 .mo__open__wrap table tr td input {
-  width: calc(50% - 14px);
-  border: 1px solid #ccc;
+  width: calc(50% - 1.4rem);
+  border: 0.1rem solid #ccc;
   height: 4rem;
 }
 .mo__open__wrap .data__title {
@@ -2027,18 +2027,18 @@ table caption {
 .mo__open__wrap .mo__column .sub__element {
   font-weight: 700;
   font-size: 1.8rem;
-  padding-left: 8px;
+  padding-left: 0.8rem;
   color: #333;
   margin-top: 2.4rem;
 }
 .mo__open__wrap .mo__column .sub__element.depth2 {
-  padding-left: 16px;
+  padding-left: 1.6rem;
 }
 .mo__open__wrap .mo__column .sub__item-depth2 {
   padding-left: 1.2rem;
 }
 .mo__open__wrap .mo__column .sub__item-depth3 {
-  padding-left: 16px;
+  padding-left: 1.6rem;
 }
 .mo__open__wrap .mo__column td {
   margin-top: 0;
@@ -2061,7 +2061,7 @@ table caption {
   display: block;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  height: 1px;
+  height: 0.1rem;
   background-color: #ddd;
   position: absolute;
   bottom: 0;
@@ -2076,7 +2076,7 @@ table caption {
   display: inline-block;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  height: 1px;
+  height: 0.1rem;
   background-color: #ddd;
   position: absolute;
   top: 0;
@@ -2089,14 +2089,14 @@ table caption {
 }
 .data--open .arrow__wrap .arrow__top {
   display: none;
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   background: url(../img/arrow__top.png) no-repeat center;
 }
 .data--open .arrow__wrap .arrow__bottom {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   background: url(../img/arrow__bottom.png) no-repeat center;
 }
 
@@ -2110,7 +2110,7 @@ table caption {
 
 .t__title__wrap {
   padding-bottom: 1.3rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.1rem solid #ccc;
 }
 
 .mo__column .t__title {
@@ -2368,7 +2368,7 @@ table caption {
 }
 
 .lnb .menu__depth-1 {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
   font-size: 1.7rem;
 }
 .lnb .menu__depth-1 ol {
@@ -2382,7 +2382,7 @@ table caption {
 }
 .lnb .menu__depth-1 li:first-child {
   padding-top: 1rem;
-  border-top: 3px solid #16408D;
+  border-top: 0.3rem solid #16408D;
 }
 .lnb .menu__depth-1 li:last-child {
   padding-bottom: 1rem;
@@ -2440,14 +2440,14 @@ table caption {
   position: relative;
 }
 .main__content .lnb__wrap {
-  width: 280px;
+  width: 28rem;
   margin-right: auto;
 }
 .main__content .content--flex {
   display: flex;
 }
 .main__content .main {
-  width: calc(100% - 316px);
+  width: calc(100% - 31.6rem);
   margin-left: auto;
 }
 .main__content .main .content .main__table {
@@ -2471,7 +2471,7 @@ table caption {
 }
 
 .content .table__horizontal {
-  border-top: 1px solid #ddd;
+  border-top: 0.1rem solid #ddd;
 }
 
 .main__table .main__th {
@@ -2484,7 +2484,7 @@ table caption {
 
 .main__table .menu__th {
   width: 18.9%;
-  min-width: 120px;
+  min-width: 12rem;
 }
 
 .main__table .menu__td {
@@ -2526,7 +2526,7 @@ table caption {
   padding: 0.8rem 2.6rem;
   background-color: #fff;
   color: #000;
-  border: 1px solid #ccc;
+  border: 0.1rem solid #ccc;
   font-weight: 400;
   margin-left: 1rem;
 }
@@ -2548,7 +2548,7 @@ table caption {
   margin-top: 0.8rem;
   height: calc(100% - 1.6rem);
   width: 100%;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
 }
 
 .main__table {
@@ -2567,13 +2567,13 @@ table caption {
   width: 100%;
   height: 100%;
   height: 4rem;
-  padding: 8px 10px 8px 16px;
+  padding: 0.8rem 1rem 0.8rem 1.6rem;
   -webkit-appearance: none; /* 크롬 화살표 없애기 */
   -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
   appearance: none; /* 화살표 없애기 */
   position: relative;
   font-size: 1.6rem;
-  border: 1px solid #ccc;
+  border: 0.1rem solid #ccc;
 }
 .search__work .select__renew {
   background: url(../img/select__renew.png) no-repeat 93% 50%;
@@ -2589,7 +2589,7 @@ table caption {
   width: 100%;
   height: 100%;
   height: 4rem;
-  padding: 8px 10px 8px 16px;
+  padding: 0.8rem 1rem 0.8rem 1.6rem;
   -webkit-appearance: none; /* 크롬 화살표 없애기 */
   -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
   appearance: none; /* 화살표 없애기 */
@@ -2630,7 +2630,7 @@ table caption {
 }
 
 .border-btm {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .table__horizontal .main__table tbody th {
@@ -2642,17 +2642,17 @@ table caption {
 }
 
 .tree {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #000;
-  width: 290px;
+  width: 29rem;
 }
 
 .tree_tit {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .tree_tit span {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .tree ul, .tree li, .tree span {
@@ -2673,7 +2673,7 @@ a {
 }
 
 .tree .tree_label {
-  margin-left: 3px;
+  margin-left: 0.3rem;
   vertical-align: top;
   text-decoration: none;
   display: inline-block;
@@ -2681,47 +2681,47 @@ a {
 
 .tree .tree_label a {
   display: inline-block;
-  margin: -1px 0 0 1px;
-  padding-left: 10px;
-  font-size: 15px;
+  margin: -0.1rem 0 0 0.1rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
   color: #aaa;
-  letter-spacing: -1px;
+  letter-spacing: -0.1rem;
   vertical-align: top;
 }
 
 .tree .tree_label span {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .tree ul {
-  background: url(../img/bg_tree_stream.svg) repeat-y 9px 0;
-  padding-top: 20px;
+  background: url(../img/bg_tree_stream.svg) repeat-y 0.9rem 0;
+  padding-top: 2rem;
 }
 
 .tree li {
-  padding-left: 28px;
-  background: url(../img/bg_tree_branch.svg) no-repeat 9px -12.5px;
+  padding-left: 2.8rem;
+  background: url(../img/bg_tree_branch.svg) no-repeat 0.9rem -1.25rem;
 }
 
 .tree li.tree_last_node {
-  margin-bottom: 4px;
-  background: url(../img/bg_tree_branch_last.svg) no-repeat 9px -10px;
+  margin-bottom: 0.4rem;
+  background: url(../img/bg_tree_branch_last.svg) no-repeat 0.9rem -1rem;
 }
 
 .depth__1__tree a {
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 1.6rem;
+  line-height: 4rem;
   font-weight: 600;
 }
 
 .depth__2__tree a {
-  font-size: 15px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 3.6rem;
   font-weight: 500;
 }
 
 .check__result .table__vertical {
-  border-top: 2px solid #000;
+  border-top: 0.2rem solid #000;
 }
 .check__result table {
   width: 100%;
@@ -2736,7 +2736,7 @@ a {
 .check__result table .name {
   text-align: left;
   padding-left: 0.8rem;
-  border-left: 1px solid #ddd;
+  border-left: 0.1rem solid #ddd;
 }
 .check__result table .ex {
   text-align: center;
@@ -2751,7 +2751,7 @@ a {
 }
 
 .check__result .table__vertical table tbody tr th:nth-child(1) {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
   border-left: 0;
   background-color: #fff;
   border-left: 0;
@@ -2811,7 +2811,7 @@ a {
 }
 
 .note__th {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .no__border__note .note__th {
@@ -2837,7 +2837,7 @@ a {
 }
 
 .system__infomation .table__note {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .system__margin {
@@ -2848,7 +2848,7 @@ a {
   display: flex;
 }
 .auth__wrap .auth__control {
-  width: calc(100% - 290px);
+  width: calc(100% - 29rem);
 }
 .auth__wrap .radio__wrap {
   position: absolute;
@@ -2856,7 +2856,7 @@ a {
 .auth__wrap .radio__wrap .flex {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 4rem;
 }
 .auth__wrap .radio__wrap .flex label:nth-of-type(1) {
   margin-right: 2rem;
@@ -2874,7 +2874,7 @@ a {
           appearance: none;
 }
 .auth__wrap .radio__wrap input[type=radio]:not(:checked) {
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
 }
 
 .check__year__result .pagination {
@@ -2891,7 +2891,7 @@ a {
 }
 .check__year__result .division {
   text-align: center;
-  border-left: 1px solid #ddd;
+  border-left: 0.1rem solid #ddd;
 }
 
 .year__data__wrap {
@@ -2901,7 +2901,7 @@ a {
   align-items: start;
   height: 40rem;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
 }
 .year__data__wrap img {
   width: 100%;
@@ -2948,11 +2948,11 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 3px solid #CBCCCD;
+  border: 0.3rem solid #CBCCCD;
 }
 .data__modal__wrap .data__modal .modal__inner {
   width: calc(100% - 7.2rem);
-  margin: 0px auto;
+  margin: 0rem auto;
 }
 .data__modal__wrap .data__modal .modal__close {
   text-align: center;
@@ -2979,7 +2979,7 @@ a {
 }
 
 .modal__result {
-  border-top: 2px solid #000;
+  border-top: 0.2rem solid #000;
 }
 .modal__result table {
   width: 100%;
@@ -3073,15 +3073,15 @@ a {
 }
 
 .select__wrap {
-  border-top: 1px solid #ddd;
+  border-top: 0.1rem solid #ddd;
 }
 
 .last__select {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .modal__result .report__check__table tbody tr td {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .wrap .report__content .table__horizontal .main__table .radio__wrap .flex label {
@@ -3109,7 +3109,7 @@ a {
   font-weight: 500;
 }
 .table__template__radio td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .table__template__radio .radio__wrap input[type=radio] {
@@ -3120,7 +3120,7 @@ a {
   height: 2.6rem;
   border-radius: 50%;
   margin-right: 0.7rem;
-  border: 1px solid #ccc;
+  border: 0.1rem solid #ccc;
 }
 .table__template__radio .radio__wrap input[type=radio]:checked {
   border: 0.6rem solid #000;
@@ -3172,13 +3172,13 @@ a {
   font-weight: 500;
 }
 .table__template__horizontal td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 .table__template__horizontal .default__table tr {
   line-height: 5.8rem;
 }
 .table__template__horizontal .default__table th, .table__template__horizontal .default__table td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid #ddd;
 }
 .table__template__horizontal .default__table th {
   width: auto;
@@ -3485,7 +3485,13 @@ html {
   font-size: 62.5%;
 }
 
+table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
 body {
+  font-size: 1.6rem;
   color: #1d1d1d;
   font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   overflow-x: hidden;
