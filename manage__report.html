@@ -11,11 +11,10 @@
     <link rel="shortcut icon" href="img/korea__favicon.ico">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 </head>
 <body>
     <div class="skip__nav">
-        <a href="#main__content">본문 바로가기</a>
+        <a href="#sub__content">본문 바로가기</a>
     </div>
 
     <div class="wrap manage__wrap" id="wrap">
@@ -88,7 +87,7 @@
             </div>
           </div>
 
-       <main class="main__content report__content" style="padding-bottom: 40px;">
+       <main class="main__content report__content" style="padding-bottom: 40px;" id="sub__content">
         <div class="inner">
             <div class="function__group">
                 <button type="button">초기화</button>
@@ -290,30 +289,30 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                              <th scope="col" class="report__th">
-                                                <label for="example22">총연합단체</label>
-                                              </th>
-                                              <td class="border--no">
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
-                                              <th scope="col" class="report__th">
-                                                <label for="examples11" >연합단체</label>
-                                              </th>
-                                              <td class="border--no">
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
-                                              <th scope="col" class="report__th">
-                                                <label for="examples11">단위 노동조합</label>
-                                              </th>
-                                              <td class="border--no">
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
+                                                <th scope="col" class="report__th">
+                                                    총연합단체
+                                                </th>
+                                                <td class="border--no">
+                                                    <select name="category2" id="category2-1" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="col" class="report__th">
+                                                    연합단체
+                                                </th>
+                                                <td class="border--no">
+                                                    <select name="category" id="category-2" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="col" class="report__th">
+                                                    단위 노동조합
+                                                </th>
+                                                <td class="border--no">
+                                                    <select name="category" id="category-3" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                           </tbody>
                                     </table>
@@ -332,30 +331,30 @@
                                         </colgroup>
                                         <tbody class="last__select">
                                             <tr>
-                                              <th scope="col" class="report__th">
-                                                <label for="example22">지부</label>
-                                              </th>
-                                              <td>
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
-                                              <th scope="col" class="report__th">
-                                                <label for="examples11">지회</label>
-                                              </th>
-                                              <td>
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
-                                              <th scope="col" class="report__th">
-                                                <label for="examples11">분회 </label>
-                                              </th>
-                                              <td>
-                                                <select name="category" id="category" class="select--no--style select__renew">
-                                                    <option value="선택">선택</option>
-                                                </select>
-                                              </td>
+                                                <th scope="col" class="report__th">
+                                                   지부
+                                                </th>
+                                                <td>
+                                                    <select name="category" id="category1" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="col" class="report__th">
+                                                   지회
+                                                </th>
+                                                <td>
+                                                    <select name="category" id="category2" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="col" class="report__th">
+                                                    분회
+                                                </th>
+                                                <td>
+                                                    <select name="category" id="category3" class="select--no--style select__renew">
+                                                        <option value="선택">선택</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                           </tbody>
                                     </table>
@@ -379,53 +378,51 @@
                                         <th scope="col">자산 및 부채</th>
                                         <td class="radio__wrap">
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">전체</label>
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">현금 및 예금</label>
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">토지</label>
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">건물</label>
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">기타 자산</label>
-                                                <input type="radio" name="rdo_6-1" id="rdo_6-1">
-                                                <label for="rdo_1-1">부채</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-1">
+                                                <label for="rdo_6-1-1">전체</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-2">
+                                                <label for="rdo_6-1-2">현금 및 예금</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-3">
+                                                <label for="rdo_6-1-3">토지</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-4">
+                                                <label for="rdo_6-1-4">건물</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-5">
+                                                <label for="rdo_6-1-5">기타 자산</label>
+                                                <input type="radio" name="rdo_6-1" id="rdo_6-1-6">
+                                                <label for="rdo_6-1-6">부채</label>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="col">
-                                          <label for="example">
                                             사용여부
-                                          </label>
                                         </th>
                                         <td class="radio__wrap">
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">전체</label>
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">수입총계</label>
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">전년도 이월금</label>
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">조합비</label>
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">상급단체 교부금</label>
-                                                <input type="radio" name="rdo_6-2" id="rdo_6-2">
-                                                <label for="rdo_1-1">하부조직 부과금</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-1">
+                                                <label for="rdo_6-2-1">전체</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-2">
+                                                <label for="rdo_6-2-2">수입총계</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-3">
+                                                <label for="rdo_6-2-3">전년도 이월금</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-4">
+                                                <label for="rdo_6-2-4">조합비</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-5">
+                                                <label for="rdo_6-2-5">상급단체 교부금</label>
+                                                <input type="radio" name="rdo_6-2" id="rdo_6-2-6">
+                                                <label for="rdo_6-2-6">하부조직 부과금</label>
                                             </div>
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
-                                                <label for="rdo_1-1">후원금</label>
-                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
-                                                <label for="rdo_1-1">타회계 전입금</label>
-                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
-                                                <label for="rdo_1-1">보조금 수입</label>
-                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
-                                                <label for="rdo_1-1">수익사업 수입</label>
-                                                <input type="radio" name="rdo_6-3" id="rdo_6-3">
-                                                <label for="rdo_1-1">기타</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3-1">
+                                                <label for="rdo_6-3-1">후원금</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3-2">
+                                                <label for="rdo_6-3-2">타회계 전입금</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3-3">
+                                                <label for="rdo_6-3-3">보조금 수입</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3-4">
+                                                <label for="rdo_6-3-4">수익사업 수입</label>
+                                                <input type="radio" name="rdo_6-3" id="rdo_6-3-5">
+                                                <label for="rdo_6-3-5">기타</label>
                                             </div>
                                         </td>
                                     </tr>
@@ -433,46 +430,46 @@
                                         <th scope="col">사용여부</th>
                                         <td class="radio__wrap">
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1">전체</label>
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1">지출총계</label>
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1"> 일반관리비용 전체</label>
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1"> 인건비</label>
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1">업무추진비</label>
-                                                <input type="radio" name="rdo_6-4" id="rdo_6-4">
-                                                <label for="rdo_1-1">기타운영비</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-1">
+                                                <label for="rdo_6-4-1">전체</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-2">
+                                                <label for="rdo_6-4-2">지출총계</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-3">
+                                                <label for="rdo_6-4-3">일반관리비용 전체</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-4">
+                                                <label for="rdo_6-4-4">인건비</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-5">
+                                                <label for="rdo_6-4-5">업무추진비</label>
+                                                <input type="radio" name="rdo_6-4" id="rdo_6-4-6">
+                                                <label for="rdo_6-4-6">기타운영비</label>
                                             </div>
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
-                                                <label for="rdo_1-1">사업수행 비용전체</label>
-                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
-                                                <label for="rdo_1-1"> 총회 등 대회비</label>
-                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
-                                                <label for="rdo_1-1">  조직 사업비</label>
-                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
-                                                <label for="rdo_1-1">  정책 사업비</label>
-                                                <input type="radio" name="rdo_6-5" id="rdo_6-5">
-                                                <label for="rdo_1-1"> 교육홍보 사업비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5-1">
+                                                <label for="rdo_6-5-1">사업수행 비용전체</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5-2">
+                                                <label for="rdo_6-5-2">총회 등 대회비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5-3">
+                                                <label for="rdo_6-5-3">조직 사업비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5-4">
+                                                <label for="rdo_6-5-4">정책 사업비</label>
+                                                <input type="radio" name="rdo_6-5" id="rdo_6-5-5">
+                                                <label for="rdo_6-5-5">교육홍보 사업비</label>
                                             </div>
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
-                                                <label for="rdo_1-1">교섭 쟁의 사업비</label>
-                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
-                                                <label for="rdo_1-1">  상급단체 부과금</label>
-                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
-                                                <label for="rdo_1-1">  하부조직 교부금</label>
-                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
-                                                <label for="rdo_1-1">  타회계 전출금</label>
-                                                <input type="radio" name="rdo_6-6" id="rdo_6-6">
-                                                <label for="rdo_1-1">  기타</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6-1">
+                                                <label for="rdo_6-6-1">교섭 쟁의 사업비</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6-2">
+                                                <label for="rdo_6-6-2">상급단체 부과금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6-3">
+                                                <label for="rdo_6-6-3">하부조직 교부금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6-4">
+                                                <label for="rdo_6-6-4">타회계 전출금</label>
+                                                <input type="radio" name="rdo_6-6" id="rdo_6-6-5">
+                                                <label for="rdo_6-6-5">기타</label>
                                             </div>
                                             <div class="flex">
-                                                <input type="radio" name="rdo_6-7" id="rdo_6-7">
-                                                <label for="rdo_1-1">기타 사업비</label>
+                                                <input type="radio" name="rdo_6-7" id="rdo_6-7-1">
+                                                <label for="rdo_6-7-1">기타 사업비</label>
                                             </div>
                                         </td>
                                     </tr>
@@ -557,7 +554,6 @@
                 </div>
             </footer>
         </div>
-    </div>
 
     <!-- jquery 스와이퍼 cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

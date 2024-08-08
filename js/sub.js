@@ -29,6 +29,7 @@ $(document).ready(function () {
   }
 
   function updateView() {
+    
     if (isMobileView) {
       moTabBtn.removeClass("btn--active");
       moTabBtn.eq(activeTabIndex).addClass("btn--active");
